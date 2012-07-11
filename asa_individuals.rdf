@@ -174,7 +174,7 @@
     <owl:NamedIndividual rdf:about="http://www.oesta.gv.at/policies/free_opensource_tools_available">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;integer">4</control-policy:value>
-        <control-policy:property rdf:resource="http://scape-project.eu/pw/vocab/number_of_free_tools_opensource"/>
+        <control-policy:property rdf:resource="http://scape-project.eu/pw/vocab/free_opensource_tools_available"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
     
