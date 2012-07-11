@@ -70,8 +70,18 @@ public class PolicyTest {
       Literal prop = next.getLiteral("pName");
       Resource mod = next.getResource("modality");
       Literal val = next.getLiteral("value");
+      Resource metric = next.getResource("metric");
       System.out.println("Format Objective [" + obj.toString() + "] defines that: \nproperty '" + prop.getString()
-          + "' " + mod.getLocalName() + " have a \nvalue '" + val.getString() + "'\n");
+          + "' " + mod.getLocalName() + " have a \nvalue " + getMetric(metric) + " '" + val.getString() + "'\n");
     }
+  }
+  
+  private static String getMetric(Resource metric) {
+    String result = "";
+    if (metric != null) {
+      result = metric.getLocalName();
+    }
+    
+    return result;
   }
 }

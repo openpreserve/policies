@@ -9,7 +9,7 @@ PREFIX control: <http://www.scape-project.eu/pw/vocab/control-policy#>
 PREFIX oesta: <http://www.oesta.gv.at/policies/>
 
 
-SELECT ?objective ?pName ?modality ?value
+SELECT ?objective ?pName ?modality ?value ?metric
 WHERE { 
 oesta:ministries_executions_scenario pw:hasObjective ?objective .
 ?objective rdf:type control:FormatObjective .
@@ -17,5 +17,6 @@ oesta:ministries_executions_scenario pw:hasObjective ?objective .
 ?objective control:value ?value .
 ?objective control:property ?criterion .
 ?criterion pw:property ?prop .
+OPTIONAL {?criterion pw:hasComparisonMetric ?metric .}
 ?prop pw:hasName ?pName .
 }
