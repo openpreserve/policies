@@ -1,0 +1,37 @@
+# A simple SKOS vocabulary for qualifiers
+
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: 	    <http://purl.org/dc/terms/> .
+
+@prefix :        <http://www.scape-project.eu/pw/vocab/metrics#> .
+
+:scheme a skos:ConceptScheme;
+	dct:title "METRICS".
+
+:RETAINED a skos:Concept;
+      skos:prefLabel "retained";
+      skos:inScheme :scheme.
+:EQUAL a skos:Concept;
+      skos:prefLabel "equal";
+      skos:inScheme :scheme.
+:LESS_THAN a skos:Concept;
+      skos:prefLabel "less than";
+      skos:inScheme :scheme.
+:GREATER_THAN a skos:Concept;
+      skos:prefLabel "greater than";
+      skos:inScheme :scheme.
+:GREATER_OR_EQUAL a skos:Concept;
+      skos:prefLabel "greater or equal";
+      skos:inScheme :scheme.
+:AE a skos:Concept;
+      skos:prefLabel "absolute error";
+      skos:inScheme :scheme.
+:PAE a skos:Concept;
+      skos:prefLabel "peak absolute error";
+      skos:inScheme :scheme.
+
+### may be more...
+
+

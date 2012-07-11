@@ -1,0 +1,27 @@
+# A simple SKOS vocabulary for qualifiers
+
+@prefix rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: 	    <http://purl.org/dc/terms/> .
+
+@prefix :        <http://www.scape-project.eu/pw/vocab/scales#> .
+
+:scheme a skos:ConceptScheme;
+	dct:title "SCALES".
+
+:INTEGER a skos:Concept;
+	  skos:prefLabel "integer";
+      skos:inScheme :scheme.
+:NUMERIC a skos:Concept;
+	  skos:prefLabel "numeric";
+	  skos:inScheme :scheme.
+:BOOL a skos:Concept;
+      skos:prefLabel "boolean";
+      skos:inScheme :scheme.
+:ORDINAL a skos:Concept;
+      skos:prefLabel "ordinal";
+      skos:inScheme :scheme.
+:TEXT a skos:Concept;
+      skos:prefLabel "free text";
+      skos:inScheme :scheme.

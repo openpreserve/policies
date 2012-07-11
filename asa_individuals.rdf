@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY org "http://www.w3.org/ns/org#" >
+    <!ENTITY ns "http://premis.loc.gov/ns/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY oesta "http://www.oesta.gv.at/policies/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY mcat "http://www.scape-project.eu/pw/vocab/mcat#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY scales "http://www.scape-project.eu/pw/vocab/scales#" >
+    <!ENTITY metrics "http://www.scape-project.eu/pw/vocab/metrics#" >
+    <!ENTITY pronom "http://reference.data.gov.uk/technical-registry/" >
+    <!ENTITY modalities "http://www.scape-project.eu/pw/vocab/modalities#" >
+    <!ENTITY qualifiers "http://www.scape-project.eu/pw/vocab/qualifiers#" >
+    <!ENTITY control-policy "http://www.scape-project.eu/pw/vocab/control-policy#" >
+]>
+
+
+<rdf:RDF xmlns="http://scape-project.eu/pw/vocab/"
+     xml:base="http://oesta.gv.at/policies"
+     xml:pw="http://scape-project.eu/pw/vocab/"
+     xmlns:ns="http://premis.loc.gov/ns/"
+     xmlns:modalities="http://www.scape-project.eu/pw/vocab/modalities#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:scales="http://www.scape-project.eu/pw/vocab/scales#"
+     xmlns:control-policy="http://www.scape-project.eu/pw/vocab/control-policy#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pronom="http://reference.data.gov.uk/technical-registry/"
+     xmlns:mcat="http://www.scape-project.eu/pw/vocab/mcat#"
+     xmlns:metrics="http://www.scape-project.eu/pw/vocab/metrics#"
+     xmlns:qualifiers="http://www.scape-project.eu/pw/vocab/qualifiers#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+
+    <!-- http://scape-project.eu/pw/vocab/asa_ministries_scanned_papers_scenario -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/asa_ministries_scanned_papers_scenario">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Scenario"/>
+        <pw:hasUserCommunity rdf:resource="http://oesta.gv.at/policies/ministries"/>
+        <pw:hasUserCommunity rdf:resource="http://oesta.gv.at/policies/public"/>
+        <pw:hasUserCommunity rdf:resource="http://oesta.gv.at/policies/researchers"/>
+        <pw:hasContentSet rdf:resource="http://oesta.gv.at/policies/scanned_papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/austrian_state_archives -->
+
+    <org:Organization rdf:about="http://oesta.gv.at/policies/austrian_state_archives">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <org:identifier>ASA</org:identifier>
+    </org:Organization>
+    
+
+    <!-- http://scape-project.eu/pw/vocab/documents_executions -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/documents_executions">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/ContentSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/documents_notes -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/documents_notes">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/ContentSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/emails -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/emails">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/ContentSet"/>
+    </owl:NamedIndividual>
+    
+
+    <!-- http://scape-project.eu/pw/vocab/formats_must_have_lossless_compression -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/formats_must_have_lossless_compression">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value>lossless</control-policy:value>
+        <pw:organizationScope rdf:resource="http://oesta.gv.at/policies/austrian_state_archives"/>
+        <control-policy:property rdf:resource="http://scape-project.eu/pw/vocab/object_compression"/>
+        <control-policy:modality rdf:resource="&modalities;MUST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/formats_shall_be_iso_standardized -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/formats_shall_be_iso_standardized">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;string">ISO Standardized</control-policy:value>
+        <pw:organizationScope rdf:resource="http://oesta.gv.at/policies/austrian_state_archives"/>
+        <control-policy:property rdf:resource="http://scape-project.eu/pw/vocab/object_standardized"/>
+        <control-policy:modality rdf:resource="&modalities;SHOULD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/ministries -->
+
+    <foaf:Group rdf:about="http://oesta.gv.at/policies/ministries">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </foaf:Group>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/ministries_administrative_records -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/ministries_administrative_records">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/ContentSet"/>
+        <pw:belongsToOrganization rdf:resource="http://oesta.gv.at/policies/austrian_state_archives"/>
+        <pw:consistsOf rdf:resource="http://oesta.gv.at/policies/documents_executions"/>
+        <pw:consistsOf rdf:resource="http://oesta.gv.at/policies/documents_notes"/>
+        <pw:consistsOf rdf:resource="http://oesta.gv.at/policies/emails"/>
+        <pw:consistsOf rdf:resource="http://oesta.gv.at/policies/photographs"/>
+        <pw:consistsOf rdf:resource="http://oesta.gv.at/policies/scanned_papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/objects_must_be_valid_and_well_formed -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/objects_must_be_valid_and_well_formed">
+        <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
+        <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
+        <control-policy:property rdf:resource="http://scape-project.eu/pw/vocab/object_is_valid_and_wellformed"/>
+        <pw:contentSetScope rdf:resource="http://oesta.gv.at/policies/scanned_papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/photographs -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/photographs">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/ContentSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/public -->
+
+    <foaf:Group rdf:about="http://oesta.gv.at/policies/public">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </foaf:Group>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/researchers -->
+
+    <foaf:Group rdf:about="http://oesta.gv.at/policies/researchers">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </foaf:Group>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/scanned_papers -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/scanned_papers">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/ContentSet"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.oesta.gv.at/policies/free_opensource_tools_available -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/free_opensource_tools_available">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;integer">4</control-policy:value>
+        <control-policy:property rdf:resource="http://scape-project.eu/pw/vocab/number_of_free_tools_opensource"/>
+        <control-policy:modality rdf:resource="&modalities;MUST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/ministries_executions_scenario -->
+
+    <owl:NamedIndividual rdf:about="http://oesta.gv.at/policies/ministries_executions_scenario">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Scenario"/>
+        <pw:hasContentSet rdf:resource="http://oesta.gv.at/policies/documents_executions"/>
+        <pw:hasObjective rdf:resource="http://oesta.gv.at/policies/formats_shall_be_iso_standardized"/>
+        <pw:hasUserCommunity rdf:resource="http://oesta.gv.at/policies/ministries"/>
+        <pw:hasUserCommunity rdf:resource="http://oesta.gv.at/policies/researchers"/>
+        <pw:hasObjective rdf:resource="http://oesta.gv.at/policies/free_opensource_tools_available"/>
+    </owl:NamedIndividual>
+</rdf:RDF>

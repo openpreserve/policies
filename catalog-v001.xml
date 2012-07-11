@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://scape-project.eu/pw/vocab/" uri="pw_individuals.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1342012052925" name="duplicate:http://scape-project.eu/pw/vocab/" uri="pw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1342012052925" name="duplicate:http://scape-project.eu/pw/vocab/" uri="asa_individuals.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1342012052925" name="duplicate:http://scape-project.eu/pw/vocab/" uri="pw_individuals.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1342012052925" name="http://www.scape-project.eu/pw/vocab/control-policy" uri="control-policy/control-policy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1342012052925" name="http://www.scape-project.eu/pw/vocab/domain" uri="control-policy/domain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1342012052925" name="shadowed:http://scape-project.eu/pw/vocab/" uri="experiments/query/resources/pw_exp.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1342012052925" name="shadowed:http://scape-project.eu/pw/vocab/" uri="experiments/query/resources/pw_exp_backup20120707.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1342012052925" name="shadowed:http://scape-project.eu/pw/vocab/" uri="experiments/query/bin/pw_exp.rdf"/>
+    </group>
+</catalog>

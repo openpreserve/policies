@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY org "http://www.w3.org/ns/org#" >
+    <!ENTITY ns "http://premis.loc.gov/ns/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY oesta "http://www.oesta.gv.at/policies/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY mcat "http://www.scape-project.eu/pw/vocab/mcat#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY scales "http://www.scape-project.eu/pw/vocab/scales#" >
+    <!ENTITY metrics "http://www.scape-project.eu/pw/vocab/metrics#" >
+    <!ENTITY pronom "http://reference.data.gov.uk/technical-registry/" >
+    <!ENTITY modalities "http://www.scape-project.eu/pw/vocab/modalities#" >
+    <!ENTITY qualifiers "http://www.scape-project.eu/pw/vocab/qualifiers#" >
+    <!ENTITY control-policy "http://www.scape-project.eu/pw/vocab/control-policy#" >
+]>
+
+
+<rdf:RDF xmlns="http://scape-project.eu/pw/vocab/"
+     xml:base="http://scape-project.eu/pw/vocab/"
+     xmlns:ns="http://premis.loc.gov/ns/"
+     xmlns:modalities="http://www.scape-project.eu/pw/vocab/modalities#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:scales="http://www.scape-project.eu/pw/vocab/scales#"
+     xmlns:control-policy="http://www.scape-project.eu/pw/vocab/control-policy#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:oesta="http://www.oesta.gv.at/policies/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pronom="http://reference.data.gov.uk/technical-registry/"
+     xmlns:mcat="http://www.scape-project.eu/pw/vocab/mcat#"
+     xmlns:metrics="http://www.scape-project.eu/pw/vocab/metrics#"
+     xmlns:qualifiers="http://www.scape-project.eu/pw/vocab/qualifiers#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+
+
+    <!-- http://reference.data.gov.uk/technical-registry/formatType/Image_(Raster) -->
+
+    <owl:NamedIndividual rdf:about="&pronom;formatType/Image_(Raster)"/>
+
+    <!-- http://scape-project.eu/pw/vocab/bool_scale -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/bool_scale">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/PropertyMeasurementScale"/>
+        <hasType rdf:resource="&scales;BOOL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/compression -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/compression">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/FormatProperty"/>
+        <hasDescription>Indicates the compression of an object</hasDescription>
+        <hasName>Compression</hasName>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/compression_scale"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/compression_scale -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/compression_scale">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/OrdinalScale"/>
+        <hasScaleValues>{&#39;lossy&#39;, &#39;lossless&#39;}</hasScaleValues>
+        <hasType rdf:resource="&scales;ORDINAL"/>
+    </owl:NamedIndividual>
+
+    <!-- http://scape-project.eu/pw/vocab/free_opensource_tools_available -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/free_opensource_tools_available">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <hasDescription rdf:datatype="&xsd;string">Free (open source) tools available</hasDescription>
+        <isAboutFormatType rdf:resource="&pronom;formatType/Image_(Raster)"/>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/number_of_free_tools_opensource"/>
+        <hasComparisonMetric rdf:resource="&metrics;GREATER_OR_EQUAL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/free_text_scale -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/free_text_scale">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/PropertyMeasurementScale"/>
+        <hasType rdf:resource="&scales;TEXT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/format_standardization -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/format_standardization">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/FormatProperty"/>
+        <hasName rdf:datatype="&xsd;string">Format Standardization</hasName>
+        <hasDescription rdf:datatype="&xsd;string">Standardization of the outcome format</hasDescription>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/standardization_ordinal_scale"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+
+    <!-- http://scape-project.eu/pw/vocab/image_width_property -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/image_width_property">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/TransformationInformationProperty"/>
+        <hasName rdf:datatype="&xsd;string">Image Width</hasName>
+        <hasDescription rdf:datatype="&xsd;string">The image width of a digital object ot type image</hasDescription>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/zero_positive_integers"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/image_width_unchanged -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/image_width_unchanged">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <hasDescription rdf:datatype="&xsd;string">The image width of the outcome object should be unchanged</hasDescription>
+        <isAboutFormatType rdf:resource="&pronom;formatType/Image_(Raster)"/>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/image_width_property"/>
+        <hasComparisonMetric rdf:resource="&metrics;RETAINED"/>
+    </owl:NamedIndividual>
+    
+
+    <!-- http://scape-project.eu/pw/vocab/license_ordinal_scale -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/license_ordinal_scale">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/OrdinalScale"/>
+        <hasScaleValues>{&#39;Open Source&#39;, &#39;Closed Source&#39;}</hasScaleValues>
+        <hasType rdf:resource="&scales;ORDINAL"/>
+    </owl:NamedIndividual>
+
+    <!-- http://scape-project.eu/pw/vocab/number_of_free_tools_opensource -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/number_of_free_tools_opensource">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/FormatProperty"/>
+        <hasDescription rdf:datatype="&xsd;string">Number of free open source tools which support the outcome format.</hasDescription>
+        <hasName rdf:datatype="&xsd;string">Number of free tools (open source)</hasName>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/zero_positive_integers"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/object_compression -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/object_compression">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/compression"/>
+        <hasComparisonMetric rdf:resource="&metrics;EQUAL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/object_is_valid -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/object_is_valid">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <hasDescription rdf:datatype="&xsd;string">Indicates whether the fomrat of any object is valid according to the format specification.</hasDescription>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/valid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/object_is_valid_and_wellformed -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/object_is_valid_and_wellformed">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <hasDescription rdf:datatype="&xsd;string">Indicates whether the format of any object is valid and well formed.</hasDescription>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/valid_and_wellformed"/>
+        <hasComparisonMetric rdf:resource="&metrics;EQUAL"/>
+    </owl:NamedIndividual>
+    
+
+    <!-- http://scape-project.eu/pw/vocab/object_standardized -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/object_standardized">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <hasDescription rdf:datatype="&xsd;string">Indicates whether raster image outcome objects are in a standardized format</hasDescription>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/format_standardization"/>
+    </owl:NamedIndividual>
+
+    <!-- http://scape-project.eu/pw/vocab/positive_integers -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/positive_integers">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/IntegerScale"/>
+        <hasLowerBound rdf:datatype="&xsd;int">1</hasLowerBound>
+        <hasType rdf:resource="&scales;INTEGER"/>
+    </owl:NamedIndividual>
+
+   <!-- http://scape-project.eu/pw/vocab/standardization_ordinal_scale -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/standardization_ordinal_scale">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/OrdinalScale"/>
+        <hasScaleValues>{&#39;ISO Standardized&#39;, &#39;DeFacto standardized&#39;, &#39;Non-Standardized&#39;}</hasScaleValues>
+        <hasType rdf:resource="&scales;ORDINAL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/total_setup_cost -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/total_setup_cost">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/ActionProperty"/>
+        <hasName rdf:datatype="&xsd;string">Total Setup Costs</hasName>
+        <hasDescription rdf:datatype="&xsd;string">Total sum of costs needed to setup the action-tool.</hasDescription>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/zero_positive_integers"/>
+        <hasMeasurementCategory rdf:resource="&mcat;ACTION"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/valid -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/valid">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/RepresentationInstanceProperty"/>
+        <hasDescription rdf:datatype="&xsd;string">The validity of a digital object according to its format</hasDescription>
+        <hasName rdf:datatype="&xsd;string">Valid</hasName>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/bool_scale"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/valid_and_wellformed -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/valid_and_wellformed">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/RepresentationInstanceProperty"/>
+        <hasDescription rdf:datatype="&xsd;string">The validity and wellformdness of a digital object according to its format</hasDescription>
+        <hasName rdf:datatype="&xsd;string">Valid And Well-Formed</hasName>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/bool_scale"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/zero_positive_integers -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/zero_positive_integers">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/IntegerScale"/>
+        <hasLowerBound rdf:datatype="&xsd;int">0</hasLowerBound>
+        <hasType rdf:resource="&scales;INTEGER"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.scape-project.eu/pw/vocab/mcat#ACTION -->
+
+    <owl:NamedIndividual rdf:about="&mcat;ACTION"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/mcat#OUTCOME -->
+
+    <owl:NamedIndividual rdf:about="&mcat;OUTCOME"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/metrics#EQUAL -->
+
+    <owl:NamedIndividual rdf:about="&metrics;EQUAL"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/metrics#GREATER_OR_EQUAL -->
+
+    <owl:NamedIndividual rdf:about="&metrics;GREATER_OR_EQUAL"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/metrics#RETAINED -->
+
+    <owl:NamedIndividual rdf:about="&metrics;RETAINED"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/modalities#MUST -->
+
+    <owl:NamedIndividual rdf:about="&modalities;MUST"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/modalities#SHOULD -->
+
+    <owl:NamedIndividual rdf:about="&modalities;SHOULD"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/scales#BOOL -->
+
+    <owl:NamedIndividual rdf:about="&scales;BOOL"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/scales#INTEGER -->
+
+    <owl:NamedIndividual rdf:about="&scales;INTEGER"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/scales#ORDINAL -->
+
+    <owl:NamedIndividual rdf:about="&scales;ORDINAL"/>
+    
+
+
+    <!-- http://www.scape-project.eu/pw/vocab/scales#TEXT -->
+
+    <owl:NamedIndividual rdf:about="&scales;TEXT"/>
+
+</rdf:RDF>
