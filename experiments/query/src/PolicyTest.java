@@ -19,7 +19,9 @@ public class PolicyTest {
   public static void main(String... args) {
     OntModelSpec spec = OntModelSpec.OWL_MEM_RDFS_INF;
     OntModel ont = ModelFactory.createOntologyModel(spec);
-    ont.read("file:resources/pw_exp.rdf");
+    ont.read("file:../../pw.owl");
+    ont.read("file:../../pw_individuals.rdf");
+    ont.read("file:../../asa_individuals.rdf");
 
     String query1 = "";
     String query2 = "";
@@ -57,7 +59,7 @@ public class PolicyTest {
       Literal prop = next.getLiteral("pName");
       System.out.println("Property: " + prop.getString());
     }
-    
+
     System.out.println("######### ALL FORMAT OBJECTIVES FOR SCENARIO DOCUMENT EXECUTIONS #########");
     qe = QueryExecutionFactory.create(query3, ont.getBaseModel());
     set = qe.execSelect();

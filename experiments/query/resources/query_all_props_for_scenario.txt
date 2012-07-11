@@ -5,12 +5,13 @@ PREFIX ns: <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX org: <http://www.w3.org/ns/org#> 
 PREFIX pw: <http://scape-project.eu/pw/vocab/>
+PREFIX oesta: <http://www.oesta.gv.at/policies/>
 PREFIX control: <http://www.scape-project.eu/pw/vocab/control-policy#>
 
 SELECT ?pName
 
 WHERE { 
-pw:asa_ministries_scanned_papers_scenario pw:hasContentSet ?set .
+oesta:asa_ministries_scanned_papers_scenario pw:hasContentSet ?set .
 ?objective pw:contentSetScope ?set . 
 ?objective control:property ?criterion .
 ?criterion rdf:type pw:Criterion .

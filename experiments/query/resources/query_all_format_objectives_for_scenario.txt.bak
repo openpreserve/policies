@@ -11,7 +11,7 @@ PREFIX oesta: <http://www.oesta.gv.at/policies/>
 
 SELECT ?objective ?pName ?modality ?value
 WHERE { 
-pw:ministries_executions_scenario pw:hasObjective ?objective .
+oesta:ministries_executions_scenario pw:hasObjective ?objective .
 ?objective rdf:type control:FormatObjective .
 ?objective control:modality ?modality .
 ?objective control:value ?value .
