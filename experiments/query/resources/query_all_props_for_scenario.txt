@@ -11,7 +11,7 @@ PREFIX control: <http://www.scape-project.eu/pw/vocab/control-policy#>
 SELECT ?pName
 
 WHERE { 
-oesta:asa_ministries_scanned_papers_scenario pw:hasContentSet ?set .
+oesta:ministries_scanned_papers_scenario pw:hasContentSet ?set .
 ?objective pw:contentSetScope ?set . 
 ?objective control:property ?criterion .
 ?criterion rdf:type pw:Criterion .

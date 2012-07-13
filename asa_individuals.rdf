@@ -17,6 +17,7 @@
     <!ENTITY modalities "http://www.scape-project.eu/pw/vocab/modalities#" >
     <!ENTITY qualifiers "http://www.scape-project.eu/pw/vocab/qualifiers#" >
     <!ENTITY control-policy "http://www.scape-project.eu/pw/vocab/control-policy#" >
+    <!ENTITY premis "http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl" >
 ]>
 
 
@@ -24,11 +25,11 @@
      xml:base="http://scape-project.eu/pw/vocab/"
      xmlns:modalities="http://www.scape-project.eu/pw/vocab/modalities#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:premis="http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl"
      xmlns:scales="http://www.scape-project.eu/pw/vocab/scales#"
      xmlns:control-policy="http://www.scape-project.eu/pw/vocab/control-policy#"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:oesta="http://www.oesta.gv.at/policies/"
+     xmlns:premis="http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:pronom="http://reference.data.gov.uk/technical-registry/"
      xmlns:mcat="http://www.scape-project.eu/pw/vocab/mcat#"
@@ -58,10 +59,17 @@
     <owl:AnnotationProperty rdf:about="&pw;hasContentSet"/>
     <owl:AnnotationProperty rdf:about="&pw;belongsToOrganization"/>
     <owl:AnnotationProperty rdf:about="&pw;organizationScope"/>
+    <owl:AnnotationProperty rdf:about="&oesta;hasUserCommunity"/>
+    <owl:AnnotationProperty rdf:about="&oesta;belongsToOrganization"/>
+    <owl:AnnotationProperty rdf:about="&pw;contentSetScope"/>
+    <owl:AnnotationProperty rdf:about="&oesta;organizationScope"/>
+    <owl:AnnotationProperty rdf:about="&oesta;hasObjective"/>
     <owl:AnnotationProperty rdf:about="&pw;consistsOf"/>
     <owl:AnnotationProperty rdf:about="&pw;hasUserCommunity"/>
+    <owl:AnnotationProperty rdf:about="&oesta;contentSetScope"/>
+    <owl:AnnotationProperty rdf:about="&oesta;consistsOf"/>
+    <owl:AnnotationProperty rdf:about="&oesta;hasContentSet"/>
     <owl:AnnotationProperty rdf:about="&pw;hasObjective"/>
-    <owl:AnnotationProperty rdf:about="&pw;contentSetScope"/>
     
 
 
@@ -107,6 +115,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <!-- http://scape-project.eu/pw/vocab/formats_widespread_use -->
+
+    <owl:NamedIndividual rdf:about="&oesta;formats_widespread_use">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;string">widespread</control-policy:value>
+        <control-policy:property rdf:resource="&pw;format_ubiquity"/>
+        <organizationScope rdf:resource="&oesta;austrian_state_archives"/>
+        <control-policy:modality rdf:resource="&modalities;SHOULD"/>
+    </owl:NamedIndividual>
     
 
 
@@ -131,18 +148,6 @@
     <!-- http://scape-project.eu/pw/vocab/object_standardized -->
 
     <owl:NamedIndividual rdf:about="&pw;object_standardized"/>
-    
-
-
-    <!-- http://www.oesta.gv.at/policies/asa_ministries_scanned_papers_scenario -->
-
-    <owl:NamedIndividual rdf:about="&oesta;asa_ministries_scanned_papers_scenario">
-        <rdf:type rdf:resource="&pw;Scenario"/>
-        <hasUserCommunity rdf:resource="&oesta;ministries"/>
-        <hasUserCommunity rdf:resource="&oesta;public"/>
-        <hasUserCommunity rdf:resource="&oesta;researchers"/>
-        <hasContentSet rdf:resource="&oesta;scanned_papers"/>
-    </owl:NamedIndividual>
     
 
 
@@ -234,8 +239,6 @@
         <consistsOf rdf:resource="&oesta;scanned_papers"/>
     </owl:NamedIndividual>
     
-
-
     <!-- http://www.oesta.gv.at/policies/ministries_executions_scenario -->
 
     <owl:NamedIndividual rdf:about="&oesta;ministries_executions_scenario">
@@ -243,8 +246,21 @@
         <hasContentSet rdf:resource="&oesta;documents_executions"/>
         <hasObjective rdf:resource="&oesta;formats_shall_be_iso_standardized"/>
         <hasObjective rdf:resource="&oesta;free_opensource_tools_available"/>
+        <hasObjective rdf:resource="&oesta;formats_widespread_use"/>
         <hasUserCommunity rdf:resource="&oesta;ministries"/>
         <hasUserCommunity rdf:resource="&oesta;researchers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/ministries_scanned_papers_scenario -->
+
+    <owl:NamedIndividual rdf:about="&oesta;ministries_scanned_papers_scenario">
+        <rdf:type rdf:resource="&pw;Scenario"/>
+        <hasUserCommunity rdf:resource="&oesta;ministries"/>
+        <hasUserCommunity rdf:resource="&oesta;public"/>
+        <hasUserCommunity rdf:resource="&oesta;researchers"/>
+        <hasContentSet rdf:resource="&oesta;scanned_papers"/>
     </owl:NamedIndividual>
     
 
