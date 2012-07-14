@@ -181,6 +181,28 @@
     
 
 
+    <!-- http://scape-project.eu/pw/vocab/documentation_ordinal_scale -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/documentation_ordinal_scale">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/OrdinalScale"/>
+        <hasScaleValues>{&#39;yes-free&#39;, &#39;yes-pay&#39;, &#39;no&#39;}</hasScaleValues>
+        <hasType rdf:resource="&scales;ORDINAL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/format_documentation -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/format_documentation">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/FormatProperty"/>
+        <hasDescription rdf:datatype="&xsd;string">Availability of the outcome format documentation.</hasDescription>
+        <hasName rdf:datatype="&xsd;string">Documentation availability</hasName>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/documentation_ordinal_scale"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://scape-project.eu/pw/vocab/format_standardization -->
 
     <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/format_standardization">
@@ -189,6 +211,16 @@
         <hasDescription rdf:datatype="&xsd;string">Standardization of the outcome format</hasDescription>
         <hasScale rdf:resource="http://scape-project.eu/pw/vocab/standardization_ordinal_scale"/>
         <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/format_ubiquity -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/format_ubiquity">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/ubiquity"/>
+        <hasComparisonMetric rdf:resource="&metrics;EQUAL"/>
     </owl:NamedIndividual>
     
 
@@ -333,6 +365,17 @@
     
 
 
+    <!-- http://scape-project.eu/pw/vocab/ubiquity -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/ubiquity">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/FormatProperty"/>
+        <hasDescription rdf:datatype="&xsd;string">Ubiquity or popularity of the outcome format.</hasDescription>
+        <hasName>Ubiquity</hasName>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://scape-project.eu/pw/vocab/valid -->
 
     <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/valid">
@@ -363,26 +406,6 @@
         <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/IntegerScale"/>
         <hasLowerBound rdf:datatype="&xsd;int">0</hasLowerBound>
         <hasType rdf:resource="&scales;INTEGER"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://scape-project.eu/pw/vocab/format_ubiquity -->
-
-    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/format_ubiquity">
-        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
-        <property rdf:resource="http://scape-project.eu/pw/vocab/ubiquity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://scape-project.eu/pw/vocab/ubiquity -->
-
-    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/ubiquity">
-        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/FormatProperty"/>
-        <hasDescription rdf:datatype="&xsd;string">Ubiquity or popularity of the outcome format.</hasDescription>
-        <hasName>Ubiquity</hasName>
-        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
     </owl:NamedIndividual>
     
 

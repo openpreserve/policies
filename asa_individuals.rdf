@@ -115,15 +115,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <!-- http://scape-project.eu/pw/vocab/formats_widespread_use -->
+    
 
-    <owl:NamedIndividual rdf:about="&oesta;formats_widespread_use">
-        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
-        <control-policy:value rdf:datatype="&xsd;string">widespread</control-policy:value>
-        <control-policy:property rdf:resource="&pw;format_ubiquity"/>
-        <organizationScope rdf:resource="&oesta;austrian_state_archives"/>
-        <control-policy:modality rdf:resource="&modalities;SHOULD"/>
-    </owl:NamedIndividual>
+
+    <!-- http://scape-project.eu/pw/vocab/format_ubiquity -->
+
+    <owl:NamedIndividual rdf:about="&pw;format_ubiquity"/>
     
 
 
@@ -184,6 +181,18 @@
     
 
 
+    <!-- http://www.oesta.gv.at/policies/formats_documentation_must_be_freely_available -->
+
+    <owl:NamedIndividual rdf:about="&oesta;formats_documentation_must_be_freely_available">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;string">yes-free</control-policy:value>
+        <control-policy:property rdf:resource="&pw;format_ubiquity"/>
+        <organizationScope rdf:resource="&oesta;austrian_state_archives"/>
+        <control-policy:modality rdf:resource="&modalities;MUST"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.oesta.gv.at/policies/formats_must_have_lossless_compression -->
 
     <owl:NamedIndividual rdf:about="&oesta;formats_must_have_lossless_compression">
@@ -202,6 +211,18 @@
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">ISO Standardized</control-policy:value>
         <control-policy:property rdf:resource="&pw;object_standardized"/>
+        <organizationScope rdf:resource="&oesta;austrian_state_archives"/>
+        <control-policy:modality rdf:resource="&modalities;SHOULD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/formats_widespread_use -->
+
+    <owl:NamedIndividual rdf:about="&oesta;formats_widespread_use">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;string">widespread</control-policy:value>
+        <control-policy:property rdf:resource="&pw;format_ubiquity"/>
         <organizationScope rdf:resource="&oesta;austrian_state_archives"/>
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
     </owl:NamedIndividual>
@@ -239,14 +260,17 @@
         <consistsOf rdf:resource="&oesta;scanned_papers"/>
     </owl:NamedIndividual>
     
+
+
     <!-- http://www.oesta.gv.at/policies/ministries_executions_scenario -->
 
     <owl:NamedIndividual rdf:about="&oesta;ministries_executions_scenario">
         <rdf:type rdf:resource="&pw;Scenario"/>
         <hasContentSet rdf:resource="&oesta;documents_executions"/>
         <hasObjective rdf:resource="&oesta;formats_shall_be_iso_standardized"/>
-        <hasObjective rdf:resource="&oesta;free_opensource_tools_available"/>
         <hasObjective rdf:resource="&oesta;formats_widespread_use"/>
+        <hasObjective rdf:resource="&oesta;free_opensource_tools_available"/>
+        <hasObjective rdf:resource="&oesta;formats_documentation_must_be_freely_available"/>
         <hasUserCommunity rdf:resource="&oesta;ministries"/>
         <hasUserCommunity rdf:resource="&oesta;researchers"/>
     </owl:NamedIndividual>
