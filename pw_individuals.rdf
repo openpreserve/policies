@@ -244,6 +244,15 @@
         <hasType rdf:resource="&scales;TEXT"/>
     </owl:NamedIndividual>
     
+    <!-- http://scape-project.eu/pw/vocab/image_similarity_property -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/image_similarity_property">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/TransformationInformationProperty"/>
+        <hasName rdf:datatype="&xsd;string">Image Similarity</hasName>
+        <hasDescription rdf:datatype="&xsd;string">Quantitative indication of similarity between input and ouput.</hasDescription>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/bool_scale"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
 
 
     <!-- http://scape-project.eu/pw/vocab/image_width_property -->
@@ -256,6 +265,15 @@
         <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
     </owl:NamedIndividual>
     
+    <!-- http://scape-project.eu/pw/vocab/image_height_property -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/image_height_property">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/TransformationInformationProperty"/>
+        <hasName rdf:datatype="&xsd;string">Image Height</hasName>
+        <hasDescription rdf:datatype="&xsd;string">The image height of a digital object ot type image</hasDescription>
+        <hasScale rdf:resource="http://scape-project.eu/pw/vocab/zero_positive_integers"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
 
 
     <!-- http://scape-project.eu/pw/vocab/image_width_unchanged -->
@@ -268,6 +286,16 @@
         <hasComparisonMetric rdf:resource="&metrics;RETAINED"/>
     </owl:NamedIndividual>
     
+    <!-- http://scape-project.eu/pw/vocab/image_height_unchanged -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/image_height_unchanged">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <hasDescription rdf:datatype="&xsd;string">The image height of the outcome object should be unchanged</hasDescription>
+        <isAboutFormatType rdf:resource="&pronom;formatType/Image_(Raster)"/>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/image_height_property"/>
+        <hasComparisonMetric rdf:resource="&metrics;RETAINED"/>
+    </owl:NamedIndividual>
+
 
 
     <!-- http://scape-project.eu/pw/vocab/license_ordinal_scale -->
@@ -311,7 +339,6 @@
     </owl:NamedIndividual>
     
 
-
     <!-- http://scape-project.eu/pw/vocab/object_is_valid_and_wellformed -->
 
     <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/object_is_valid_and_wellformed">
@@ -319,8 +346,17 @@
         <hasDescription rdf:datatype="&xsd;string">Indicates whether the format of any object is valid and well formed.</hasDescription>
         <property rdf:resource="http://scape-project.eu/pw/vocab/valid_and_wellformed"/>
         <hasComparisonMetric rdf:resource="&metrics;EQUAL"/>
-    </owl:NamedIndividual>
-    
+    </owl:NamedIndividual> 
+
+    <!-- http://scape-project.eu/pw/vocab/image_is_similar -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/image_is_similar">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <hasDescription rdf:datatype="&xsd;string">Indicates whether input and output image are similar.</hasDescription>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/image_similarity_property"/>
+        <hasComparisonMetric rdf:resource="&metrics;EQUAL"/>
+    </owl:NamedIndividual> 
+
 
 
     <!-- http://scape-project.eu/pw/vocab/object_standardized -->
@@ -406,6 +442,38 @@
         <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/IntegerScale"/>
         <hasLowerBound rdf:datatype="&xsd;int">0</hasLowerBound>
         <hasType rdf:resource="&scales;INTEGER"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/format_identification_possibilities -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/format_identification_possibilities">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/FormatProperty"/>
+        <hasName rdf:datatype="&xsd;string">Identification possibilities</hasName>
+        <hasDescription rdf:datatype="&xsd;string">Possibilies to identify the outcome format.</hasDescription>
+        <hasType rdf:resource="http://scape-project.eu/pw/vocab/format_identification_possibilities_ordinal_scale"/>
+        <hasMeasurementCategory rdf:resource="&mcat;OUTCOME"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/format_identification_possibilities_ordinal_scale -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/format_identification_possibilities_ordinal_scale">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/OrdinalScale"/>
+        <hasType>{&#39;automatic_specific&#39;, &#39;automatic_generic&#39;, &#39;automatic_tentative&#39;, &#39;manual&#39;, &#39;none&#39;}</hasType>
+        <hasType rdf:resource="&scales;ORDINAL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/format_identification_possible -->
+
+    <owl:NamedIndividual rdf:about="http://scape-project.eu/pw/vocab/format_identification_possible">
+        <rdf:type rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
+        <property rdf:resource="http://scape-project.eu/pw/vocab/format_identification_possibilities"/>
+        <hasComparisonMetric rdf:resource="&metrics;EQUAL"/>
     </owl:NamedIndividual>
     
 

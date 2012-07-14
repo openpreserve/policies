@@ -214,9 +214,17 @@
         <organizationScope rdf:resource="&oesta;austrian_state_archives"/>
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
     </owl:NamedIndividual>
+
+    <!-- http://www.oesta.gv.at/policies/formats_identification_must_be_possible -->
+
+    <owl:NamedIndividual rdf:about="&oesta;formats_identification_must_be_possible">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;string">automatic_specific</control-policy:value>
+        <control-policy:property rdf:resource="&pw;format_identification_possible"/>
+        <organizationScope rdf:resource="&oesta;austrian_state_archives"/>
+        <control-policy:modality rdf:resource="&modalities;MUST"/>
+    </owl:NamedIndividual>
     
-
-
     <!-- http://www.oesta.gv.at/policies/formats_widespread_use -->
 
     <owl:NamedIndividual rdf:about="&oesta;formats_widespread_use">
@@ -259,8 +267,6 @@
         <consistsOf rdf:resource="&oesta;photographs"/>
         <consistsOf rdf:resource="&oesta;scanned_papers"/>
     </owl:NamedIndividual>
-    
-
 
     <!-- http://www.oesta.gv.at/policies/ministries_executions_scenario -->
 
@@ -271,22 +277,54 @@
         <hasObjective rdf:resource="&oesta;formats_widespread_use"/>
         <hasObjective rdf:resource="&oesta;free_opensource_tools_available"/>
         <hasObjective rdf:resource="&oesta;formats_documentation_must_be_freely_available"/>
+        <hasObjective rdf:resource="&oesta;formats_identification_must_be_possible"/>        
         <hasUserCommunity rdf:resource="&oesta;ministries"/>
         <hasUserCommunity rdf:resource="&oesta;researchers"/>
-    </owl:NamedIndividual>
-    
-
+        <hasUserCommunity rdf:resource="&oesta;public"/>        
+    </owl:NamedIndividual>    
 
     <!-- http://www.oesta.gv.at/policies/ministries_scanned_papers_scenario -->
 
     <owl:NamedIndividual rdf:about="&oesta;ministries_scanned_papers_scenario">
         <rdf:type rdf:resource="&pw;Scenario"/>
+        <hasObjective rdf:resource="&oesta;image_width_must_be_unchanged"/>
+        <hasObjective rdf:resource="&oesta;image_height_must_be_unchanged"/>        
+        <hasObjective rdf:resource="&oesta;image_must_be_identical"/>                
         <hasUserCommunity rdf:resource="&oesta;ministries"/>
         <hasUserCommunity rdf:resource="&oesta;public"/>
         <hasUserCommunity rdf:resource="&oesta;researchers"/>
         <hasContentSet rdf:resource="&oesta;scanned_papers"/>
     </owl:NamedIndividual>
     
+
+    <!-- http://www.oesta.gv.at/policies/image_must_be_identical -->
+
+    <owl:NamedIndividual rdf:about="&oesta;image_must_be_identical">
+        <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
+        <control-policy:property rdf:resource="&pw;image_is_similar"/>
+        <contentSetScope rdf:resource="&oesta;scanned_papers"/>
+    </owl:NamedIndividual>
+
+
+    <!-- http://www.oesta.gv.at/policies/image_width_must_be_unchanged -->
+
+    <owl:NamedIndividual rdf:about="&oesta;image_width_must_be_unchanged">
+        <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
+        <control-policy:property rdf:resource="&pw;image_width_unchanged"/>
+        <contentSetScope rdf:resource="&oesta;scanned_papers"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.oesta.gv.at/policies/image_height_must_be_unchanged -->
+
+    <owl:NamedIndividual rdf:about="&oesta;image_height_must_be_unchanged">
+        <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
+        <control-policy:property rdf:resource="&pw;image_height_unchanged"/>
+        <contentSetScope rdf:resource="&oesta;scanned_papers"/>
+    </owl:NamedIndividual>
+
 
 
     <!-- http://www.oesta.gv.at/policies/objects_must_be_valid_and_well_formed -->
