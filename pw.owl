@@ -137,6 +137,16 @@
     
 
 
+    <!-- http://scape-project.eu/pw/vocab/hasCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="http://scape-project.eu/pw/vocab/hasCharacteristic">
+        <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Hardware"/>
+        <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Software"/>
+        <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/TechnicalCharacteristic"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://scape-project.eu/pw/vocab/hasComparisonMetric -->
 
     <owl:ObjectProperty rdf:about="http://scape-project.eu/pw/vocab/hasComparisonMetric">
@@ -168,6 +178,15 @@
     <owl:ObjectProperty rdf:about="http://scape-project.eu/pw/vocab/hasHardware">
         <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/Hardware"/>
         <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/TechnicalEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/hasInstalled -->
+
+    <owl:ObjectProperty rdf:about="http://scape-project.eu/pw/vocab/hasInstalled">
+        <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Hardware"/>
+        <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/Software"/>
     </owl:ObjectProperty>
     
 
@@ -307,6 +326,22 @@
     
 
 
+    <!-- http://scape-project.eu/pw/vocab/hasCharacteristicKey -->
+
+    <owl:DatatypeProperty rdf:about="http://scape-project.eu/pw/vocab/hasCharacteristicKey">
+        <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/TechnicalCharacteristic"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/hasCharacteristicValue -->
+
+    <owl:DatatypeProperty rdf:about="http://scape-project.eu/pw/vocab/hasCharacteristicValue">
+        <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/TechnicalCharacteristic"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://scape-project.eu/pw/vocab/hasDescription -->
 
     <owl:DatatypeProperty rdf:about="http://scape-project.eu/pw/vocab/hasDescription">
@@ -413,6 +448,14 @@
     
 
 
+    <!-- http://scape-project.eu/pw/vocab/CharacterizationTool -->
+
+    <owl:Class rdf:about="http://scape-project.eu/pw/vocab/CharacterizationTool">
+        <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Software"/>
+    </owl:Class>
+    
+
+
     <!-- http://scape-project.eu/pw/vocab/ContentSet -->
 
     <owl:Class rdf:about="http://scape-project.eu/pw/vocab/ContentSet">
@@ -425,6 +468,14 @@
 
     <owl:Class rdf:about="http://scape-project.eu/pw/vocab/Criterion">
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/EmulationTool -->
+
+    <owl:Class rdf:about="http://scape-project.eu/pw/vocab/EmulationTool">
+        <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Software"/>
     </owl:Class>
     
 
@@ -456,6 +507,14 @@
 
     <owl:Class rdf:about="http://scape-project.eu/pw/vocab/IntegerScale">
         <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/PropertyMeasurementScale"/>
+    </owl:Class>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/MigrationActionTool -->
+
+    <owl:Class rdf:about="http://scape-project.eu/pw/vocab/MigrationActionTool">
+        <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Software"/>
     </owl:Class>
     
 
@@ -501,6 +560,14 @@ objects.</rdfs:comment>
     <!-- http://scape-project.eu/pw/vocab/Software -->
 
     <owl:Class rdf:about="http://scape-project.eu/pw/vocab/Software"/>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/TechnicalCharacteristic -->
+
+    <owl:Class rdf:about="http://scape-project.eu/pw/vocab/TechnicalCharacteristic">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
     
 
 
