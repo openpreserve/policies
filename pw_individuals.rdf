@@ -48,19 +48,7 @@
     // Annotation properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/hasDescription"/>
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/hasScale"/>
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/hasLowerBound"/>
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/isAboutFormatType"/>
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/hasComparisonMetric"/>
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/hasName"/>
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/property"/>
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/hasScaleValues"/>
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/hasType"/>
-    <owl:AnnotationProperty rdf:about="http://scape-project.eu/pw/vocab/hasMeasurementCategory"/>
-    
+     -->    
 
 
     <!-- 

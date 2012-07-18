@@ -26,10 +26,12 @@ public class PolicyTest {
     String query1 = "";
     String query2 = "";
     String query3 = "";
+//    String query4 = "";
     try {
       query1 = IOUtils.toString(new FileInputStream("resources/query_all_format_objectives_for_organization.txt"));
       query2 = IOUtils.toString(new FileInputStream("resources/query_all_props_for_scenario.txt"));
       query3 = IOUtils.toString(new FileInputStream("resources/query_all_format_objectives_for_scenario.txt"));
+//      query4 = IOUtils.toString(new FileInputStream("resources/query_all.txt"));
     } catch (FileNotFoundException e) {
       e.printStackTrace();
     } catch (IOException e) {
@@ -74,6 +76,16 @@ public class PolicyTest {
       System.out.println("Format Objective [" + obj.toString() + "] defines that: \nproperty '" + prop.getString()
           + "' " + mod.getLocalName() + " have a \nvalue " + getMetric(metric) + " '" + val.getString() + "'\n");
     }
+    
+//    System.out.println("######### ALL #########");
+//    qe = QueryExecutionFactory.create(query4, ont.getBaseModel());
+//    set = qe.execSelect();
+//    
+//    while (set.hasNext()) {
+//      QuerySolution next = set.nextSolution();
+//      
+//      System.out.println(next.toString());
+//    }
   }
   
   private static String getMetric(Resource metric) {

@@ -2,10 +2,10 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://scape-project.eu/pw/vocab/" uri="pw_individuals.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1342546156067" name="duplicate:http://scape-project.eu/pw/vocab/" uri="asa_individuals.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1342546156067" name="duplicate:http://scape-project.eu/pw/vocab/" uri="pw.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1342546156067" name="duplicate:http://scape-project.eu/pw/vocab/" uri="pw_individuals.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1342546156067" name="http://www.scape-project.eu/pw/vocab/control-policy" uri="control-policy/control-policy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1342546156067" name="http://www.scape-project.eu/pw/vocab/domain" uri="control-policy/domain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1342611552557" name="duplicate:http://scape-project.eu/pw/vocab/" uri="asa_individuals.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1342611552557" name="duplicate:http://scape-project.eu/pw/vocab/" uri="pw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1342611552557" name="duplicate:http://scape-project.eu/pw/vocab/" uri="pw_individuals.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1342611552557" name="http://www.scape-project.eu/pw/vocab/control-policy" uri="control-policy/control-policy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1342611552557" name="http://www.scape-project.eu/pw/vocab/domain" uri="control-policy/domain.owl"/>
     </group>
 </catalog>
