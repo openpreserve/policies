@@ -11,35 +11,46 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Literal;
+import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 
 public class PolicyTest {
 
-  public static void main(String... args) {
-    OntModelSpec spec = OntModelSpec.OWL_MEM_RDFS_INF;
-    OntModel ont = ModelFactory.createOntologyModel(spec);
-    ont.read("file:../../pw.owl");
-    ont.read("file:../../pw_individuals.rdf");
-    ont.read("file:../../asa_individuals.rdf");
+  public static void queryAll(Model model) {
+    String query = getQuery("resources/query_all.txt");
+    System.out.println("######### ALL #########");
+    QueryExecution qe = QueryExecutionFactory.create(query, model); // getBaseModel?
+    ResultSet set = qe.execSelect();
 
-    String query1 = "";
-    String query2 = "";
-    String query3 = "";
-//    String query4 = "";
-    try {
-      query1 = IOUtils.toString(new FileInputStream("resources/query_all_format_objectives_for_organization.txt"));
-      query2 = IOUtils.toString(new FileInputStream("resources/query_all_props_for_scenario.txt"));
-      query3 = IOUtils.toString(new FileInputStream("resources/query_all_format_objectives_for_scenario.txt"));
-//      query4 = IOUtils.toString(new FileInputStream("resources/query_all.txt"));
-    } catch (FileNotFoundException e) {
-      e.printStackTrace();
-    } catch (IOException e) {
-      e.printStackTrace();
+    while (set.hasNext()) {
+      QuerySolution next = set.nextSolution();
+
+      System.out.println(next.toString());
     }
+  }
 
+  public static void queryAllPropertiesForScenario(Model model) {
+    System.out.println("######### ALL PROPERTIES FOR SCENARIO ASA_MINISTRIES_SCANNED_PAPERS_SCENARIO #########");
+
+    String query = getQuery("resources/query_all_props_for_scenario.txt");
+
+    QueryExecution qe = QueryExecutionFactory.create(query, model); // getBaseModel?
+    ResultSet set = qe.execSelect();
+
+    while (set.hasNext()) {
+      QuerySolution next = set.nextSolution();
+      Literal prop = next.getLiteral("pName");
+      System.out.println("Property: " + prop.getString());
+    }
+  }
+
+  public static void queryAllFormatObjectivesForOrganization(Model model) {
     System.out.println("######### ALL FORMAT OBJECTIVES FOR ORGANIZATION AUSTRIAN STATE ARCHIVES #########");
-    QueryExecution qe = QueryExecutionFactory.create(query1, ont.getBaseModel());
+
+    String query = getQuery("resources/query_all_format_objectives_for_organization.txt");
+
+    QueryExecution qe = QueryExecutionFactory.create(query, model); // getBaseModel?
     ResultSet set = qe.execSelect();
 
     while (set.hasNext()) {
@@ -51,20 +62,15 @@ public class PolicyTest {
       System.out.println("Format Objective [" + obj.toString() + "] defines that: \nproperty '" + prop.getString()
           + "' " + mod.getLocalName() + " have a \nvalue '" + val.getString() + "'\n");
     }
+  }
 
-    System.out.println("######### ALL PROPERTIES FOR SCENARIO ASA_MINISTRIES_SCANNED_PAPERS_SCENARIO #########");
-    qe = QueryExecutionFactory.create(query2, ont.getBaseModel());
-    set = qe.execSelect();
-
-    while (set.hasNext()) {
-      QuerySolution next = set.nextSolution();
-      Literal prop = next.getLiteral("pName");
-      System.out.println("Property: " + prop.getString());
-    }
-
+  public static void queryAllFormatObjectivesForScenario(Model model) {
     System.out.println("######### ALL FORMAT OBJECTIVES FOR SCENARIO DOCUMENT EXECUTIONS #########");
-    qe = QueryExecutionFactory.create(query3, ont.getBaseModel());
-    set = qe.execSelect();
+
+    String query = getQuery("resources/query_all_format_objectives_for_scenario.txt");
+
+    QueryExecution qe = QueryExecutionFactory.create(query, model); // getBaseModel?
+    ResultSet set = qe.execSelect();
 
     while (set.hasNext()) {
       QuerySolution next = set.nextSolution();
@@ -76,24 +82,44 @@ public class PolicyTest {
       System.out.println("Format Objective [" + obj.toString() + "] defines that: \nproperty '" + prop.getString()
           + "' " + mod.getLocalName() + " have a \nvalue " + getMetric(metric) + " '" + val.getString() + "'\n");
     }
-    
-//    System.out.println("######### ALL #########");
-//    qe = QueryExecutionFactory.create(query4, ont.getBaseModel());
-//    set = qe.execSelect();
-//    
-//    while (set.hasNext()) {
-//      QuerySolution next = set.nextSolution();
-//      
-//      System.out.println(next.toString());
-//    }
+
   }
-  
+
+  public static void main(String... args) {
+    OntModelSpec spec = OntModelSpec.OWL_MEM_RDFS_INF;
+    OntModel ont = ModelFactory.createOntologyModel(spec);
+    ont.read("file:../../harmonised/pw.rdf");
+    ont.read("file:../../harmonised/control-policy.rdf");
+    // ont.read("file:../../pw_individuals.rdf");
+    ont.read("file:../../harmonised/asa_individuals.rdf");
+    Model base = ont.getBaseModel();
+    
+//    queryAll(base);
+    queryAllFormatObjectivesForOrganization(base);
+    queryAllFormatObjectivesForScenario(base);
+    queryAllPropertiesForScenario(base);
+  }
+
+  private static String getQuery(String filepath) {
+    String query = "";
+    try {
+      query = IOUtils.toString(new FileInputStream(filepath));
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    return query;
+  }
+
   private static String getMetric(Resource metric) {
     String result = "";
     if (metric != null) {
       result = metric.getLocalName();
     }
-    
+
     return result;
   }
+
 }

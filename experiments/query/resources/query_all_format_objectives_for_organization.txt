@@ -1,20 +1,17 @@
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX ns: <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX org: <http://www.w3.org/ns/org#> 
 PREFIX pw: <http://scape-project.eu/pw/vocab/>
 PREFIX oesta: <http://www.oesta.gv.at/policies/>
-PREFIX control: <http://www.scape-project.eu/pw/vocab/control-policy#>
+PREFIX cp: <http://scape-project.eu/pw/vocab/control-policy#>
 
-SELECT ?objective ?pName ?modality ?value
-WHERE { 
-?objective rdf:type control:FormatObjective .
+SELECT ?objective ?pName ?modality ?value WHERE { 
+?objective rdf:type cp:FormatObjective .
 ?objective pw:organizationScope oesta:austrian_state_archives .
-?objective control:modality ?modality .
-?objective control:value ?value .
-?objective control:property ?criterion .
+?objective cp:modality ?modality .
+?objective cp:value ?value .
+?objective cp:property ?criterion .
 ?criterion pw:property ?prop .
 ?prop pw:hasName ?pName .
 }
