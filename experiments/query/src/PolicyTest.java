@@ -89,8 +89,7 @@ public class PolicyTest {
     OntModelSpec spec = OntModelSpec.OWL_MEM_RDFS_INF;
     OntModel ont = ModelFactory.createOntologyModel(spec);
     ont.read("file:../../harmonised/pw.rdf");
-    ont.read("file:../../harmonised/control-policy.rdf");
-    // ont.read("file:../../pw_individuals.rdf");
+    ont.read("file:../../harmonised/pw_individuals.rdf");
     ont.read("file:../../harmonised/asa_individuals.rdf");
     Model base = ont.getBaseModel();
     
