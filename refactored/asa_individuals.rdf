@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY org "http://www.w3.org/ns/org#" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY pw "http://scape-project.eu/pw/vocab/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY mcat "http://scape-project.eu/pw/vocab/mcat#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY scales "http://scape-project.eu/pw/vocab/scales#" >
+    <!ENTITY metrics "http://scape-project.eu/pw/vocab/metrics#" >
+    <!ENTITY pronom "http://reference.data.gov.uk/technical-registry/" >
+    <!ENTITY modalities "http://scape-project.eu/pw/vocab/modalities#" >
+    <!ENTITY qualifiers "http://scape-project.eu/pw/vocab/qualifiers#" >
+    <!ENTITY control-policy "http://scape-project.eu/pw/vocab/control-policy#" >
+    <!ENTITY premis "http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl" >
+]>
+
+
+<rdf:RDF xmlns="http://www.oesta.gv.at/policies/"
+     xml:base="http://www.oesta.gv.at/policies/"
+     xmlns:modalities="http://scape-project.eu/pw/vocab/modalities#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:scales="http://scape-project.eu/pw/vocab/scales#"
+     xmlns:control-policy="http://scape-project.eu/pw/vocab/control-policy#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:premis="http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:pronom="http://reference.data.gov.uk/technical-registry/"
+     xmlns:mcat="http://scape-project.eu/pw/vocab/mcat#"
+     xmlns:metrics="http://scape-project.eu/pw/vocab/metrics#"
+     xmlns:qualifiers="http://scape-project.eu/pw/vocab/qualifiers#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:pw="http://scape-project.eu/pw/vocab/">
+   
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/ContentSet -->
+
+    <owl:Class rdf:about="&pw;ContentSet"/>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/Scenario -->
+
+    <owl:Class rdf:about="&pw;Scenario"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/format_ubiquity -->
+
+    <owl:NamedIndividual rdf:about="&pw;format_ubiquity"/>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/free_opensource_tools_available -->
+
+    <owl:NamedIndividual rdf:about="&pw;free_opensource_tools_available"/>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/object_compression -->
+
+    <owl:NamedIndividual rdf:about="&pw;object_compression"/>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/object_is_valid_and_wellformed -->
+
+    <owl:NamedIndividual rdf:about="&pw;object_is_valid_and_wellformed"/>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/object_standardized -->
+
+    <owl:NamedIndividual rdf:about="&pw;object_standardized"/>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/austrian_state_archives -->
+
+    <org:Organization rdf:about="austrian_state_archives">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <org:identifier>ASA</org:identifier>
+    </org:Organization>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/documents_executions -->
+
+    <owl:NamedIndividual rdf:about="documents_executions">
+        <rdf:type rdf:resource="&pw;ContentSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/documents_notes -->
+
+    <owl:NamedIndividual rdf:about="documents_notes">
+        <rdf:type rdf:resource="&pw;ContentSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/emails -->
+
+    <owl:NamedIndividual rdf:about="emails">
+        <rdf:type rdf:resource="&pw;ContentSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/formats_documentation_must_be_freely_available -->
+
+    <owl:NamedIndividual rdf:about="formats_documentation_must_be_freely_available">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;string">yes-free</control-policy:value>
+        <control-policy:property rdf:resource="&pw;format_ubiquity"/>
+        <pw:organizationScope rdf:resource="austrian_state_archives"/>
+        <control-policy:modality rdf:resource="&modalities;MUST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/formats_must_have_lossless_compression -->
+
+    <owl:NamedIndividual rdf:about="formats_must_have_lossless_compression">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value>lossless</control-policy:value>
+        <control-policy:property rdf:resource="&pw;object_compression"/>
+        <pw:organizationScope rdf:resource="austrian_state_archives"/>
+        <control-policy:modality rdf:resource="&modalities;MUST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/formats_shall_be_iso_standardized -->
+
+    <owl:NamedIndividual rdf:about="formats_shall_be_iso_standardized">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;string">ISO Standardized</control-policy:value>
+        <control-policy:property rdf:resource="&pw;object_standardized"/>
+        <pw:organizationScope rdf:resource="austrian_state_archives"/>
+        <control-policy:modality rdf:resource="&modalities;SHOULD"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.oesta.gv.at/policies/formats_identification_must_be_possible -->
+
+    <owl:NamedIndividual rdf:about="formats_identification_must_be_possible">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;string">automatic_specific</control-policy:value>
+        <control-policy:property rdf:resource="&pw;format_identification_possible"/>
+        <pw:organizationScope rdf:resource="austrian_state_archives"/>
+        <control-policy:modality rdf:resource="&modalities;MUST"/>
+    </owl:NamedIndividual>
+    
+    <!-- http://www.oesta.gv.at/policies/formats_widespread_use -->
+
+    <owl:NamedIndividual rdf:about="formats_widespread_use">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;string">widespread</control-policy:value>
+        <control-policy:property rdf:resource="&pw;format_ubiquity"/>
+        <pw:organizationScope rdf:resource="austrian_state_archives"/>
+        <control-policy:modality rdf:resource="&modalities;SHOULD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/free_opensource_tools_available -->
+
+    <owl:NamedIndividual rdf:about="free_opensource_tools_available">
+        <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <control-policy:value rdf:datatype="&xsd;integer">4</control-policy:value>
+        <control-policy:property rdf:resource="&pw;free_opensource_tools_available"/>
+        <control-policy:modality rdf:resource="&modalities;MUST"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/ministries -->
+
+    <foaf:Group rdf:about="ministries">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </foaf:Group>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/ministries_administrative_records -->
+
+    <owl:NamedIndividual rdf:about="ministries_administrative_records">
+        <rdf:type rdf:resource="&pw;ContentSet"/>
+        <pw:belongsToOrganization rdf:resource="austrian_state_archives"/>
+        <pw:consistsOf rdf:resource="documents_executions"/>
+        <pw:consistsOf rdf:resource="documents_notes"/>
+        <pw:consistsOf rdf:resource="emails"/>
+        <pw:consistsOf rdf:resource="photographs"/>
+        <pw:consistsOf rdf:resource="scanned_papers"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.oesta.gv.at/policies/ministries_executions_scenario -->
+
+    <owl:NamedIndividual rdf:about="ministries_executions_scenario">
+        <rdf:type rdf:resource="&pw;Scenario"/>
+        <pw:hasContentSet rdf:resource="documents_executions"/>
+        <pw:hasObjective rdf:resource="formats_shall_be_iso_standardized"/>
+        <pw:hasObjective rdf:resource="formats_widespread_use"/>
+        <pw:hasObjective rdf:resource="free_opensource_tools_available"/>
+        <pw:hasObjective rdf:resource="formats_documentation_must_be_freely_available"/>
+        <pw:hasObjective rdf:resource="formats_identification_must_be_possible"/>        
+        <pw:hasUserCommunity rdf:resource="ministries"/>
+        <pw:hasUserCommunity rdf:resource="researchers"/>
+        <pw:hasUserCommunity rdf:resource="public"/>        
+    </owl:NamedIndividual>    
+
+    <!-- http://www.oesta.gv.at/policies/ministries_scanned_papers_scenario -->
+
+    <owl:NamedIndividual rdf:about="ministries_scanned_papers_scenario">
+        <rdf:type rdf:resource="&pw;Scenario"/>
+        <pw:hasObjective rdf:resource="image_width_must_be_unchanged"/>
+        <pw:hasObjective rdf:resource="image_height_must_be_unchanged"/>        
+        <pw:hasObjective rdf:resource="image_must_be_identical"/>                
+        <pw:hasUserCommunity rdf:resource="ministries"/>
+        <pw:hasUserCommunity rdf:resource="public"/>
+        <pw:hasUserCommunity rdf:resource="researchers"/>
+        <pw:hasContentSet rdf:resource="scanned_papers"/>
+    </owl:NamedIndividual>
+    
+
+    <!-- http://www.oesta.gv.at/policies/image_must_be_identical -->
+
+    <owl:NamedIndividual rdf:about="image_must_be_identical">
+        <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
+        <control-policy:property rdf:resource="&pw;image_is_similar"/>
+        <pw:contentSetScope rdf:resource="scanned_papers"/>
+    </owl:NamedIndividual>
+
+
+    <!-- http://www.oesta.gv.at/policies/image_width_must_be_unchanged -->
+
+    <owl:NamedIndividual rdf:about="image_width_must_be_unchanged">
+        <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
+        <control-policy:property rdf:resource="&pw;image_width_unchanged"/>
+        <pw:contentSetScope rdf:resource="scanned_papers"/>
+    </owl:NamedIndividual>
+
+    <!-- http://www.oesta.gv.at/policies/image_height_must_be_unchanged -->
+
+    <owl:NamedIndividual rdf:about="image_height_must_be_unchanged">
+        <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
+        <control-policy:property rdf:resource="&pw;image_height_unchanged"/>
+        <pw:contentSetScope rdf:resource="scanned_papers"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://www.oesta.gv.at/policies/objects_must_be_valid_and_well_formed -->
+
+    <owl:NamedIndividual rdf:about="objects_must_be_valid_and_well_formed">
+        <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
+        <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
+        <control-policy:property rdf:resource="&pw;object_is_valid_and_wellformed"/>
+        <pw:contentSetScope rdf:resource="scanned_papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/photographs -->
+
+    <owl:NamedIndividual rdf:about="photographs">
+        <rdf:type rdf:resource="&pw;ContentSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/public -->
+
+    <foaf:Group rdf:about="public">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </foaf:Group>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/researchers -->
+
+    <foaf:Group rdf:about="researchers">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </foaf:Group>
+    
+
+
+    <!-- http://www.oesta.gv.at/policies/scanned_papers -->
+
+    <owl:NamedIndividual rdf:about="scanned_papers">
+        <rdf:type rdf:resource="&pw;ContentSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/modalities#MUST -->
+
+    <owl:NamedIndividual rdf:about="&modalities;MUST"/>
+    
+
+
+    <!-- http://scape-project.eu/pw/vocab/modalities#SHOULD -->
+
+    <owl:NamedIndividual rdf:about="&modalities;SHOULD"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
