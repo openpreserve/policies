@@ -56,7 +56,8 @@ public class PolicyTest {
     while (set.hasNext()) {
       QuerySolution next = set.nextSolution();
       Resource obj = next.getResource("objective");
-      Literal prop = next.getLiteral("pName");
+      Resource measure = next.getResource("measure");
+      Literal prop = next.getLiteral("desc");
       Resource mod = next.getResource("modality");
       Literal val = next.getLiteral("value");
       System.out.println("Format Objective [" + obj.toString() + "] defines that: \nproperty '" + prop.getString()
@@ -75,7 +76,7 @@ public class PolicyTest {
     while (set.hasNext()) {
       QuerySolution next = set.nextSolution();
       Resource obj = next.getResource("objective");
-      Literal prop = next.getLiteral("pName");
+      Literal prop = next.getLiteral("label");
       Resource mod = next.getResource("modality");
       Literal val = next.getLiteral("value");
       Resource metric = next.getResource("metric");
@@ -88,9 +89,9 @@ public class PolicyTest {
   public static void main(String... args) {
     OntModelSpec spec = OntModelSpec.OWL_MEM_RDFS_INF;
     OntModel ont = ModelFactory.createOntologyModel(spec);
-    ont.read("file:../../harmonised/pw.rdf");
-    ont.read("file:../../harmonised/pw_individuals.rdf");
-    ont.read("file:../../harmonised/asa_individuals.rdf");
+    ont.read("file:../../refactored/pw.rdf");
+    ont.read("file:../../refactored/attributes_measures.rdf");
+    ont.read("file:../../refactored/asa_individuals.rdf");
     Model base = ont.getBaseModel();
     
 //    queryAll(base);

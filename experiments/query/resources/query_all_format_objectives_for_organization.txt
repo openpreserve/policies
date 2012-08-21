@@ -6,12 +6,12 @@ PREFIX pw: <http://scape-project.eu/pw/vocab/>
 PREFIX oesta: <http://www.oesta.gv.at/policies/>
 PREFIX cp: <http://scape-project.eu/pw/vocab/control-policy#>
 
-SELECT ?objective ?pName ?modality ?value WHERE { 
+
+SELECT ?objective ?measure ?desc ?modality ?value WHERE { 
 ?objective rdf:type cp:FormatObjective .
 ?objective pw:organizationScope oesta:austrian_state_archives .
 ?objective cp:modality ?modality .
 ?objective cp:value ?value .
-?objective cp:property ?criterion .
-?criterion pw:property ?prop .
-?prop pw:hasName ?pName .
+?objective cp:property ?measure .
+?measure pw:description ?desc .
 }
