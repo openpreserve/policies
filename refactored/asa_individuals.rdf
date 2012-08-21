@@ -16,7 +16,7 @@
     <!ENTITY modalities "http://scape-project.eu/pw/vocab/modalities#" >
     <!ENTITY qualifiers "http://scape-project.eu/pw/vocab/qualifiers#" >
     <!ENTITY control-policy "http://scape-project.eu/pw/vocab/control-policy#" >
-    <!ENTITY measures "http://scape-project.eu/pw/vocab/measures#">
+    <!ENTITY measures "http://scape-project.eu/pw/vocab/measures/">
     <!ENTITY premis "http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl" >
 ]>
 
@@ -37,7 +37,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:measures="http://scape-project.eu/pw/vocab/measures#"
+     xmlns:measures="http://scape-project.eu/pw/vocab/measures/"
      xmlns:pw="http://scape-project.eu/pw/vocab/">
    
     

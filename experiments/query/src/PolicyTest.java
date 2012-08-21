@@ -56,12 +56,12 @@ public class PolicyTest {
     while (set.hasNext()) {
       QuerySolution next = set.nextSolution();
       Resource obj = next.getResource("objective");
-      Resource measure = next.getResource("measure");
-      Literal prop = next.getLiteral("desc");
+      Literal name = next.getLiteral("name");
+      Literal desc = next.getLiteral("desc");
       Resource mod = next.getResource("modality");
       Literal val = next.getLiteral("value");
-      System.out.println("Format Objective [" + obj.toString() + "] defines that: \nproperty '" + prop.getString()
-          + "' " + mod.getLocalName() + " have a \nvalue '" + val.getString() + "'\n");
+      System.out.println("Format Objective [" + obj.toString() + "] defines that: \nproperty '" + name.getString()
+          + "' with description '" + desc.getString() + "' " + mod.getLocalName() + " have a \nvalue '" + val.getString() + "'\n");
     }
   }
 
