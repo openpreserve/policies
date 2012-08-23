@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:control-policy="http://scape-project.eu/pw/vocab/control-policy#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:mcat="http://scape-project.eu/pw/vocab/mcat#" xmlns:metrics="http://scape-project.eu/pw/vocab/metrics#" xmlns:modalities="http://scape-project.eu/pw/vocab/modalities#" xmlns:ns="http://premis.loc.gov/ns/" xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#" xmlns:org="http://www.w3.org/ns/org#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:pronom="http://reference.data.gov.uk/technical-registry/" xmlns:qualifiers="http://scape-project.eu/pw/vocab/qualifiers#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:scales="http://scape-project.eu/pw/vocab/scales#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="http://scape-project.eu/pw/vocab/">
+<rdf:RDF xmlns:control-policy="http://scape-project.eu/pw/vocab/control-policy#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:mcat="http://scape-project.eu/pw/vocab/mcat#" xmlns:scopes="http://scape-project.eu/pw/vocab/scopes#" xmlns:modalities="http://scape-project.eu/pw/vocab/modalities#" xmlns:ns="http://premis.loc.gov/ns/" xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#" xmlns:org="http://www.w3.org/ns/org#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:pronom="http://reference.data.gov.uk/technical-registry/" xmlns:qualifiers="http://scape-project.eu/pw/vocab/qualifiers#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:scales="http://scape-project.eu/pw/vocab/scales#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="http://scape-project.eu/pw/vocab/">
   <rdf:Description rdf:about="http://premis.loc.gov/ns/Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -21,11 +21,92 @@
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/">
     <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/ActionProperty">
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/attribute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/attribute">
+    <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/Attribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/attribute">
+    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/attribute">
+    <owl:inverseOf rdf:resource="http://scape-project.eu/pw/vocab/measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/measure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/measyre">
+    <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/measure">
+    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Attribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/criterion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/criterion">
+    <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/CriterionCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/criterion">
+    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/criterioncategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/criterioncategory">
+    <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/CriterionCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/criterioncategory">
+    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Attribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/scale">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/scale">
+    <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/scales"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/scale">
+    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/scope">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/scope">
+    <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/scopes"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/scope">
+    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/CriterionCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/subcategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/subcategory">
+    <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/subcategory">
+    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/description">
+    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Attribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/description">
+    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Measure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/Attribute">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/ActionProperty">
-    <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/Category">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/CriterionCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/Measure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/CharacterizationTool">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -39,72 +120,20 @@
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/ContentSet">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/Criterion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/Criterion">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/EmulationTool">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/EmulationTool">
     <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Software"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/FormatProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/FormatProperty">
-    <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/Hardware">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/InformationProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/InformationProperty">
-    <rdfs:comment>Desired properties or features of the objects themselves.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/InformationProperty">
-    <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/IntegerScale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/IntegerScale">
-    <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/PropertyMeasurementScale"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/MigrationActionTool">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/MigrationActionTool">
     <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Software"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/OrdinalScale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/OrdinalScale">
-    <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/PropertyMeasurementScale"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/Property">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/PropertyMeasurementScale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/PropertyMeasurementScale">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/RepresentationInstanceProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/RepresentationInstanceProperty">
-    <rdfs:comment>Describe aspects of the representation, i.e. of the encoding, of information
-objects.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/RepresentationInstanceProperty">
-    <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/Scenario">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -120,16 +149,6 @@ objects.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/TechnicalEnvironment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/TransformationInformationProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/TransformationInformationProperty">
-    <rdfs:comment>Refer to the signiﬁcant properties to be preserved throughout changes
-of either environments or object representations.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/TransformationInformationProperty">
-    <rdfs:subClassOf rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/belongsToOrganization">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -233,21 +252,6 @@ of either environments or object representations.</rdfs:comment>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasContentSet">
     <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/ContentSet"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasDescripion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasDescription">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasDescription">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasDescription">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasDescription">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasFormat">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
@@ -274,33 +278,6 @@ of either environments or object representations.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasInstalled">
     <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/Software"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasLowerBound">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasLowerBound">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/IntegerScale"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasMeasurementCategory">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasMeasurementCategory">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasMeasurementCategory">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasName">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasName">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasObjectUid">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
@@ -329,53 +306,17 @@ of either environments or object representations.</rdfs:comment>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasOwner">
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasScale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasScale">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasScale">
-    <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/PropertyMeasurementScale"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasScaleValues">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasScaleValues">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/OrdinalScale"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasSoftware">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasSoftware">
     <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/TechnicalEnvironment"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasSoftware">
     <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/Software"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasSubcategory">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasSubcategory">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasType">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/PropertyMeasurementScale"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasUid">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasUid">
     <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/ContentSet"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasUpperBound">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasUpperBound">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/IntegerScale"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasUserCommunity">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -385,30 +326,6 @@ of either environments or object representations.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/hasUserCommunity">
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/isAbout">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/isAbout">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/isAboutFormatType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/isAboutFormatType">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/FormatProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/isAboutFormatType">
-    <rdfs:subPropertyOf rdf:resource="http://scape-project.eu/pw/vocab/isAbout"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/isSignificant">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/isSignificant">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/isSignificant">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/objectiveScope">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -443,52 +360,7 @@ of either environments or object representations.</rdfs:comment>
   <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/partOf">
     <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/ContentSet"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/property">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/property">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/Criterion"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/property">
-    <rdfs:range rdf:resource="http://scape-project.eu/pw/vocab/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/relatesTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/relatesTo">
-    <rdfs:domain rdf:resource="http://scape-project.eu/pw/vocab/FormatProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/relatesTo">
-    <rdfs:range rdf:resource="http://reference.data.gov.uk/technical-registry/file-format"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/ns/org#Organization">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://reference.data.gov.uk/technical-registry/formatType/Image_(Raster)">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/ActionProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/Criterion">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/FormatProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/IntegerScale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/OrdinalScale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/PropertyMeasurementScale">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/RepresentationInstanceProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/TransformationInformationProperty">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>
