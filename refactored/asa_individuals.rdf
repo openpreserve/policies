@@ -160,7 +160,7 @@
     
 
 
-    <!-- http://www.oesta.gv.at/policies/formats_documentation_must_be_freely_available -->
+    <!-- http://www.oesta.gv.at/policies/FormatDocumentationMustBeFreelyAvailable -->
 
     <owl:NamedIndividual rdf:about="FormatDocumentationMustBeFreelyAvailable">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
@@ -172,61 +172,59 @@
     
 
 
-    <!-- http://www.oesta.gv.at/policies/formats_must_have_lossless_compression -->
-<!--
-    <owl:NamedIndividual rdf:about="formats_must_have_lossless_compression">
+    <!-- http://www.oesta.gv.at/policies/FormatMustHaveLosslessCompression -->
+
+    <owl:NamedIndividual rdf:about="FormatMustHaveLosslessCompression">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value>lossless</control-policy:value>
-        <control-policy:property rdf:resource="&pw;object_compression"/>
+        <control-policy:property rdf:resource="&measures;117"/>
         <pw:organizationScope rdf:resource="austrian_state_archives"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
--->
     
 
 
-    <!-- http://www.oesta.gv.at/policies/formats_shall_be_iso_standardized -->
-<!--
-    <owl:NamedIndividual rdf:about="formats_shall_be_iso_standardized">
+    <!-- http://www.oesta.gv.at/policies/FormatShallBeISOStandardized -->
+
+    <owl:NamedIndividual rdf:about="FormatShallBeISOStandardized">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
-        <control-policy:value rdf:datatype="&xsd;string">ISO Standardized</control-policy:value>
-        <control-policy:property rdf:resource="&pw;object_standardized"/>
+        <control-policy:value rdf:datatype="&xsd;string">true</control-policy:value>
+        <control-policy:property rdf:resource="&measures;13"/>
         <pw:organizationScope rdf:resource="austrian_state_archives"/>
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
     </owl:NamedIndividual>
--->
-    <!-- http://www.oesta.gv.at/policies/formats_identification_must_be_possible -->
 
- <!--   <owl:NamedIndividual rdf:about="formats_identification_must_be_possible">
+    <!-- http://www.oesta.gv.at/policies/FormatIdentificaitonMustBePossible -->
+
+	<owl:NamedIndividual rdf:about="FormatIdentificaitonMustBePossible">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">automatic_specific</control-policy:value>
-        <control-policy:property rdf:resource="&pw;format_identification_possible"/>
+        <control-policy:property rdf:resource="&measures;153"/>
         <pw:organizationScope rdf:resource="austrian_state_archives"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
-    -->
-    <!-- http://www.oesta.gv.at/policies/formats_widespread_use -->
 
- <!--   <owl:NamedIndividual rdf:about="formats_widespread_use">
+    <!-- http://www.oesta.gv.at/policies/UseOfFormatShouldBeWidespread -->
+
+	<owl:NamedIndividual rdf:about="UseOfFormatShouldBeWidespread">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">widespread</control-policy:value>
-        <control-policy:property rdf:resource="&pw;format_ubiquity"/>
+        <control-policy:property rdf:resource="&measures;162"/>
         <pw:organizationScope rdf:resource="austrian_state_archives"/>
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
     </owl:NamedIndividual>
-    -->
 
 
-    <!-- http://www.oesta.gv.at/policies/free_opensource_tools_available -->
+    <!-- http://www.oesta.gv.at/policies/NumberOfFreeOpenSourceToolsMustBeGT3 -->
 
-<!--    <owl:NamedIndividual rdf:about="free_opensource_tools_available">
+	<owl:NamedIndividual rdf:about="NumberOfFreeOpenSourceToolsMustBeGT3">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
-        <control-policy:value rdf:datatype="&xsd;integer">4</control-policy:value>
-        <control-policy:property rdf:resource="&pw;free_opensource_tools_available"/>
+        <control-policy:value rdf:datatype="&xsd;integer">3</control-policy:value>
+        <control-policy:property rdf:resource="&measures;139"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
+        <control-policy:qualifier rdf:resource="&qualifiers;GT"/>
+        <pw:organizationScope rdf:resource="austrian_state_archives"/>        
     </owl:NamedIndividual>
--->    
-
 
     <!-- http://www.oesta.gv.at/policies/ministries -->
 
