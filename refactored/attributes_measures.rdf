@@ -4389,5 +4389,5 @@ direction) has been retained</description>
   <scale rdf:resource="http://scape-project.eu/pw/vocab/scales#BOOLEAN" />
 </rdf:Description>
 
-<!-- Generated with csvmod2rdf 0.1.0  -->
+<!-- Generated with csvmod2rdf 0.2.0  -->
 </rdf:RDF>     
