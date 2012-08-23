@@ -3,16 +3,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX pw: <http://scape-project.eu/pw/vocab/>
-PREFIX control: <http://scape-project.eu/pw/vocab/control-policy#>
+PREFIX cp: <http://scape-project.eu/pw/vocab/control-policy#>
 PREFIX oesta: <http://www.oesta.gv.at/policies/>
 
-SELECT ?objective ?pName ?modality ?value ?metric WHERE { 
+SELECT ?objective ?name ?desc ?modality ?value ?q WHERE { 
 oesta:ministries_executions_scenario pw:hasObjective ?objective .
-?objective rdf:type control:FormatObjective .
-?objective control:modality ?modality .
-?objective control:value ?value .
-?objective control:property ?criterion .
-?criterion pw:property ?prop .
+?objective rdf:type cp:FormatObjective .
+?objective cp:modality ?modality .
+?objective cp:value ?value .
+?objective cp:property ?measure .
+OPTIONAL {?objective cp:qualifier ?q .}
+?measure pw:description ?desc .
+?measure rdfs:label ?name
 OPTIONAL {?criterion pw:hasComparisonMetric ?metric .}
-?prop pw:hasName ?pName .
+
 }

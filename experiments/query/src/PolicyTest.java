@@ -60,8 +60,17 @@ public class PolicyTest {
       Literal desc = next.getLiteral("desc");
       Resource mod = next.getResource("modality");
       Literal val = next.getLiteral("value");
-      System.out.println("Format Objective [" + obj.toString() + "] defines that: \nproperty '" + name.getString()
-          + "' with description '" + desc.getString() + "' " + mod.getLocalName() + " have a \nvalue '" + val.getString() + "'\n");
+      Resource q = next.getResource("q");
+
+      String qualifierString = "";
+      
+      if (q == null) {
+    	  qualifierString = "'";    	  
+      } else {
+    	  qualifierString = q.getLocalName() + " '";
+      }
+      System.out.println("Format Objective [" + obj.toString() + "] defines that: \nmeasure '" + name.getString()
+          + "' with description '" + desc.getString() + "' " + mod.getLocalName() + " have a \nvalue " + qualifierString + val.getString() + "'\n");
     }
   }
 
@@ -76,12 +85,22 @@ public class PolicyTest {
     while (set.hasNext()) {
       QuerySolution next = set.nextSolution();
       Resource obj = next.getResource("objective");
-      Literal prop = next.getLiteral("label");
+      Literal name = next.getLiteral("name");
       Resource mod = next.getResource("modality");
       Literal val = next.getLiteral("value");
-      Resource metric = next.getResource("metric");
-      System.out.println("Format Objective [" + obj.toString() + "] defines that: \nproperty '" + prop.getString()
-          + "' " + mod.getLocalName() + " have a \nvalue " + getMetric(metric) + " '" + val.getString() + "'\n");
+      Literal desc = next.getLiteral("desc");
+      Resource q = next.getResource("q");
+
+      String qualifierString = "";
+      
+      if (q == null) {
+    	  qualifierString = "'";    	  
+      } else {
+    	  qualifierString = q.getLocalName() + " '";
+      }
+      
+      System.out.println("Format Objective [" + obj.toString() + "] defines that: \nmeasure '" + name.getString()
+          + "' " + mod.getLocalName() + " have a \nvalue " + qualifierString + val.getString() + "'\n");
     }
 
   }
