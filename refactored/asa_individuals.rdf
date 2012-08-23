@@ -251,10 +251,10 @@
     <owl:NamedIndividual rdf:about="ministries_executions_scenario">
         <rdf:type rdf:resource="&pw;Scenario"/>
         <pw:hasContentSet rdf:resource="documents_executions"/>
-<!--        <pw:hasObjective rdf:resource="formats_shall_be_iso_standardized"/>
-        <pw:hasObjective rdf:resource="formats_widespread_use"/>
-        <pw:hasObjective rdf:resource="free_opensource_tools_available"/>
-        <pw:hasObjective rdf:resource="formats_identification_must_be_possible"/>        -->        
+        <pw:hasObjective rdf:resource="FormatShallBeISOStandardized"/>
+        <pw:hasObjective rdf:resource="UseOfFormatShouldBeWidespread"/>
+        <pw:hasObjective rdf:resource="NumberOfFreeOpenSourceToolsMustBeGT3"/>
+        <pw:hasObjective rdf:resource="FormatIdentificaitonMustBePossible"/> 
         <pw:hasObjective rdf:resource="FormatDocumentationMustBeFreelyAvailable"/>
         <pw:hasUserCommunity rdf:resource="ministries"/>
         <pw:hasUserCommunity rdf:resource="researchers"/>
@@ -265,55 +265,63 @@
 
     <owl:NamedIndividual rdf:about="ministries_scanned_papers_scenario">
         <rdf:type rdf:resource="&pw;Scenario"/>
-<!--        <pw:hasObjective rdf:resource="image_width_must_be_unchanged"/>
-        <pw:hasObjective rdf:resource="image_height_must_be_unchanged"/>        
-        <pw:hasObjective rdf:resource="image_must_be_identical"/>                
--->        <pw:hasUserCommunity rdf:resource="ministries"/>
+        <pw:hasObjective rdf:resource="ImageWidthMustBeUnchanged"/>
+        <pw:hasObjective rdf:resource="ImageHeightMustBeUnchanged"/>        
+        <pw:hasObjective rdf:resource="ImageMustBeIdentical"/>                
+        <pw:hasUserCommunity rdf:resource="ministries"/>
         <pw:hasUserCommunity rdf:resource="public"/>
         <pw:hasUserCommunity rdf:resource="researchers"/>
         <pw:hasContentSet rdf:resource="scanned_papers"/>
     </owl:NamedIndividual>
     
 
-    <!-- http://www.oesta.gv.at/policies/image_must_be_identical -->
+    <!-- http://www.oesta.gv.at/policies/ImageMustBeIdentical -->
 
-    <owl:NamedIndividual rdf:about="image_must_be_identical">
+    <owl:NamedIndividual rdf:about="ImageMustBeIdentical">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&pw;image_is_similar"/>
+        <control-policy:property rdf:resource="&measures;2"/>
         <pw:contentSetScope rdf:resource="scanned_papers"/>
     </owl:NamedIndividual>
 
 
-    <!-- http://www.oesta.gv.at/policies/image_width_must_be_unchanged -->
+    <!-- http://www.oesta.gv.at/policies/ImageWidthMustBeUnchanged -->
 
-    <owl:NamedIndividual rdf:about="image_width_must_be_unchanged">
+    <owl:NamedIndividual rdf:about="ImageWidthMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&pw;image_width_unchanged"/>
+        <control-policy:property rdf:resource="&measures;51"/>
         <pw:contentSetScope rdf:resource="scanned_papers"/>
     </owl:NamedIndividual>
 
-    <!-- http://www.oesta.gv.at/policies/image_height_must_be_unchanged -->
+    <!-- http://www.oesta.gv.at/policies/ImageHeightMustBeUnchanged -->
 
-    <owl:NamedIndividual rdf:about="image_height_must_be_unchanged">
+    <owl:NamedIndividual rdf:about="ImageHeightMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&pw;image_height_unchanged"/>
+        <control-policy:property rdf:resource="&measures;53"/>
         <pw:contentSetScope rdf:resource="scanned_papers"/>
     </owl:NamedIndividual>
 
 
 
-    <!-- http://www.oesta.gv.at/policies/objects_must_be_valid_and_well_formed -->
+    <!-- http://www.oesta.gv.at/policies/ObjectsMustBeValid -->
 
-    <owl:NamedIndividual rdf:about="objects_must_be_valid_and_well_formed">
+    <owl:NamedIndividual rdf:about="ObjectsMustBeValid">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&pw;object_is_valid_and_wellformed"/>
+        <control-policy:property rdf:resource="&measures;120"/>
         <pw:contentSetScope rdf:resource="scanned_papers"/>
     </owl:NamedIndividual>
     
+    <!-- http://www.oesta.gv.at/policies/ObjectsMustBeWellFormed -->
+
+    <owl:NamedIndividual rdf:about="ObjectsMustBeWellFormed">
+        <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
+        <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
+        <control-policy:property rdf:resource="&measures;121"/>
+        <pw:contentSetScope rdf:resource="scanned_papers"/>
+    </owl:NamedIndividual>
 
 
     <!-- http://www.oesta.gv.at/policies/photographs -->
