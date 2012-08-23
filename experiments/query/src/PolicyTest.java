@@ -108,9 +108,9 @@ public class PolicyTest {
   public static void main(String... args) {
     OntModelSpec spec = OntModelSpec.OWL_MEM_RDFS_INF;
     OntModel ont = ModelFactory.createOntologyModel(spec);
-    ont.read("file:../../refactored/pw.rdf");
-    ont.read("file:../../refactored/attributes_measures.rdf");
-    ont.read("file:../../refactored/asa_individuals.rdf");
+    ont.read("file:../../harmonised/pw.rdf");
+    ont.read("file:../../harmonised/attributes_measures.rdf");
+    ont.read("file:../../harmonised/asa_individuals.rdf");
     Model base = ont.getBaseModel();
     
 //    queryAll(base);
