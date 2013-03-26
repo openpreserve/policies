@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="http://purl.org/DP/control-policy#"
+     xml:base="http://purl.org/DP/control-policy/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.org/DP/control-policy"/>
+    
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Modalities
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#scheme">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#scheme">
+    <dct:title>Modalities</dct:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#scheme">
+    <rdfs:seeAlso rdf:resource="http://tools.ietf.org/html/rfc2119"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#MUST">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#MUST">
+    <skos:prefLabel>MUST</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#MUST">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/modalities#scheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#SHOULD">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#SHOULD">
+    <skos:prefLabel>SHOULD</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#SHOULD">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/modalities#scheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#MAY">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#MAY">
+    <skos:prefLabel>MAY</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#MAY">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/modalities#scheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#SHOULD_NOT">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#SHOULD_NOT">
+    <skos:prefLabel>SHOULD NOT</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#SHOULD_NOT">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/modalities#scheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#MUST_NOT">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#MUST_NOT">
+    <skos:prefLabel>MUST NOT</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/modalities#MUST_NOT">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/modalities#scheme"/>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#scheme">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#scheme">
+    <dct:title>Qualifiers</dct:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#EQ">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#EQ">
+    <skos:prefLabel>equal</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#EQ">
+    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GT">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GT">
+    <skos:prefLabel>greater than</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GT">
+    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LT">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LT">
+    <skos:prefLabel>less than</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LT">
+    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GE">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GE">
+    <skos:prefLabel>greater than or equal to</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GE">
+    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LE">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LE">
+    <skos:prefLabel>less than or equal to</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LE">
+    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  </rdf:Description>
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#Objective">
+      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:Description>
+
+
+    <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/control-policy#modality">
+      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/control-policy#property">
+      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/control-policy#value">
+      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    </rdf:Description>
+
+
+    <!-- http://purl.org/DP/control-policy#content -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#content">
+        <rdfs:comment>Relates a scenario to a content set</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/DP/control-policy#modality -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#modality">
+        <rdfs:comment>Relates an Objective to the modality (e.g. MUST, SHOULD etc) that applies to the objective.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/DP/control-policy#objective -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#objective">
+        <rdfs:comment>Relates a scenario to an objective</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/DP/control-policy#property -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#property">
+        <rdfs:comment>Relates an Objective to the property that the objective pertains to.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/DP/control-policy#qualifier -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#qualifier">
+        <rdfs:comment>Relates an Objective to the qualifer (e.g. EQ, GE, etc) that applies to the objective.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/DP/control-policy#value -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/DP/control-policy#value">
+        <rdfs:comment>Relates an Objective to the value that the property pertains to. This may be a value that is required to be present (in the case of a MUST), or a value that is required to be absent (in the case of a MUST NOT).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/DP/control-policy#AccessObjective -->
+
+    <owl:Class rdf:about="http://purl.org/DP/control-policy#AccessObjective">
+        <rdfs:subClassOf rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+        <rdfs:comment>Expresses a requirement that content is provided in representations that can be accessed by the user community. Involves information about technology available to users (browsers etc), formats that the objects are provided in and the capabilities of that technology. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/DP/control-policy#ActionObjective -->
+
+    <owl:Class rdf:about="http://purl.org/DP/control-policy#ActionObjective">
+        <rdfs:subClassOf rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+        <rdfs:comment>Expresses a constraint on the characteristics of a software component</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/DP/control-policy#AuthenticityObjective -->
+
+    <owl:Class rdf:about="http://purl.org/DP/control-policy#AuthenticityObjective">
+        <rdfs:subClassOf rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+        <rdfs:comment>Requirement that certain properties of content/fidelity requirements must be preserved across preservation operations. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/DP/control-policy#FormatObjective -->
+
+    <owl:Class rdf:about="http://purl.org/DP/control-policy#FormatObjective">
+        <rdfs:subClassOf rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+        <rdfs:comment>Expresses a constraint on the characteristics of a format</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/DP/control-policy#Objective -->
+
+    <owl:Class rdf:about="http://purl.org/DP/control-policy#Objective"/>
+    
+
+
+    <!-- http://purl.org/DP/control-policy#RepresentationInstanceObjective -->
+
+    <owl:Class rdf:about="http://purl.org/DP/control-policy#RepresentationInstanceObjective">
+        <rdfs:subClassOf rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+        <rdfs:comment>Expresses a requirement on the characteristics of a particular representation.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
