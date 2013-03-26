@@ -80,57 +80,64 @@
     <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/modalities#scheme"/>
   </rdf:Description>
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Qualifiers
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#scheme">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#scheme">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#scheme">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#scheme">
     <dct:title>Qualifiers</dct:title>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#EQ">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#EQ">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#EQ">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#EQ">
     <skos:prefLabel>equal</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#EQ">
-    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#EQ">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/qualifiers#scheme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GT">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#GT">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GT">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#GT">
     <skos:prefLabel>greater than</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GT">
-    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#GT">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/qualifiers#scheme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LT">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#LT">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LT">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#LT">
     <skos:prefLabel>less than</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LT">
-    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#LT">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/qualifiers#scheme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GE">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#GE">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GE">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#GE">
     <skos:prefLabel>greater than or equal to</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#GE">
-    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#GE">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/qualifiers#scheme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LE">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#LE">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LE">
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#LE">
     <skos:prefLabel>less than or equal to</skos:prefLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/qualifiers#LE">
-    <skos:inScheme rdf:resource="http://scape-project.eu/pw/vocab/qualifiers#scheme"/>
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/qualifiers#LE">
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/qualifiers#scheme"/>
   </rdf:Description>
 
 
@@ -171,15 +178,15 @@
     </rdf:Description>
 
 
-    <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/control-policy#modality">
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy/control-policy#modality">
       <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/control-policy#property">
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#property">
       <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://scape-project.eu/pw/vocab/control-policy#value">
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#value">
       <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
     </rdf:Description>
 
