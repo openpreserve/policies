@@ -2,43 +2,39 @@
 
 
 <!DOCTYPE rdf:RDF [
+    <!ENTITY quality "http://purl.org/DP/quality#">
+    <!ENTITY measures "http://purl.org/DP/quality/measures#">
+    <!ENTITY preservation-case "http://purl.org/DP/preservation-case#">
+    <!ENTITY control-policy "http://purl.org/DP/control-policy#">
+    <!ENTITY modalities "http://purl.org/DP/control-policy/modalities#" >
+    <!ENTITY qualifiers "http://purl.org/DP/control-policy/qualifiers#" >
     <!ENTITY org "http://www.w3.org/ns/org#" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY pw "http://scape-project.eu/pw/vocab/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY mcat "http://scape-project.eu/pw/vocab/mcat#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY scales "http://scape-project.eu/pw/vocab/scales#" >
-    <!ENTITY metrics "http://scape-project.eu/pw/vocab/metrics#" >
     <!ENTITY pronom "http://reference.data.gov.uk/technical-registry/" >
-    <!ENTITY modalities "http://scape-project.eu/pw/vocab/modalities#" >
-    <!ENTITY qualifiers "http://scape-project.eu/pw/vocab/qualifiers#" >
-    <!ENTITY control-policy "http://scape-project.eu/pw/vocab/control-policy#" >
-    <!ENTITY measures "http://scape-project.eu/pw/vocab/measures/">
     <!ENTITY premis "http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl" >
 ]>
 
 
-<rdf:RDF xmlns="http://www.our-big-library.com/policies/"
+<rdf:RDF xmlns="http://www.our-big-library.com/policies#"
      xml:base="http://www.our-big-library.com/policies/"
-     xmlns:modalities="http://scape-project.eu/pw/vocab/modalities#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:scales="http://scape-project.eu/pw/vocab/scales#"
-     xmlns:control-policy="http://scape-project.eu/pw/vocab/control-policy#"
+     xmlns:quality="http://purl.org/DP/quality#"
+     xmlns:measures="http://purl.org/DP/quality/measures#"
+     xmlns:preservation-case="http://purl.org/DP/preservation-case#"
+     xmlns:control-policy="http://purl.org/DP/control-policy#"
+     xmlns:modalities="http://purl.org/DP/control-policy/modalities#"
+     xmlns:qualifiers="http://purl.org/DP/control-policy/qualifiers#"
      xmlns:org="http://www.w3.org/ns/org#"
-     xmlns:premis="http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:pronom="http://reference.data.gov.uk/technical-registry/"
-     xmlns:mcat="http://scape-project.eu/pw/vocab/mcat#"
-     xmlns:metrics="http://scape-project.eu/pw/vocab/metrics#"
-     xmlns:qualifiers="http://scape-project.eu/pw/vocab/qualifiers#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:measures="http://scape-project.eu/pw/vocab/measures/"
-     xmlns:pw="http://scape-project.eu/pw/vocab/">
+     xmlns:pronom="http://reference.data.gov.uk/technical-registry/"
+     xmlns:premis="http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl">
    
     
 
@@ -74,15 +70,9 @@
     
 
 
-    <!-- http://scape-project.eu/pw/vocab/ContentSet -->
-
-    <owl:Class rdf:about="&pw;ContentSet"/>
+    <owl:Class rdf:about="&preservation-case;ContentSet"/>
     
-
-
-    <!-- http://scape-project.eu/pw/vocab/Scenario -->
-
-    <owl:Class rdf:about="&pw;Scenario"/>
+    <owl:Class rdf:about="&preservation-case;PreservationCase"/>
     
 
 
@@ -95,114 +85,83 @@
      -->
 
     
+    <owl:NamedIndividual rdf:about="&quality;format_ubiquity"/>
 
+    <owl:NamedIndividual rdf:about="&quality;free_opensource_tools_available"/>
 
-    <!-- http://scape-project.eu/pw/vocab/format_ubiquity -->
-
-    <owl:NamedIndividual rdf:about="&pw;format_ubiquity"/>
+    <owl:NamedIndividual rdf:about="&quality;object_compression"/>
     
-
-
-    <!-- http://scape-project.eu/pw/vocab/free_opensource_tools_available -->
-
-    <owl:NamedIndividual rdf:about="&pw;free_opensource_tools_available"/>
+    <owl:NamedIndividual rdf:about="&quality;object_is_valid_and_wellformed"/>
     
-
-
-    <!-- http://scape-project.eu/pw/vocab/object_compression -->
-
-    <owl:NamedIndividual rdf:about="&pw;object_compression"/>
+    <owl:NamedIndividual rdf:about="&quality;object_standardized"/>
     
-
-
-    <!-- http://scape-project.eu/pw/vocab/object_is_valid_and_wellformed -->
-
-    <owl:NamedIndividual rdf:about="&pw;object_is_valid_and_wellformed"/>
-    
-
-
-    <!-- http://scape-project.eu/pw/vocab/object_standardized -->
-
-    <owl:NamedIndividual rdf:about="&pw;object_standardized"/>
-    
-
-
-    <!-- http://www.our-big-library.com/policies/austrian_state_archives -->
-
     <org:Organization rdf:about="our_big_library">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <org:identifier>Our Big Library</org:identifier>
     </org:Organization>
     
-    <!-- http://www.our-big-library.com/policies/documents_executions -->
-
     <owl:NamedIndividual rdf:about="JISC1_newspapers">
-        <rdf:type rdf:resource="&pw;ContentSet"/>
+        <rdf:type rdf:resource="&preservation-case;ContentSet"/>
     </owl:NamedIndividual>
         
-    <!-- http://www.our-big-library.com/policies/ministries_scanned_papers_scenario -->
 
     <owl:NamedIndividual rdf:about="JISC1_newspapers_scenario">
-        <rdf:type rdf:resource="&pw;Scenario"/>
+        <rdf:type rdf:resource="&preservation-case;PreservationCase"/>
         <rdfs:label>JISC1 newspapers</rdfs:label>
-        <pw:hasObjective rdf:resource="ImageWidthMustBeUnchanged"/>
-        <pw:hasObjective rdf:resource="ImageHeightMustBeUnchanged"/>        
-        <pw:hasObjective rdf:resource="ColourModelMustBePreserved"/>        
-        <pw:hasObjective rdf:resource="AllTiffDataMustBeRetained"/>        
-        <pw:hasObjective rdf:resource="QuantitativeArchivalStorageCosts"/>        
-        <pw:hasObjective rdf:resource="RunningCostsPerObject"/>        
-        <pw:hasObjective rdf:resource="AutomatedQAMustBePossible"/>
-        <pw:hasObjective rdf:resource="ElapsedTimePerMB"/>
-        <pw:hasObjective rdf:resource="NumberOfToolsMustBeGT0"/>
-        <pw:hasObjective rdf:resource="FormatDocumentationAvailabilityShouldBeYesFree"/>
-        <pw:hasObjective rdf:resource="FormatShouldBeInternationalStandard"/>
-        <pw:hasObjective rdf:resource="CompressionTypeMustBeLossless"/>
-        <pw:hasObjective rdf:resource="IdentificationPossibilitiesMustBeAutomatic"/>
-        <pw:hasObjective rdf:resource="FormatComplexityShouldBeLow"/>
-        <pw:hasObjective rdf:resource="ComparativeFileSizeMustBeLT10"/>
+        <preservation-case:hasObjective rdf:resource="ImageWidthMustBeUnchanged"/>
+        <preservation-case:hasObjective rdf:resource="ImageHeightMustBeUnchanged"/>        
+        <preservation-case:hasObjective rdf:resource="ColourModelMustBePreserved"/>        
+        <preservation-case:hasObjective rdf:resource="AllTiffDataMustBeRetained"/>        
+        <preservation-case:hasObjective rdf:resource="QuantitativeArchivalStorageCosts"/>        
+        <preservation-case:hasObjective rdf:resource="RunningCostsPerObject"/>        
+        <preservation-case:hasObjective rdf:resource="AutomatedQAMustBePossible"/>
+        <preservation-case:hasObjective rdf:resource="ElapsedTimePerMB"/>
+        <preservation-case:hasObjective rdf:resource="NumberOfToolsMustBeGT0"/>
+        <preservation-case:hasObjective rdf:resource="FormatDocumentationAvailabilityShouldBeYesFree"/>
+        <preservation-case:hasObjective rdf:resource="FormatShouldBeInternationalStandard"/>
+        <preservation-case:hasObjective rdf:resource="CompressionTypeMustBeNone"/>
+        <preservation-case:hasObjective rdf:resource="IdentificationPossibilitiesMustBeAutomatic"/>
+        <preservation-case:hasObjective rdf:resource="FormatComplexityShouldBeLow"/>
+        <preservation-case:hasObjective rdf:resource="ComparativeFileSizeMustBeLT10"/>
         
-        <pw:hasObjective rdf:resource="ActionShouldBeStable"/>
-        <pw:hasObjective rdf:resource="EaseOfIntegration"/>
-        <pw:hasObjective rdf:resource="ActionSoftwareLicenceMustBeOpenSource"/>
-        <pw:hasObjective rdf:resource="ActionToolUsabilityShouldBeGood"/>
+        <preservation-case:hasObjective rdf:resource="ActionShouldBeStable"/>
+        <preservation-case:hasObjective rdf:resource="EaseOfIntegration"/>
+        <preservation-case:hasObjective rdf:resource="ActionSoftwareLicenceMustBeOpenSource"/>
+        <preservation-case:hasObjective rdf:resource="ActionToolUsabilityShouldBeGood"/>
         
-        <pw:hasUserCommunity rdf:resource="genealogists"/>
-        <pw:hasUserCommunity rdf:resource="researchers"/>
-        <pw:hasContentSet rdf:resource="JISC1_newspapers"/>
+        <preservation-case:hasUserCommunity rdf:resource="genealogists"/>
+        <preservation-case:hasUserCommunity rdf:resource="researchers"/>
+        <preservation-case:hasContentSet rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
         
         
-    <!-- http://www.our-big-library.com/policies/ImageWidthMustBeUnchanged -->
 
     <owl:NamedIndividual rdf:about="ImageWidthMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:property rdf:resource="&measures;51"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
 
-    <!-- http://www.our-big-library.com/policies/ImageHeightMustBeUnchanged -->
 
     <owl:NamedIndividual rdf:about="ImageHeightMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:property rdf:resource="&measures;53"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>        
 
-    <!-- http://www.our-big-library.com/policies/ColourModelMustBePreserved -->
     
     <owl:NamedIndividual rdf:about="ColourModelMustBePreserved">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:property rdf:resource="&measures;56"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
     
-    <!-- http://www.our-big-library.com/policies/AllTiffMetadataMustBeRetained -->
     
     <owl:NamedIndividual rdf:about="AllTiffDataMustBeRetained">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
@@ -211,7 +170,6 @@
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
     
-    <!-- http://www.our-big-library.com/policies/AllTiffMetadataMustBeRetained -->
     
     <owl:NamedIndividual rdf:about="QuantitativeArchivalStorageCosts">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
@@ -221,27 +179,24 @@
         <control-policy:qualifier rdf:resource="&qualifiers;LT"/>
     </owl:NamedIndividual>
 
-    <!-- http://www.our-big-library.com/policies/RunningCostsPerObject -->
     
     <owl:NamedIndividual rdf:about="RunningCostsPerObject">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;unsignedLong">0.24</control-policy:value>
-        <control-policy:property rdf:resource="&measures;137"/>
+        <control-policy:property rdf:resource="&measures;21"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;LT"/>
     </owl:NamedIndividual>
             
-    <!-- http://www.our-big-library.com/policies/AutomatedQAMustBePossible -->
     
     <owl:NamedIndividual rdf:about="AutomatedQAMustBePossible">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:property rdf:resource="&measures;134"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
     
-    <!-- http://www.our-big-library.com/policies/ElapsedTimePerMB -->
     
     <owl:NamedIndividual rdf:about="ElapsedTimePerMB">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
@@ -249,10 +204,9 @@
         <control-policy:property rdf:resource="&measures;10"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;LT"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
     
-    <!-- http://www.our-big-library.com/policies/NumberOfToolsMustBeGT0 -->
     
     <owl:NamedIndividual rdf:about="NumberOfToolsMustBeGT0">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
@@ -260,60 +214,54 @@
         <control-policy:property rdf:resource="&measures;141"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;GT"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
 
-    <!-- http://www.our-big-library.com/policies/FormatDocumentationAvailabilityShouldBeYesFree -->
     
     <owl:NamedIndividual rdf:about="FormatDocumentationAvailabilityShouldBeYesFree">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">yes-free</control-policy:value>
         <control-policy:property rdf:resource="&measures;147"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
 
-    <!-- http://www.our-big-library.com/policies/FormatShouldBeInternationalStandard -->
     
     <owl:NamedIndividual rdf:about="FormatShouldBeInternationalStandard">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">international standard</control-policy:value>
         <control-policy:property rdf:resource="&measures;161"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
     
-    <!-- http://www.our-big-library.com/policies/CompressionTypeMustBeLossless -->
     
     <owl:NamedIndividual rdf:about="CompressionTypeMustBeLossless">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
-        <control-policy:value rdf:datatype="&xsd;string">lossless</control-policy:value>
+        <control-policy:value rdf:datatype="&xsd;string">none</control-policy:value>
         <control-policy:property rdf:resource="&measures;117"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
 
-    <!-- http://www.our-big-library.com/policies/IdentificationPossibilitiesMustBeAutomatic -->
     
     <owl:NamedIndividual rdf:about="IdentificationPossibilitiesMustBeAutomatic">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">automatic_specific</control-policy:value>
         <control-policy:property rdf:resource="&measures;153"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
         
-    <!-- http://www.our-big-library.com/policies/FormatComplexityShouldBeLow -->
     
     <owl:NamedIndividual rdf:about="FormatComplexityShouldBeLow">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">low</control-policy:value>
         <control-policy:property rdf:resource="&measures;143"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>       
     
-    <!-- http://www.our-big-library.com/policies/ComparativeFileSizeMustBeLT10 -->
     
     <owl:NamedIndividual rdf:about="ComparativeFileSizeMustBeLT10">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
@@ -321,84 +269,66 @@
         <control-policy:property rdf:resource="&measures;123"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;LT"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>  
     
-    <!-- http://www.our-big-library.com/policies/ActionShouldBeStable -->
     
     <owl:NamedIndividual rdf:about="ActionShouldBeStable">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">stable</control-policy:value>
         <control-policy:property rdf:resource="&measures;108"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>  
        
-    <!-- http://www.our-big-library.com/policies/EaseOfIntegration -->
     
     <owl:NamedIndividual rdf:about="EaseOfIntegration">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">good</control-policy:value>
         <control-policy:property rdf:resource="&measures;99"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>  
 
-    <!-- http://www.our-big-library.com/policies/ActionSoftwareLicenceMustBeOpenSource -->
     
     <owl:NamedIndividual rdf:about="ActionSoftwareLicenceMustBeOpenSource">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">openSource</control-policy:value>
         <control-policy:property rdf:resource="&measures;175"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>                
     
-    <!-- http://www.our-big-library.com/policies/ActionToolUsabilityShouldBeGood -->
     
     <owl:NamedIndividual rdf:about="ActionToolUsabilityShouldBeGood">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">openSource</control-policy:value>
         <control-policy:property rdf:resource="&measures;115"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
-        <pw:contentSetScope rdf:resource="JISC1_newspapers"/>
+        <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>                           
 
-    <!-- http://www.our-big-library.com/policies/public -->
 
     <foaf:Group rdf:about="public">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
     </foaf:Group>
     
-    <!-- http://www.our-big-library.com/policies/researchers -->
-
     <foaf:Group rdf:about="genealogists">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
     </foaf:Group>
-
-    <!-- http://www.our-big-library.com/policies/researchers -->
 
     <foaf:Group rdf:about="researchers">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
     </foaf:Group>
     
 
-
-    <!-- http://www.our-big-library.com/policies/scanned_papers -->
-
     <owl:NamedIndividual rdf:about="scanned_papers">
-        <rdf:type rdf:resource="&pw;ContentSet"/>
+        <rdf:type rdf:resource="&preservation-case;ContentSet"/>
     </owl:NamedIndividual>
     
 
-
-    <!-- http://scape-project.eu/pw/vocab/modalities#MUST -->
-
     <owl:NamedIndividual rdf:about="&modalities;MUST"/>
     
-
-
-    <!-- http://scape-project.eu/pw/vocab/modalities#SHOULD -->
 
     <owl:NamedIndividual rdf:about="&modalities;SHOULD"/>
 </rdf:RDF>

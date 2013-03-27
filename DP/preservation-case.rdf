@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  Digital Preservation: Preservation Case
+
+  Changes:
+  * removed
+    <rdf:Description rdf:about="http://purl.org/DP/preservation-case#hasComparisonMetric">
+      <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/DP/preservation-case#hasComparisonMetric">
+      <rdfs:domain rdf:resource="http://purl.org/DP/preservation-case#Criterion"/>
+    </rdf:Description>
+
+-->
 <rdf:RDF xmlns="http://purl.org/DP/preservation-case#"
     xmlns:control-policy="http://purl.org/DP/control-policy#" 
     xmlns:foaf="http://xmlns.com/foaf/0.1/" 
@@ -8,6 +21,7 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#" 
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
 
   <rdf:Description rdf:about="http://premis.loc.gov/ns/Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -28,16 +42,6 @@
     <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
   </rdf:Description>
 
-<!--  removed:
-
-  <rdf:Description rdf:about="http://purl.org/DP/preservation-case#hasComparisonMetric">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/DP/preservation-case#hasComparisonMetric">
-    <rdfs:domain rdf:resource="http://purl.org/DP/preservation-case#Criterion"/>
-  </rdf:Description>
-
--->
   <rdf:Description rdf:about="http://purl.org/DP/preservation-case#CharacterizationTool">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>

@@ -1,4 +1,23 @@
 <?xml version="1.0"?>
+<!--
+  Digital Preservation: Control Policy
+
+  Changes:
+  
+  * removed object property content: there is preservation-case:hasContentSet
+
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#content">
+        <rdfs:comment>Relates a scenario to a content set</rdfs:comment>
+    </owl:ObjectProperty>
+    
+  * removed object property objective: there is preservation-case:hasObjective
+
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#objective">
+        <rdfs:comment>Relates a scenario to an objective</rdfs:comment>
+    </owl:ObjectProperty>
+
+-->    
+
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
@@ -15,7 +34,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.org/DP/control-policy"/>
-    
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -191,13 +210,6 @@
     </rdf:Description>
 
 
-    <!-- http://purl.org/DP/control-policy#content -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#content">
-        <rdfs:comment>Relates a scenario to a content set</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
 
     <!-- http://purl.org/DP/control-policy#modality -->
 
@@ -205,15 +217,6 @@
         <rdfs:comment>Relates an Objective to the modality (e.g. MUST, SHOULD etc) that applies to the objective.</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/DP/control-policy#objective -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#objective">
-        <rdfs:comment>Relates a scenario to an objective</rdfs:comment>
-    </owl:ObjectProperty>
-    
 
 
     <!-- http://purl.org/DP/control-policy#property -->
