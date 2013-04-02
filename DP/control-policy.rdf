@@ -197,7 +197,7 @@
     </rdf:Description>
 
 
-    <rdf:Description rdf:about="http://purl.org/DP/control-policy/control-policy#modality">
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#modality">
       <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
     </rdf:Description>
 
