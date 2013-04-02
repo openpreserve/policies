@@ -201,7 +201,7 @@
       <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
     </rdf:Description>
 
-    <rdf:Description rdf:about="http://purl.org/DP/control-policy#property">
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#measure">
       <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
     </rdf:Description>
 
@@ -219,10 +219,10 @@
     </owl:ObjectProperty>
 
 
-    <!-- http://purl.org/DP/control-policy#property -->
+    <!-- http://purl.org/DP/control-policy#measure -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#property">
-        <rdfs:comment>Relates an Objective to the property that the objective pertains to.</rdfs:comment>
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#measure">
+        <rdfs:comment>Relates an Objective to the measure that the objective pertains to.</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
     </owl:ObjectProperty>
     
@@ -251,7 +251,7 @@
     <!-- http://purl.org/DP/control-policy#value -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/DP/control-policy#value">
-        <rdfs:comment>Relates an Objective to the value that the property pertains to. This may be a value that is required to be present (in the case of a MUST), or a value that is required to be absent (in the case of a MUST NOT).</rdfs:comment>
+        <rdfs:comment>Relates an Objective to the value that the measure pertains to. This may be a value that is required to be present (in the case of a MUST), or a value that is required to be absent (in the case of a MUST NOT).</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
     </owl:DatatypeProperty>
     

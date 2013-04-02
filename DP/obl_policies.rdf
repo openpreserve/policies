@@ -139,7 +139,7 @@
     <owl:NamedIndividual rdf:about="ImageWidthMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;51"/>
+        <control-policy:measure rdf:resource="&measures;51"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
@@ -148,7 +148,7 @@
     <owl:NamedIndividual rdf:about="ImageHeightMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;53"/>
+        <control-policy:measure rdf:resource="&measures;53"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>        
@@ -157,7 +157,7 @@
     <owl:NamedIndividual rdf:about="ColourModelMustBePreserved">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;56"/>
+        <control-policy:measure rdf:resource="&measures;56"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
@@ -166,7 +166,7 @@
     <owl:NamedIndividual rdf:about="AllTiffDataMustBeRetained">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;251"/>
+        <control-policy:measure rdf:resource="&measures;251"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
     
@@ -174,7 +174,7 @@
     <owl:NamedIndividual rdf:about="QuantitativeArchivalStorageCosts">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
         <control-policy:value rdf:datatype="&xsd;unsignedLong">0.24</control-policy:value>
-        <control-policy:property rdf:resource="&measures;137"/>
+        <control-policy:measure rdf:resource="&measures;137"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;LT"/>
     </owl:NamedIndividual>
@@ -183,7 +183,7 @@
     <owl:NamedIndividual rdf:about="RunningCostsPerObject">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;unsignedLong">0.24</control-policy:value>
-        <control-policy:property rdf:resource="&measures;21"/>
+        <control-policy:measure rdf:resource="&measures;21"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;LT"/>
     </owl:NamedIndividual>
@@ -192,7 +192,7 @@
     <owl:NamedIndividual rdf:about="AutomatedQAMustBePossible">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;134"/>
+        <control-policy:measure rdf:resource="&measures;134"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
@@ -201,7 +201,7 @@
     <owl:NamedIndividual rdf:about="ElapsedTimePerMB">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;unsignedLong">2000</control-policy:value>
-        <control-policy:property rdf:resource="&measures;10"/> 
+        <control-policy:measure rdf:resource="&measures;10"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;LT"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
@@ -211,7 +211,7 @@
     <owl:NamedIndividual rdf:about="NumberOfToolsMustBeGT0">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;integer">0</control-policy:value>
-        <control-policy:property rdf:resource="&measures;141"/> 
+        <control-policy:measure rdf:resource="&measures;141"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;GT"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
@@ -221,7 +221,7 @@
     <owl:NamedIndividual rdf:about="FormatDocumentationAvailabilityShouldBeYesFree">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">yes-free</control-policy:value>
-        <control-policy:property rdf:resource="&measures;147"/> 
+        <control-policy:measure rdf:resource="&measures;147"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
@@ -230,7 +230,7 @@
     <owl:NamedIndividual rdf:about="FormatShouldBeInternationalStandard">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">international standard</control-policy:value>
-        <control-policy:property rdf:resource="&measures;161"/> 
+        <control-policy:measure rdf:resource="&measures;161"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
@@ -239,7 +239,7 @@
     <owl:NamedIndividual rdf:about="CompressionTypeMustBeLossless">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">none</control-policy:value>
-        <control-policy:property rdf:resource="&measures;117"/> 
+        <control-policy:measure rdf:resource="&measures;117"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
@@ -248,7 +248,7 @@
     <owl:NamedIndividual rdf:about="IdentificationPossibilitiesMustBeAutomatic">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">automatic_specific</control-policy:value>
-        <control-policy:property rdf:resource="&measures;153"/> 
+        <control-policy:measure rdf:resource="&measures;153"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>
@@ -257,7 +257,7 @@
     <owl:NamedIndividual rdf:about="FormatComplexityShouldBeLow">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">low</control-policy:value>
-        <control-policy:property rdf:resource="&measures;143"/> 
+        <control-policy:measure rdf:resource="&measures;143"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>       
@@ -266,7 +266,7 @@
     <owl:NamedIndividual rdf:about="ComparativeFileSizeMustBeLT10">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
         <control-policy:value rdf:datatype="&xsd;unsignedLong">10</control-policy:value>
-        <control-policy:property rdf:resource="&measures;123"/> 
+        <control-policy:measure rdf:resource="&measures;123"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;LT"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
@@ -276,7 +276,7 @@
     <owl:NamedIndividual rdf:about="ActionShouldBeStable">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">stable</control-policy:value>
-        <control-policy:property rdf:resource="&measures;108"/> 
+        <control-policy:measure rdf:resource="&measures;108"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>  
@@ -285,7 +285,7 @@
     <owl:NamedIndividual rdf:about="EaseOfIntegration">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">good</control-policy:value>
-        <control-policy:property rdf:resource="&measures;99"/> 
+        <control-policy:measure rdf:resource="&measures;99"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>  
@@ -294,7 +294,7 @@
     <owl:NamedIndividual rdf:about="ActionSoftwareLicenceMustBeOpenSource">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">openSource</control-policy:value>
-        <control-policy:property rdf:resource="&measures;175"/> 
+        <control-policy:measure rdf:resource="&measures;175"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>                
@@ -303,7 +303,7 @@
     <owl:NamedIndividual rdf:about="ActionToolUsabilityShouldBeGood">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">openSource</control-policy:value>
-        <control-policy:property rdf:resource="&measures;115"/> 
+        <control-policy:measure rdf:resource="&measures;115"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
     </owl:NamedIndividual>                           
