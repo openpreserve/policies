@@ -19,8 +19,8 @@
 ]>
 
 
-<rdf:RDF xmlns="http://www.our-big-library.com/policies#"
-     xml:base="http://www.our-big-library.com/policies/"
+<rdf:RDF xmlns="http://www.bl.uk/policies#"
+     xml:base="http://www.bl.uk/policies/"
      xmlns:quality="http://purl.org/DP/quality#"
      xmlns:measures="http://purl.org/DP/quality/measures#"
      xmlns:preservation-case="http://purl.org/DP/preservation-case#"
@@ -64,9 +64,9 @@
     
     <owl:NamedIndividual rdf:about="&quality;object_standardized"/>
     
-    <org:Organization rdf:about="our_big_library">
+    <org:Organization rdf:about="british_library">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
-        <org:identifier>Our Big Library</org:identifier>
+        <org:identifier>The British Library</org:identifier>
     </org:Organization>
     
     <owl:NamedIndividual rdf:about="JISC1_newspapers">
@@ -76,7 +76,7 @@
 
     <owl:NamedIndividual rdf:about="JISC1_newspapers_scenario">
         <rdf:type rdf:resource="&preservation-case;PreservationCase"/>
-        <rdfs:label>JISC1 newspapers</rdfs:label>
+        <skos:prefLabel>JISC1 newspapers</skos:prefLabel>
         <preservation-case:hasObjective rdf:resource="ImageWidthMustBeUnchanged"/>
         <preservation-case:hasObjective rdf:resource="ImageHeightMustBeUnchanged"/>        
         <preservation-case:hasObjective rdf:resource="ColourModelMustBePreserved"/>        

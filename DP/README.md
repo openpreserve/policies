@@ -9,15 +9,24 @@ This common vocabulary allows interoperability between
 * Policies
 * Planning
 
-The vocabulary is organised as follows:
+The vocabulary is split up into quality model, control policies and preservation case, 
+and for each class of individuals a separate file is used.
 
 * Quality Model (quality.rdf)
   Describes criteria, properties (RIP, IP, TIP, etc.)
+  . quality_attributes.rdf
+  . quality_measures.rdf
+  . quality_categories.rdf
+  . quality_scales.rdf
+  . quality_scopes.rdf
+
   
 * Control Policies (control-policy.rdf)
+  . control-policy_modalities.rdf
+  . control-policy_qualifiers.rdf
 
 * Preservation Case (preservation-case.rdf)
   Formerly known as Scenario
   
-* An example of a preservation case: obl_policies.rdf
+* An example of a preservation case is given in bl_policies.rdf
   
