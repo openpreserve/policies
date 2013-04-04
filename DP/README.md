@@ -14,16 +14,16 @@ and for each class of individuals a separate file is used.
 
 * Quality Model (quality.rdf)
   Describes criteria, properties (RIP, IP, TIP, etc.)
-  . quality_attributes.rdf
-  . quality_measures.rdf
-  . quality_categories.rdf
-  . quality_scales.rdf
-  . quality_scopes.rdf
+  * quality_attributes.rdf
+  * quality_measures.rdf
+  * quality_categories.rdf
+  * quality_scales.rdf
+  * quality_scopes.rdf
 
   
 * Control Policies (control-policy.rdf)
-  . control-policy_modalities.rdf
-  . control-policy_qualifiers.rdf
+  * control-policy_modalities.rdf
+  * control-policy_qualifiers.rdf
 
 * Preservation Case (preservation-case.rdf)
   Formerly known as Scenario
