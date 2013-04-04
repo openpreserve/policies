@@ -12,7 +12,7 @@
      
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#83">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>available metadata for database</rdfs:label>
+  <skos:prefLabel>available metadata for database</skos:prefLabel>
   <dct:description>Different metadata available for database</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_information_property"/>
   
@@ -29,7 +29,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#48">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format adoption</rdfs:label>
+  <skos:prefLabel>format adoption</skos:prefLabel>
   <dct:description>Degree of adoption of a format</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_sustainability"/>
   
@@ -43,7 +43,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#34">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>software vendor</rdfs:label>
+  <skos:prefLabel>software vendor</skos:prefLabel>
   <dct:description>Assessment of the vendor of an action (active, out of business, about to go bankrupt, unreliable...)</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#action_maintenance"/>
   
@@ -52,7 +52,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#59">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format rights</rdfs:label>
+  <skos:prefLabel>format rights</skos:prefLabel>
   <dct:description>This covers the question of openness and rights restrictions on a format: Do known IPR issues exist? Is the format copyrighted by one company? Are there known patents or other rights?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_sustainability"/>
   
@@ -61,7 +61,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#45">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>automated quality assurance support</rdfs:label>
+  <skos:prefLabel>automated quality assurance support</skos:prefLabel>
   <dct:description>Indicators whether the outcome of an action supports automated QA</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -70,7 +70,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#20">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>colour space of a digital image</rdfs:label>
+  <skos:prefLabel>colour space of a digital image</skos:prefLabel>
   <dct:description>The designated colour space of the decompressed image data</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -80,7 +80,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#65">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>document structure</rdfs:label>
+  <skos:prefLabel>document structure</skos:prefLabel>
   <dct:description>Indicators for how well the structure of a multi-page document has been preserved</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -99,7 +99,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#88">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format specification</rdfs:label>
+  <skos:prefLabel>format specification</skos:prefLabel>
   <dct:description>Indicates the identified format of an object</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -108,7 +108,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#49">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format stability</rdfs:label>
+  <skos:prefLabel>format stability</skos:prefLabel>
   <dct:description>Degree of stability of a format and its versions</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_sustainability"/>
   
@@ -119,7 +119,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#2">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>image EXIF metadata</rdfs:label>
+  <skos:prefLabel>image EXIF metadata</skos:prefLabel>
   <dct:description>The accuracy of Exchangeable Image File Format (EXIF) metadata of an image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -168,7 +168,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#87">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>video content</rdfs:label>
+  <skos:prefLabel>video content</skos:prefLabel>
   <dct:description>Indicators for properties of video content</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -179,7 +179,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#57">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format viewing features support</rdfs:label>
+  <skos:prefLabel>format viewing features support</skos:prefLabel>
   <dct:description>Are specific features in principle supported by the format when viewed in common viewers? (e.g. easy PDF creation, zoom etc)</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -191,7 +191,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#23">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>image orientation</rdfs:label>
+  <skos:prefLabel>image orientation</skos:prefLabel>
   <dct:description>This specifies the orientation of the image in relation to the placement of its rows and columns when it was saved to disk i.e. it denotes whether the image has been rotated or flipped.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -201,7 +201,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#1">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>image content</rdfs:label>
+  <skos:prefLabel>image content</skos:prefLabel>
   <dct:description>The accuracy of image content preservation</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -218,7 +218,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#5">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>image metadata</rdfs:label>
+  <skos:prefLabel>image metadata</skos:prefLabel>
   <dct:description>The accuracy of metadata of an image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -235,7 +235,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#17">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>input object validation</rdfs:label>
+  <skos:prefLabel>input object validation</skos:prefLabel>
   <dct:description>Does the action perform validation of the input?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_completeness"/>
   
@@ -244,7 +244,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#29">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>modular design</rdfs:label>
+  <skos:prefLabel>modular design</skos:prefLabel>
   <dct:description>Indicators for the modularity of the system design of an action, which is an aspect of maintainability</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#modularity"/>
   
@@ -254,7 +254,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#9">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>operational costs of a preservation action</rdfs:label>
+  <skos:prefLabel>operational costs of a preservation action</skos:prefLabel>
   <dct:description>These are the operational costs of running a preservation action.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#action_costs"/>
   
@@ -269,7 +269,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#39">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>compression</rdfs:label>
+  <skos:prefLabel>compression</skos:prefLabel>
   <dct:description>Compression used in outcome object.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -280,7 +280,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#26">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>file name handling</rdfs:label>
+  <skos:prefLabel>file name handling</skos:prefLabel>
   <dct:description>Indicators for how the preservation action handles file names</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_completeness"/>
   
@@ -289,7 +289,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#12">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>Software interface of a preservation action</rdfs:label>
+  <skos:prefLabel>Software interface of a preservation action</skos:prefLabel>
   <dct:description>The question of how to interface a preservation action tool, which can be a key factor limiting technical adoption in a given environment, but also drive or limit the scalability of operations where this action is involved (e.g. when no batch interface is provided)</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#interoperability"/>
   
@@ -302,7 +302,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#14">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>handling of illegal content elements</rdfs:label>
+  <skos:prefLabel>handling of illegal content elements</skos:prefLabel>
   <dct:description>How does the action handle illegal (i.e. out-of-spec) elements inside content?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -314,7 +314,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#76">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>PC gaming hardware controller support</rdfs:label>
+  <skos:prefLabel>PC gaming hardware controller support</skos:prefLabel>
   <dct:description></dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -328,7 +328,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#47">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>preservation watch and planning costs</rdfs:label>
+  <skos:prefLabel>preservation watch and planning costs</skos:prefLabel>
   <dct:description>Effects of a preservation action on preservation watch and planning costs</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#outcome_effect"/>
   
@@ -337,7 +337,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#80">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>video game network support</rdfs:label>
+  <skos:prefLabel>video game network support</skos:prefLabel>
   <dct:description>Degree of network support.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_information_property"/>
   
@@ -348,7 +348,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#7">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format standardization</rdfs:label>
+  <skos:prefLabel>format standardization</skos:prefLabel>
   <dct:description>Degree of standardization of the format</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_sustainability"/>
   
@@ -357,7 +357,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#22">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>sampling frequency</rdfs:label>
+  <skos:prefLabel>sampling frequency</skos:prefLabel>
   <dct:description>The number of captured pixels per unit distance</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -368,7 +368,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#24">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>output object validation</rdfs:label>
+  <skos:prefLabel>output object validation</skos:prefLabel>
   <dct:description>Does the action perform validation of the output?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_completeness"/>
   
@@ -377,7 +377,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#32">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>server environment integration</rdfs:label>
+  <skos:prefLabel>server environment integration</skos:prefLabel>
   <dct:description>Feasibility of integration of an action into a server environment</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#installability"/>
   
@@ -390,7 +390,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#53">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format metadata support</rdfs:label>
+  <skos:prefLabel>format metadata support</skos:prefLabel>
   <dct:description>Indicators for the support that a format provides for metadata</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_quality_and_functionality"/>
   
@@ -401,7 +401,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#38">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>ease of operations</rdfs:label>
+  <skos:prefLabel>ease of operations</skos:prefLabel>
   <dct:description>How easy are operations with this action?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#operability"/>
   
@@ -410,7 +410,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#46">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>archival storage costs</rdfs:label>
+  <skos:prefLabel>archival storage costs</skos:prefLabel>
   <dct:description>Effects of a preservation action on archival storage costs</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#outcome_effect"/>
   
@@ -420,7 +420,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#69">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>video game</rdfs:label>
+  <skos:prefLabel>video game</skos:prefLabel>
   <dct:description></dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -431,7 +431,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#10">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>Total costs of ownership of a preservation action</rdfs:label>
+  <skos:prefLabel>Total costs of ownership of a preservation action</skos:prefLabel>
   <dct:description>These are the total costs of a preservation action (according to some TCO model)</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#action_costs"/>
   
@@ -440,7 +440,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#15">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>coverage of content</rdfs:label>
+  <skos:prefLabel>coverage of content</skos:prefLabel>
   <dct:description>How much of the content that needs treatment is supported by this action?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_appropriateness"/>
   
@@ -452,7 +452,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#61">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>colour depth</rdfs:label>
+  <skos:prefLabel>colour depth</skos:prefLabel>
   <dct:description>Bits per component (channel) for each pixel</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -462,7 +462,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#50">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format transparency</rdfs:label>
+  <skos:prefLabel>format transparency</skos:prefLabel>
   <dct:description>How transparent is the format and its specification?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_sustainability"/>
   
@@ -472,7 +472,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#63">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>database representation</rdfs:label>
+  <skos:prefLabel>database representation</skos:prefLabel>
   <dct:description>Database representation information</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -484,7 +484,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#75">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>PC standard hardware controller support</rdfs:label>
+  <skos:prefLabel>PC standard hardware controller support</skos:prefLabel>
   <dct:description></dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -498,7 +498,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#54">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format recoverability</rdfs:label>
+  <skos:prefLabel>format recoverability</skos:prefLabel>
   <dct:description>Resilience of the format aginst errors: Can errors be detected and/or recovered?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_sustainability"/>
   
@@ -507,7 +507,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#40">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format conformity</rdfs:label>
+  <skos:prefLabel>format conformity</skos:prefLabel>
   <dct:description>Does the digital object conform to its specification?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -518,7 +518,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#42">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>searchability</rdfs:label>
+  <skos:prefLabel>searchability</skos:prefLabel>
   <dct:description>Is it possible to search the content of the digital object</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -528,7 +528,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#58">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format licence costs</rdfs:label>
+  <skos:prefLabel>format licence costs</skos:prefLabel>
   <dct:description>Which licence costs are incurred when using a certain format?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_business_factors"/>
   
@@ -537,7 +537,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#27">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>degree of specific feature support for video games</rdfs:label>
+  <skos:prefLabel>degree of specific feature support for video games</skos:prefLabel>
   <dct:description>Indicators for the specific support of particular features that are present in video games</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_completeness"/>
   
@@ -570,7 +570,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#8">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>setup costs of a preservation action</rdfs:label>
+  <skos:prefLabel>setup costs of a preservation action</skos:prefLabel>
   <dct:description>These are the initial setup costs required for preservation operations. This includes many factors such as acquisition, one-time licence fees, installation and configuration, etc.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#action_costs"/>
   
@@ -587,7 +587,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#72">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>video game interactivity</rdfs:label>
+  <skos:prefLabel>video game interactivity</skos:prefLabel>
   <dct:description></dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -599,7 +599,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#71">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>video game graphics</rdfs:label>
+  <skos:prefLabel>video game graphics</skos:prefLabel>
   <dct:description></dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -617,7 +617,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#81">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>database context information</rdfs:label>
+  <skos:prefLabel>database context information</skos:prefLabel>
   <dct:description>Context information of the resulting database</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -625,7 +625,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#60">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>OCR Text</rdfs:label>
+  <skos:prefLabel>OCR Text</skos:prefLabel>
   <dct:description>OCR text extracted from an image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -634,7 +634,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#52">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format documentation</rdfs:label>
+  <skos:prefLabel>format documentation</skos:prefLabel>
   <dct:description>Indicators for the documentation that is available for a format</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_sustainability"/>
   
@@ -644,7 +644,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#18">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>Support of active content</rdfs:label>
+  <skos:prefLabel>Support of active content</skos:prefLabel>
   <dct:description>Are Macros specifically supported?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_completeness"/>
   
@@ -653,7 +653,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#25">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>error handling</rdfs:label>
+  <skos:prefLabel>error handling</skos:prefLabel>
   <dct:description>Indicators for how well the preservation action deals with errors</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#fault_tolerance"/>
   
@@ -665,7 +665,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#31">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>memory usage</rdfs:label>
+  <skos:prefLabel>memory usage</skos:prefLabel>
   <dct:description>Memory used for processing of objects in an action</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#resource_utilization"/>
   
@@ -675,7 +675,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#21">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>colour profile of a digital image</rdfs:label>
+  <skos:prefLabel>colour profile of a digital image</skos:prefLabel>
   <dct:description>The colour profile associated with the digital image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -685,7 +685,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#73">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>special controller support</rdfs:label>
+  <skos:prefLabel>special controller support</skos:prefLabel>
   <dct:description></dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -697,7 +697,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#70">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>video game audio</rdfs:label>
+  <skos:prefLabel>video game audio</skos:prefLabel>
   <dct:description>Information about audio quality of the video game.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -708,7 +708,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#66">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>document metadata</rdfs:label>
+  <skos:prefLabel>document metadata</skos:prefLabel>
   <dct:description>Information about the document</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -722,7 +722,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#35">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>stability</rdfs:label>
+  <skos:prefLabel>stability</skos:prefLabel>
   <dct:description>Stability of an action under normal operations</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#maturity"/>
   
@@ -731,7 +731,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#13">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>Activity logging</rdfs:label>
+  <skos:prefLabel>Activity logging</skos:prefLabel>
   <dct:description>This represents the common requirement of knowing as precisely as possible what a preservation action tool did and how, i.e. how much reporting happens on the side of a preservation action about the activities that have taken place. This includes both the amount of information procuded as well as the format (e.g. whether this is human-readable, machine-processible or in PREMIS format)</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_completeness"/>
   
@@ -742,7 +742,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#74">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>standard controller support</rdfs:label>
+  <skos:prefLabel>standard controller support</skos:prefLabel>
   <dct:description></dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -755,7 +755,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#43">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>validity of METS metadata</rdfs:label>
+  <skos:prefLabel>validity of METS metadata</skos:prefLabel>
   <dct:description>Does METS metadata conform to its specification?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -766,7 +766,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#67">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>interactive elements in documents</rdfs:label>
+  <skos:prefLabel>interactive elements in documents</skos:prefLabel>
   <dct:description>Interactive elements in documents</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -779,7 +779,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#16">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>image-specific features supported</rdfs:label>
+  <skos:prefLabel>image-specific features supported</skos:prefLabel>
   <dct:description>Are image-specific features supported by the action?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_completeness"/>
   
@@ -788,7 +788,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#41">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>file size</rdfs:label>
+  <skos:prefLabel>file size</skos:prefLabel>
   <dct:description>What happened to the size of the file?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -797,7 +797,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#84">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>archival provenance information</rdfs:label>
+  <skos:prefLabel>archival provenance information</skos:prefLabel>
   <dct:description>Provenance information on the archival process documented in outcome</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_information_property"/>
   
@@ -810,7 +810,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#55">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format disclosure</rdfs:label>
+  <skos:prefLabel>format disclosure</skos:prefLabel>
   <dct:description>Disclosure of the format</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_sustainability"/>
   
@@ -820,7 +820,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#62">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>descriptive metadata for database elements</rdfs:label>
+  <skos:prefLabel>descriptive metadata for database elements</skos:prefLabel>
   <dct:description>Context information of the database</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -846,7 +846,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#51">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>format support for specific database features</rdfs:label>
+  <skos:prefLabel>format support for specific database features</skos:prefLabel>
   <dct:description>Indicators for the specific support of particular features that are present in databases</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#format_quality_and_functionality"/>
   
@@ -857,7 +857,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#56">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>content interpretation quality</rdfs:label>
+  <skos:prefLabel>content interpretation quality</skos:prefLabel>
   <dct:description>This refers to the degrees of quality of content representation, such as the question whether a digital photograph is represented as interpreted data or as raw sensor data with interpretation instructions</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -867,7 +867,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#4">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>image DC metadata</rdfs:label>
+  <skos:prefLabel>image DC metadata</skos:prefLabel>
   <dct:description>The accuracy of Dubling Core (DC) metadata to an image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -876,7 +876,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#78">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>audio synchronicity</rdfs:label>
+  <skos:prefLabel>audio synchronicity</skos:prefLabel>
   <dct:description>Degree to which audio is synchronous with video</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -887,7 +887,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#28">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>customization</rdfs:label>
+  <skos:prefLabel>customization</skos:prefLabel>
   <dct:description>Indicators for the degree to which it is possible to customize the action-tool according to specific user needs</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#modifiability"/>
   
@@ -896,7 +896,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#30">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>batch processing capacity</rdfs:label>
+  <skos:prefLabel>batch processing capacity</skos:prefLabel>
   <dct:description>Capacity of an action in batch processing mode</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#capacity"/>
   
@@ -905,7 +905,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#19">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>image size</rdfs:label>
+  <skos:prefLabel>image size</skos:prefLabel>
   <dct:description>Dimensions of a digital image</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -918,7 +918,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#64">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>document content</rdfs:label>
+  <skos:prefLabel>document content</skos:prefLabel>
   <dct:description>Information on content stored in document</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -951,7 +951,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#36">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>configurability</rdfs:label>
+  <skos:prefLabel>configurability</skos:prefLabel>
   <dct:description>Configurability of an action</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#operability"/>
   
@@ -962,7 +962,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#77">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>input overlay support</rdfs:label>
+  <skos:prefLabel>input overlay support</skos:prefLabel>
   <dct:description>Degree to which overlays are supported</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -973,7 +973,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#3">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>image IPTC metadata</rdfs:label>
+  <skos:prefLabel>image IPTC metadata</skos:prefLabel>
   <dct:description>The accuracy of International Press Telecommunications Council (IPTC) metadata of an image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -982,7 +982,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#79">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>video game documentation</rdfs:label>
+  <skos:prefLabel>video game documentation</skos:prefLabel>
   <dct:description>Availability of different types of documentation</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -994,7 +994,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#33">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>community</rdfs:label>
+  <skos:prefLabel>community</skos:prefLabel>
   <dct:description>Assessment of the user/developer community: Is this action actively supported, maintained, improved, used?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#action_maintenance"/>
   
@@ -1005,7 +1005,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#11">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>software licence of a preservation action</rdfs:label>
+  <skos:prefLabel>software licence of a preservation action</skos:prefLabel>
   <dct:description>These are the licence agreements of a preservation action</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#action_licensing"/>
   
@@ -1015,7 +1015,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#68">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>video game set-up</rdfs:label>
+  <skos:prefLabel>video game set-up</skos:prefLabel>
   <dct:description></dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_information_property"/>
   
@@ -1025,7 +1025,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#44">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>validity of XMP metadata</rdfs:label>
+  <skos:prefLabel>validity of XMP metadata</skos:prefLabel>
   <dct:description>Does XMP metadata conform to its specification?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
@@ -1036,7 +1036,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#6">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>processing time</rdfs:label>
+  <skos:prefLabel>processing time</skos:prefLabel>
   <dct:description>processing time</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#time_behaviour"/>
   
@@ -1047,7 +1047,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#82">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>database data representation</rdfs:label>
+  <skos:prefLabel>database data representation</skos:prefLabel>
   <dct:description>Compliance of data fields with standards</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_information_property"/>
   
@@ -1056,7 +1056,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#37">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>documentation</rdfs:label>
+  <skos:prefLabel>documentation</skos:prefLabel>
   <dct:description>Is there good documentation available to support operations?</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#operability"/>
   
@@ -1066,7 +1066,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#86">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>audio content</rdfs:label>
+  <skos:prefLabel>audio content</skos:prefLabel>
   <dct:description>Indicators for properties of audio content</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
   
@@ -1083,7 +1083,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#85">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
-  <rdfs:label>database content</rdfs:label>
+  <skos:prefLabel>database content</skos:prefLabel>
   <dct:description>Indicators for how well the content of the database has been preserved</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
