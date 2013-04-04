@@ -28,6 +28,7 @@
      xmlns:modalities="http://purl.org/DP/control-policy/modalities#"
      xmlns:qualifiers="http://purl.org/DP/control-policy/qualifiers#"
      xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -37,38 +38,6 @@
      xmlns:premis="http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl">
    
     
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
 
     <owl:Class rdf:about="&preservation-case;ContentSet"/>
     
@@ -138,6 +107,7 @@
 
     <owl:NamedIndividual rdf:about="ImageWidthMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <skos:prefLabel>Image width must be unchanged</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:measure rdf:resource="&measures;51"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
@@ -147,6 +117,7 @@
 
     <owl:NamedIndividual rdf:about="ImageHeightMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <skos:prefLabel>Image height must be unchanged</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:measure rdf:resource="&measures;53"/>
         <preservation-case:contentSetScope rdf:resource="JISC1_newspapers"/>
@@ -156,6 +127,7 @@
     
     <owl:NamedIndividual rdf:about="ColourModelMustBePreserved">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <skos:prefLabel>Colour model must be preserved</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:measure rdf:resource="&measures;56"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -165,6 +137,7 @@
     
     <owl:NamedIndividual rdf:about="AllTiffDataMustBeRetained">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        <skos:prefLabel>All Tiff data must be retained</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:measure rdf:resource="&measures;251"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -173,6 +146,7 @@
     
     <owl:NamedIndividual rdf:about="QuantitativeArchivalStorageCosts">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
+        <skos:prefLabel>Quantitative archival storage costs</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;unsignedLong">0.24</control-policy:value>
         <control-policy:measure rdf:resource="&measures;137"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -182,6 +156,7 @@
     
     <owl:NamedIndividual rdf:about="RunningCostsPerObject">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
+        <skos:prefLabel>Running costs per object</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;unsignedLong">0.24</control-policy:value>
         <control-policy:measure rdf:resource="&measures;21"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -191,6 +166,7 @@
     
     <owl:NamedIndividual rdf:about="AutomatedQAMustBePossible">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
+        <skos:prefLabel>Automated QA must be possible</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:measure rdf:resource="&measures;134"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -200,6 +176,7 @@
     
     <owl:NamedIndividual rdf:about="ElapsedTimePerMB">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
+        <skos:prefLabel>Elapsed time per MB</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;unsignedLong">2000</control-policy:value>
         <control-policy:measure rdf:resource="&measures;10"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -210,6 +187,7 @@
     
     <owl:NamedIndividual rdf:about="NumberOfToolsMustBeGT0">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <skos:prefLabel>Number of tools greater 0</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;integer">0</control-policy:value>
         <control-policy:measure rdf:resource="&measures;141"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -220,6 +198,7 @@
     
     <owl:NamedIndividual rdf:about="FormatDocumentationAvailabilityShouldBeYesFree">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <skos:prefLabel>Format Documentation freely available</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;string">yes-free</control-policy:value>
         <control-policy:measure rdf:resource="&measures;147"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
@@ -229,6 +208,7 @@
     
     <owl:NamedIndividual rdf:about="FormatShouldBeInternationalStandard">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <skos:prefLabel>Format should be international standard</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;string">international standard</control-policy:value>
         <control-policy:measure rdf:resource="&measures;161"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
@@ -236,8 +216,9 @@
     </owl:NamedIndividual>
     
     
-    <owl:NamedIndividual rdf:about="CompressionTypeMustBeLossless">
+    <owl:NamedIndividual rdf:about="CompressionTypeMustBeNone">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <skos:prefLabel>Compression type must be none</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;string">none</control-policy:value>
         <control-policy:measure rdf:resource="&measures;117"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -247,6 +228,7 @@
     
     <owl:NamedIndividual rdf:about="IdentificationPossibilitiesMustBeAutomatic">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <skos:prefLabel>Identification  possibilities must be automatic</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;string">automatic_specific</control-policy:value>
         <control-policy:measure rdf:resource="&measures;153"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -256,6 +238,7 @@
     
     <owl:NamedIndividual rdf:about="FormatComplexityShouldBeLow">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
+        <skos:prefLabel>Format complexity should be low</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;string">low</control-policy:value>
         <control-policy:measure rdf:resource="&measures;143"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
@@ -265,6 +248,7 @@
     
     <owl:NamedIndividual rdf:about="ComparativeFileSizeMustBeLT10">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
+        <skos:prefLabel>Comparative file size must be less then 10</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;unsignedLong">10</control-policy:value>
         <control-policy:measure rdf:resource="&measures;123"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -275,6 +259,7 @@
     
     <owl:NamedIndividual rdf:about="ActionShouldBeStable">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
+        <skos:prefLabel>Action should be stable</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;string">stable</control-policy:value>
         <control-policy:measure rdf:resource="&measures;108"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
@@ -284,6 +269,7 @@
     
     <owl:NamedIndividual rdf:about="EaseOfIntegration">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
+        <skos:prefLabel>Ease of integration</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;string">good</control-policy:value>
         <control-policy:measure rdf:resource="&measures;99"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
@@ -293,6 +279,7 @@
     
     <owl:NamedIndividual rdf:about="ActionSoftwareLicenceMustBeOpenSource">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
+        <skos:prefLabel>Action software licence must be open source</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;string">openSource</control-policy:value>
         <control-policy:measure rdf:resource="&measures;175"/> 
         <control-policy:modality rdf:resource="&modalities;MUST"/>
@@ -302,6 +289,7 @@
     
     <owl:NamedIndividual rdf:about="ActionToolUsabilityShouldBeGood">
         <rdf:type rdf:resource="&control-policy;ActionObjective"/>
+        <skos:prefLabel>Action tool usability should be good</skos:prefLabel>
         <control-policy:value rdf:datatype="&xsd;string">openSource</control-policy:value>
         <control-policy:measure rdf:resource="&measures;115"/> 
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
