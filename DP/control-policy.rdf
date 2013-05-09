@@ -56,6 +56,10 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     </rdf:Description>
 
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#authenticityAspect">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdf:Description>
+
     <rdf:Description rdf:about="http://purl.org/DP/control-policy#value">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     </rdf:Description>
@@ -87,6 +91,12 @@
         <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
     </owl:ObjectProperty>
     
+    <!-- http://purl.org/DP/control-policy#authenticityAspect -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#authenticityAspect">
+        <rdfs:comment>Relates an AuthenticityObjective to the Authenticity aspect with which is is concerned.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#AuthenticityObjective"/>
+    </owl:ObjectProperty>
 
 
     <!-- 
