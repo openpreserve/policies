@@ -4,12 +4,15 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY org "http://www.w3.org/ns/org#" >
     <!ENTITY ns "http://premis.loc.gov/ns/" >
+    <!ENTITY dct "http://purl.org/dc/terms/" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY control-policy "http://purl.org/DP/control-policy#" >
     <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY schema "http://purl.org/vocab/changeset/schema#" >
+    <!ENTITY RecordInfo "http://id.loc.gov/ontologies/RecordInfo#" >
     <!ENTITY ont "http://www.co-ode.org/ontologies/ont.owl#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
@@ -17,19 +20,20 @@
 
 <rdf:RDF xmlns="http://purl.org/DP/preservation-case#"
      xml:base="http://purl.org/DP/preservation-case"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ns="http://premis.loc.gov/ns/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:control-policy="http://purl.org/DP/control-policy#"
-     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:RecordInfo="http://id.loc.gov/ontologies/RecordInfo#"
      xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:schema="http://purl.org/vocab/changeset/schema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.org/DP/preservation-case">
-        <owl:imports rdf:resource="http://id.loc.gov/vocabulary/countries"/>
-        <owl:imports rdf:resource="http://id.loc.gov/vocabulary/iso639-2"/>
         <owl:imports rdf:resource="http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl"/>
         <owl:imports rdf:resource="http://purl.org/DP/control-policy"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
@@ -45,6 +49,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&schema;subjectOfChange"/>
+    <owl:AnnotationProperty rdf:about="&schema;creatorName"/>
+    <owl:AnnotationProperty rdf:about="&RecordInfo;recordContentSource"/>
     
 
 
@@ -117,16 +124,6 @@
     
 
 
-    <!-- http://purl.org/DP/preservation-case#hasCharacteristic -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/DP/preservation-case#hasCharacteristic">
-        <rdfs:domain rdf:resource="http://purl.org/DP/preservation-case#Hardware"/>
-        <rdfs:domain rdf:resource="http://purl.org/DP/preservation-case#Software"/>
-        <rdfs:range rdf:resource="http://purl.org/DP/preservation-case#TechnicalCharacteristic"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/DP/preservation-case#hasContentSet -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/DP/preservation-case#hasContentSet">
@@ -157,7 +154,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/DP/preservation-case#hasHardware">
         <rdfs:range rdf:resource="http://purl.org/DP/preservation-case#Hardware"/>
-        <rdfs:domain rdf:resource="http://purl.org/DP/preservation-case#TechnicalEnvironment"/>
     </owl:ObjectProperty>
     
 
@@ -183,7 +179,6 @@
     <!-- http://purl.org/DP/preservation-case#hasOwner -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/DP/preservation-case#hasOwner">
-        <rdfs:domain rdf:resource="http://purl.org/DP/preservation-case#TechnicalEnvironment"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -201,7 +196,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/DP/preservation-case#hasSoftware">
         <rdfs:range rdf:resource="http://purl.org/DP/preservation-case#Software"/>
-        <rdfs:domain rdf:resource="http://purl.org/DP/preservation-case#TechnicalEnvironment"/>
     </owl:ObjectProperty>
     
 
@@ -262,22 +256,6 @@
     
 
 
-    <!-- http://purl.org/DP/preservation-case#hasCharacteristicKey -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/DP/preservation-case#hasCharacteristicKey">
-        <rdfs:domain rdf:resource="http://purl.org/DP/preservation-case#TechnicalCharacteristic"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/DP/preservation-case#hasCharacteristicValue -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/DP/preservation-case#hasCharacteristicValue">
-        <rdfs:domain rdf:resource="http://purl.org/DP/preservation-case#TechnicalCharacteristic"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.org/DP/preservation-case#hasContent -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/DP/preservation-case#hasContent">
@@ -298,6 +276,14 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.org/DP/preservation-case#hasNumberOfEmployees">
         <rdfs:comment>Expresses the number of employees of an organisation</rdfs:comment>
+    </owl:DatatypeProperty>
+
+    <!-- http://purl.org/DP/preservation-case#hasNumberOfEmployees -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/DP/preservation-case#usesTechnology">
+        <rdfs:comment>A description of the technology used by a user
+        community. Ultimately we might expect this to be structured
+        data, but currently a literal descrption.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -395,20 +381,9 @@
     
 
 
-    <!-- http://purl.org/DP/preservation-case#TechnicalCharacteristic -->
+    <!-- http://purl.org/vocab/changeset/schema#ChangeSet -->
 
-    <owl:Class rdf:about="http://purl.org/DP/preservation-case#TechnicalCharacteristic">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <skos:prefLabel>Technical Characteristic</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/DP/preservation-case#TechnicalEnvironment -->
-
-    <owl:Class rdf:about="http://purl.org/DP/preservation-case#TechnicalEnvironment">
-        <skos:prefLabel>Technical Environment</skos:prefLabel>
-    </owl:Class>
+    <owl:Class rdf:about="&schema;ChangeSet"/>
     
 
 
@@ -423,8 +398,54 @@
     <!-- http://www.w3.org/ns/org#Organization -->
 
     <owl:Class rdf:about="&org;Organization">
-        <skos:prefLabel>Technical Environment</skos:prefLabel>
+        <skos:prefLabel>Organization</skos:prefLabel>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/DP/preservation-case#private -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/DP/preservation-case#private">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:inScheme rdf:resource="http://purl.org/DP/preservation-case#sector-scheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/DP/preservation-case#public -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/DP/preservation-case#public">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:inScheme rdf:resource="http://purl.org/DP/preservation-case#sector-scheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/DP/preservation-case#sector-scheme -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/DP/preservation-case#sector-scheme">
+        <rdf:type rdf:resource="&skos;ConceptScheme"/>
+        <dct:title>Sectors</dct:title>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&schema;ChangeSet"/>
+        <schema:subjectOfChange rdf:resource="http://id.loc.gov/vocabulary/countries"/>
+        <schema:creatorName rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+    </rdf:Description>
+    <rdf:Description>
+        <RecordInfo:recordContentSource rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
