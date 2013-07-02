@@ -7,6 +7,8 @@
     <!ENTITY control-policy "http://purl.org/DP/control-policy#">
     <!ENTITY modalities "http://purl.org/DP/control-policy/modalities#" >
     <!ENTITY qualifiers "http://purl.org/DP/control-policy/qualifiers#" >
+    <!ENTITY policy-scopes "http://purl.org/DP/control-policy/scopes#" >
+    <!ENTITY authenticity "http://purl.org/DP/authenticity#" >
     <!ENTITY org "http://www.w3.org/ns/org#" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
@@ -26,6 +28,7 @@
      xmlns:control-policy="http://purl.org/DP/control-policy#"
      xmlns:modalities="http://purl.org/DP/control-policy/modalities#"
      xmlns:qualifiers="http://purl.org/DP/control-policy/qualifiers#"
+     xmlns:authenticity="http://purl.org/DP/authenticity#"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -35,7 +38,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:pronom="http://reference.data.gov.uk/technical-registry/"
      xmlns:premis="http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl">
-   
+     
 
 
 
@@ -245,6 +248,7 @@
         <preservation-case:hasObjective rdf:resource="NumberOfFreeOpenSourceToolsMustBeGT3"/>
         <preservation-case:hasObjective rdf:resource="FormatIdentificaitonMustBePossible"/> 
         <preservation-case:hasObjective rdf:resource="FormatDocumentationMustBeFreelyAvailable"/>
+        
         <preservation-case:hasUserCommunity rdf:resource="ministries"/>
         <preservation-case:hasUserCommunity rdf:resource="researchers"/>
         <preservation-case:hasUserCommunity rdf:resource="public"/>        
@@ -252,11 +256,12 @@
 
     <!-- http://www.oesta.gv.at/policies/ministries_scanned_papers_scenario -->
 
-    <owl:NamedIndividual rdf:about="ministries_scanned_papers_scenario">
+    <owl:NamedIndividual rdf:about="ministries_scanned_papers_scenario">        
         <rdf:type rdf:resource="&preservation-case;PreservationCase"/>
         <preservation-case:hasObjective rdf:resource="ImageWidthMustBeUnchanged"/>
         <preservation-case:hasObjective rdf:resource="ImageHeightMustBeUnchanged"/>        
         <preservation-case:hasObjective rdf:resource="ImageMustBeIdentical"/>                
+        
         <preservation-case:hasUserCommunity rdf:resource="ministries"/>
         <preservation-case:hasUserCommunity rdf:resource="public"/>
         <preservation-case:hasUserCommunity rdf:resource="researchers"/>
@@ -268,8 +273,10 @@
 
     <owl:NamedIndividual rdf:about="ImageMustBeIdentical">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        
+        <control-policy:authenticity rdf:resource="&authenticity;Content"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;2"/>
+        <control-policy:measure rdf:resource="&measures;2"/>
         <!-- <pw:contentSetScope rdf:resource="scanned_papers"/> -->
     </owl:NamedIndividual>
 
@@ -278,38 +285,50 @@
 
     <owl:NamedIndividual rdf:about="ImageWidthMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        
+        <control-policy:authenticity rdf:resource="&authenticity;Content"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;51"/>
-        <!-- <pw:contentSetScope rdf:resource="scanned_papers"/> -->
+        <control-policy:measure rdf:resource="&measures;51"/>
+        
+        <control-policy:validInScope rdf:resource="&policy-scopes;Organisation"/>
     </owl:NamedIndividual>
 
     <!-- http://www.oesta.gv.at/policies/ImageHeightMustBeUnchanged -->
 
     <owl:NamedIndividual rdf:about="ImageHeightMustBeUnchanged">
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        
+        <control-policy:authenticity rdf:resource="&authenticity;Content"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;53"/>
-        <!-- <pw:contentSetScope rdf:resource="scanned_papers"/> -->
+        <control-policy:measure rdf:resource="&measures;53"/>
     </owl:NamedIndividual>
 
-
+    <owl:NamedIndividual rdf:about="SSIMMustBeGT095">
+        <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
+        
+        <control-policy:authenticity rdf:resource="&authenticity;Appearance"/>
+        <control-policy:value rdf:datatype="&xsd;GT">0.95</control-policy:value>
+        <control-policy:measure rdf:resource="&measures;1"/>
+        
+        <control-policy:validInScope rdf:resource="&policy-scopes;Community"/>        
+    </owl:NamedIndividual>
 
     <!-- http://www.oesta.gv.at/policies/ObjectsMustBeValid -->
 
     <owl:NamedIndividual rdf:about="ObjectsMustBeValid">
-        <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
+        <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>                
+        
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;120"/>
-        <!-- <pw:contentSetScope rdf:resource="scanned_papers"/> -->
+        <control-policy:measure rdf:resource="&measures;120"/>
     </owl:NamedIndividual>
     
     <!-- http://www.oesta.gv.at/policies/ObjectsMustBeWellFormed -->
 
     <owl:NamedIndividual rdf:about="ObjectsMustBeWellFormed">
         <rdf:type rdf:resource="&control-policy;RepresentationInstanceObjective"/>
+        
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;121"/>
-        <!-- <pw:contentSetScope rdf:resource="scanned_papers"/> -->
+        <control-policy:measure rdf:resource="&measures;121"/>
     </owl:NamedIndividual>
 
 

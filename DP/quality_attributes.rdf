@@ -73,6 +73,7 @@
   <skos:prefLabel>colour space of a digital image</skos:prefLabel>
   <dct:description>The designated colour space of the decompressed image data</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#55" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#56" />
@@ -681,6 +682,7 @@
   <skos:prefLabel>colour profile of a digital image</skos:prefLabel>
   <dct:description>The colour profile associated with the digital image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#57" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#58" />
@@ -912,6 +914,7 @@
   <skos:prefLabel>image size</skos:prefLabel>
   <dct:description>Dimensions of a digital image</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#50" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#51" />
