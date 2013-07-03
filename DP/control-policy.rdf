@@ -61,6 +61,7 @@
 
     <rdf:Description rdf:about="http://purl.org/DP/control-policy#validInScope">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>Allows the association of an objective with a particular community or organisation, without necessarily including the objective in a preservation	case. </rdfs:comment>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://purl.org/DP/control-policy#value">

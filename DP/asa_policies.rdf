@@ -123,13 +123,18 @@
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <org:identifier>ASA</org:identifier>
     </org:Organization>
-    
 
+    <!-- http://www.oesta.gv.at/policies/austrian_state_archives -->
+
+    <foaf:Group rdf:about="http://www.example.com/ImageSpecialInterestGroup">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <foaf:name>Image Special Interest Group</foaf:name>
+    </foaf:Group>
 
     <!-- http://www.oesta.gv.at/policies/documents_executions -->
 
     <owl:NamedIndividual rdf:about="documents_executions">
-        <rdf:type rdf:resource="&quality;ContentSet"/>
+        <rdf:type rdf:resource="&preservation-case;ContentSet"/>
     </owl:NamedIndividual>
     
 
@@ -137,7 +142,7 @@
     <!-- http://www.oesta.gv.at/policies/documents_notes -->
 
     <owl:NamedIndividual rdf:about="documents_notes">
-        <rdf:type rdf:resource="&quality;ContentSet"/>
+        <rdf:type rdf:resource="&preservation-case;ContentSet"/>
     </owl:NamedIndividual>
     
 
@@ -145,7 +150,7 @@
     <!-- http://www.oesta.gv.at/policies/emails -->
 
     <owl:NamedIndividual rdf:about="emails">
-        <rdf:type rdf:resource="&quality;ContentSet"/>
+        <rdf:type rdf:resource="&preservation-case;ContentSet"/>
     </owl:NamedIndividual>
     
 
@@ -155,7 +160,7 @@
     <owl:NamedIndividual rdf:about="FormatDocumentationMustBeFreelyAvailable">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">yes-free</control-policy:value>
-        <control-policy:property rdf:resource="&measures;147"/>
+        <control-policy:measure rdf:resource="&measures;147"/>
         <!-- <pw:organizationScope rdf:resource="austrian_state_archives"/> -->
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
@@ -167,7 +172,7 @@
     <owl:NamedIndividual rdf:about="FormatMustHaveLosslessCompression">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value>lossless</control-policy:value>
-        <control-policy:property rdf:resource="&measures;117"/>
+        <control-policy:measure rdf:resource="&measures;117"/>
         <!-- <pw:organizationScope rdf:resource="austrian_state_archives"/> -->
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
@@ -179,7 +184,7 @@
     <owl:NamedIndividual rdf:about="FormatShallBeISOStandardized">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">true</control-policy:value>
-        <control-policy:property rdf:resource="&measures;13"/>
+        <control-policy:measure rdf:resource="&measures;13"/>
         <!-- <pw:organizationScope rdf:resource="austrian_state_archives"/> -->
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
     </owl:NamedIndividual>
@@ -189,7 +194,7 @@
 	<owl:NamedIndividual rdf:about="FormatIdentificaitonMustBePossible">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">automatic_specific</control-policy:value>
-        <control-policy:property rdf:resource="&measures;153"/>
+        <control-policy:measure rdf:resource="&measures;153"/>
         <!-- <pw:organizationScope rdf:resource="austrian_state_archives"/> -->
         <control-policy:modality rdf:resource="&modalities;MUST"/>
     </owl:NamedIndividual>
@@ -199,7 +204,7 @@
 	<owl:NamedIndividual rdf:about="UseOfFormatShouldBeWidespread">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;string">widespread</control-policy:value>
-        <control-policy:property rdf:resource="&measures;162"/>
+        <control-policy:measure rdf:resource="&measures;162"/>
         <!-- <pw:organizationScope rdf:resource="austrian_state_archives"/> -->
         <control-policy:modality rdf:resource="&modalities;SHOULD"/>
     </owl:NamedIndividual>
@@ -210,7 +215,7 @@
 	<owl:NamedIndividual rdf:about="NumberOfFreeOpenSourceToolsMustBeGT3">
         <rdf:type rdf:resource="&control-policy;FormatObjective"/>
         <control-policy:value rdf:datatype="&xsd;integer">3</control-policy:value>
-        <control-policy:property rdf:resource="&measures;139"/>
+        <control-policy:measure rdf:resource="&measures;139"/>
         <control-policy:modality rdf:resource="&modalities;MUST"/>
         <control-policy:qualifier rdf:resource="&qualifiers;GT"/>
         <!-- <pw:organizationScope rdf:resource="austrian_state_archives"/>         -->
@@ -290,7 +295,7 @@
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:measure rdf:resource="&measures;51"/>
         
-        <control-policy:validInScope rdf:resource="&policy-scopes;Organisation"/>
+        <control-policy:validInScope rdf:resource="austrian_state_archives"/>
     </owl:NamedIndividual>
 
     <!-- http://www.oesta.gv.at/policies/ImageHeightMustBeUnchanged -->
@@ -307,10 +312,11 @@
         <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
         
         <control-policy:authenticity rdf:resource="&authenticity;Appearance"/>
-        <control-policy:value rdf:datatype="&xsd;GT">0.95</control-policy:value>
+        <control-policy:value>0.95</control-policy:value>
+        <control-policy:qualifier rdf:resource="&qualifiers;GT"/>
         <control-policy:measure rdf:resource="&measures;1"/>
         
-        <control-policy:validInScope rdf:resource="&policy-scopes;Community"/>        
+        <control-policy:validInScope rdf:resource="http://www.example.com/ImageSpecialInterestGroup"/>        
     </owl:NamedIndividual>
 
     <!-- http://www.oesta.gv.at/policies/ObjectsMustBeValid -->
