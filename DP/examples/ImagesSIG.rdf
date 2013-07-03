@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY quality "http://purl.org/DP/quality#">
+    <!ENTITY measures "http://purl.org/DP/quality/measures#">
+    <!ENTITY preservation-case "http://purl.org/DP/preservation-case#">
+    <!ENTITY control-policy "http://purl.org/DP/control-policy#">
+    <!ENTITY modalities "http://purl.org/DP/control-policy/modalities#" >
+    <!ENTITY qualifiers "http://purl.org/DP/control-policy/qualifiers#" >
+    <!ENTITY policy-scopes "http://purl.org/DP/control-policy/scopes#" >
+    <!ENTITY authenticity "http://purl.org/DP/authenticity#" >
+    <!ENTITY org "http://www.w3.org/ns/org#" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY pronom "http://reference.data.gov.uk/technical-registry/" >
+    <!ENTITY premis "http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl" >
+]>
+
+
+<rdf:RDF xmlns="http://ifs.tuwien.ac.at/dp/vocabulary/examples/ImageSpecialInterestGroup#"
+     xml:base="http://ifs.tuwien.ac.at/dp/vocabulary/examples/ImageSpecialInterestGroup/"
+     xmlns:quality="http://purl.org/DP/quality#"
+     xmlns:measures="http://purl.org/DP/quality/measures#"
+     xmlns:preservation-case="http://purl.org/DP/preservation-case#"
+     xmlns:control-policy="http://purl.org/DP/control-policy#"
+     xmlns:modalities="http://purl.org/DP/control-policy/modalities#"
+     xmlns:qualifiers="http://purl.org/DP/control-policy/qualifiers#"
+     xmlns:authenticity="http://purl.org/DP/authenticity#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:pronom="http://reference.data.gov.uk/technical-registry/"
+     xmlns:premis="http://multimedialab.elis.ugent.be/users/samcoppe/ontologies/Premis/premis.owl">
+     
+
+    <foaf:Group rdf:about="http://ifs.tuwien.ac.at/dp/vocabulary/examples/ImageSpecialInterestGroup">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <foaf:name>Image Special Interest Group</foaf:name>
+    </foaf:Group>
+
+
+    <owl:NamedIndividual rdf:about="SSIMMustBeGT095">
+        <rdf:type rdf:resource="&control-policy;Objective"/>
+        
+        <control-policy:authenticity rdf:resource="&authenticity;Appearance"/>
+        <control-policy:value>0.95</control-policy:value>
+        <control-policy:qualifier rdf:resource="&qualifiers;GT"/>
+        <control-policy:measure rdf:resource="&measures;1"/>
+        
+        <control-policy:validInScope rdf:resource="http://ifs.tuwien.ac.at/dp/vocabulary/examples/ImageSpecialInterestGroup"/>        
+    </owl:NamedIndividual>
+
+</rdf:RDF>

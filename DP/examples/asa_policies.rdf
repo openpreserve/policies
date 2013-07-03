@@ -126,11 +126,6 @@
 
     <!-- http://www.oesta.gv.at/policies/austrian_state_archives -->
 
-    <foaf:Group rdf:about="http://www.example.com/ImageSpecialInterestGroup">
-        <rdf:type rdf:resource="&owl;NamedIndividual"/>
-        <foaf:name>Image Special Interest Group</foaf:name>
-    </foaf:Group>
-
     <!-- http://www.oesta.gv.at/policies/documents_executions -->
 
     <owl:NamedIndividual rdf:about="documents_executions">
@@ -306,17 +301,6 @@
         <control-policy:authenticity rdf:resource="&authenticity;Content"/>
         <control-policy:value rdf:datatype="&xsd;boolean">true</control-policy:value>
         <control-policy:measure rdf:resource="&measures;53"/>
-    </owl:NamedIndividual>
-
-    <owl:NamedIndividual rdf:about="SSIMMustBeGT095">
-        <rdf:type rdf:resource="&control-policy;AuthenticityObjective"/>
-        
-        <control-policy:authenticity rdf:resource="&authenticity;Appearance"/>
-        <control-policy:value>0.95</control-policy:value>
-        <control-policy:qualifier rdf:resource="&qualifiers;GT"/>
-        <control-policy:measure rdf:resource="&measures;1"/>
-        
-        <control-policy:validInScope rdf:resource="http://www.example.com/ImageSpecialInterestGroup"/>        
     </owl:NamedIndividual>
 
     <!-- http://www.oesta.gv.at/policies/ObjectsMustBeValid -->
