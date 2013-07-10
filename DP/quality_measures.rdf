@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns="http://purl.org/DP/quality#"
   xml:base="http://purl.org/DP/quality/"
   xmlns:scales="http://purl.org/DP/quality/scales#"
@@ -132,6 +132,14 @@
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#48"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#ORDINAL" />
   <restriction>ubiquitous/widespread/specialised/obsolete</restriction>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#30">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>TCO of action</skos:prefLabel>
+  <dct:description>Total costs of setting up and operating an action (in €)</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#10"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#107">
@@ -637,7 +645,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#391">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>The height of the video track</skos:prefLabel>
+  <skos:prefLabel>the height of the video track</skos:prefLabel>
   <dct:description>The height of the video track</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#87"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
@@ -873,7 +881,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#14">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>other yearly execution costs</skos:prefLabel>
-  <dct:description>Execution costs of an action which do not fit to a regular running cost category, measured in �/year</dct:description>
+  <dct:description>Execution costs of an action which do not fit to a regular running cost category, measured in €/year</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#9"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -881,7 +889,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#15">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Running hardware costs</skos:prefLabel>
-  <dct:description>Running hardware costs arising when using an action, measured in �/year (e.g. server rental costs).</dct:description>
+  <dct:description>Running hardware costs arising when using an action, measured in €/year (e.g. server rental costs).</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#9"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -889,7 +897,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#17">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Yearly running licence costs</skos:prefLabel>
-  <dct:description>Running software licence costs of an action in � per year.</dct:description>
+  <dct:description>Running software licence costs of an action in € per year.</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#9"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -897,7 +905,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#18">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Running licence costs per object</skos:prefLabel>
-  <dct:description>Software licence costs for running an action on one object (in � per object)</dct:description>
+  <dct:description>Software licence costs for running an action on one object (in € per object)</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#9"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -905,7 +913,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#19">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Running personell costs</skos:prefLabel>
-  <dct:description>Running costs for operating an action per year (in �)</dct:description>
+  <dct:description>Running costs for operating an action per year (in €)</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#9"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -913,7 +921,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#20">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Total running costs</skos:prefLabel>
-  <dct:description>Total sum of costs of operating an action (in �)</dct:description>
+  <dct:description>Total sum of costs of operating an action (in €)</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#9"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -921,7 +929,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#21">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Running costs per object</skos:prefLabel>
-  <dct:description>Running operational costs of an action in � per object.</dct:description>
+  <dct:description>Running operational costs of an action in € per object.</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#9"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -956,46 +964,6 @@
   <skos:prefLabel>retain original file name</skos:prefLabel>
   <dct:description>Indicates if an action is able to retain the filename of the input-file for the output-file.</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#26"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#32">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>.Net API supported</skos:prefLabel>
-  <dct:description>Is a .Net API natively supported?</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#33">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>batchprocessing supported</skos:prefLabel>
-  <dct:description>Is there support for batch processing?</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#34">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>directory watch supported</skos:prefLabel>
-  <dct:description>Is directory watch supported, i.e. can the software automatically monitor the content of a certain folder in the file system and automatically process anything appearing there?</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#35">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>Java API supported</skos:prefLabel>
-  <dct:description>Is a Java native API supported?</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#36">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>Other API supported</skos:prefLabel>
-  <dct:description>Are any other APIs supported?</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
 </rdf:Description>
 
@@ -1252,7 +1220,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#137">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>quantitative archival storage costs</skos:prefLabel>
-  <dct:description>Effects of a preservation action on archival storage costs, expressed as archival storage costs per object over a time period of 10 years, measured in  �.</dct:description>
+  <dct:description>Effects of a preservation action on archival storage costs, expressed as archival storage costs per object over a time period of 10 years, measured in  €.</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#46"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -1279,14 +1247,6 @@
   <dct:description>Indicates whether the speed performance of the game has been retained</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#69"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#30">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>TCO of action</skos:prefLabel>
-  <dct:description>Total costs of setting up and operating an action (in �)</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#10"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#44">
@@ -1710,7 +1670,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#16">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>feature development costs</skos:prefLabel>
-  <dct:description>Costs for developing new features which are not available in the software but required for successful operations (�)</dct:description>
+  <dct:description>Costs for developing new features which are not available in the software but required for successful operations (€)</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#8"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -1718,7 +1678,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#22">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Initial hardware costs</skos:prefLabel>
-  <dct:description>Initial hardware costs arising when deploying an action (e.g. new hardware needs to be acquired to get software running) measured in �</dct:description>
+  <dct:description>Initial hardware costs arising when deploying an action (e.g. new hardware needs to be acquired to get software running) measured in €</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#8"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -1726,7 +1686,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#23">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Other initial setup costs</skos:prefLabel>
-  <dct:description>Setup costs of an action which do not fit to any other given setup costs, in �</dct:description>
+  <dct:description>Setup costs of an action which do not fit to any other given setup costs, in €</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#8"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -1734,7 +1694,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#24">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Initial customization costs</skos:prefLabel>
-  <dct:description>Costs for customizing an action (e.g. performance-tuning), in �</dct:description>
+  <dct:description>Costs for customizing an action (e.g. performance-tuning), in €</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#8"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -1742,7 +1702,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#25">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Initial integration costs</skos:prefLabel>
-  <dct:description>Costs for integrating an action in the current environment, in �</dct:description>
+  <dct:description>Costs for integrating an action in the current environment, in €</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#8"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -1750,7 +1710,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#26">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Initial software licence costs</skos:prefLabel>
-  <dct:description>Initial software licence costs of an action, in �</dct:description>
+  <dct:description>Initial software licence costs of an action, in €</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#8"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -1758,7 +1718,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#27">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Costs of external expertise for action setup</skos:prefLabel>
-  <dct:description>Cost for any external expertise required to setup an action (in �)</dct:description>
+  <dct:description>Cost for any external expertise required to setup an action (in €)</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#8"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -1766,7 +1726,7 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#28">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Software training costs</skos:prefLabel>
-  <dct:description>Costs for training staff in operating an action (in �)</dct:description>
+  <dct:description>Costs for training staff in operating an action (in €)</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#8"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
@@ -1774,9 +1734,17 @@
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#29">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>Total setup costs</skos:prefLabel>
-  <dct:description>Total sum of costs needed to setup an action (in �)</dct:description>
+  <dct:description>Total sum of costs needed to setup an action (in €)</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#8"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#402">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>activity report</skos:prefLabel>
+  <dct:description>The activity report of a tool.</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#91"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#FREETEXT" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#197">
@@ -1902,6 +1870,31 @@
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
 </rdf:Description>
 
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#37">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>Amount of logging</skos:prefLabel>
+  <dct:description>Number of characters of activity log produced upon running an action on one content object</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#13"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#38">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>Format of logging</skos:prefLabel>
+  <dct:description>The format of logging output produced by an action</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#13"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#ORDINAL" />
+  <restriction>text/xml/premis/database/none</restriction>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#43">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>error reporting</skos:prefLabel>
+  <dct:description>Indicates whether errors at action execution are reported.</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#13"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#168">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>OCR text retained</skos:prefLabel>
@@ -1933,6 +1926,54 @@
   <skos:prefLabel>Macros supported</skos:prefLabel>
   <dct:description>Indicates if the action supports macros.</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#18"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#394">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>audio length identical</skos:prefLabel>
+  <dct:description>Indicates whether the length of the audio file is identical</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#89"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#395">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>content retained</skos:prefLabel>
+  <dct:description></dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#89"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#396">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>channel mapping retained</skos:prefLabel>
+  <dct:description></dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#89"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#397">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>audio sampling rate retained</skos:prefLabel>
+  <dct:description></dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#89"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#398">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>audio bit depth retained</skos:prefLabel>
+  <dct:description></dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#89"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#399">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>number of audio channels retained</skos:prefLabel>
+  <dct:description></dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#89"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
 </rdf:Description>
 
@@ -2118,31 +2159,6 @@
   <restriction>stable/largely stable/unstable</restriction>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#37">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>Amount of logging</skos:prefLabel>
-  <dct:description>Number of characters of activity log produced upon running an action on one content object</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#13"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#38">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>Format of logging</skos:prefLabel>
-  <dct:description>The format of logging output produced by an action</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#13"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#ORDINAL" />
-  <restriction>text/xml/premis/database/none</restriction>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#43">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>error reporting</skos:prefLabel>
-  <dct:description>Indicates whether errors at action execution are reported.</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#13"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#205">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>standard controller audible feedback</skos:prefLabel>
@@ -2266,6 +2282,30 @@
   <dct:description>Factor for relative output file size, calculated as: (size of output file / size of input file)</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#41"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#387">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>audio sampling frequency</skos:prefLabel>
+  <dct:description>Number of samples per second measured in Hertz (Hz)</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#90"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#389">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>audio bitrate</skos:prefLabel>
+  <dct:description>The bitrate of an audio stream measured in kbit/sec</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#90"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#400">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>audio bits per sample</skos:prefLabel>
+  <dct:description>The number of bits per sample</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#90"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#245">
@@ -2972,7 +3012,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#131">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>valid Doublin Core (DC) metadata</skos:prefLabel>
+  <skos:prefLabel>valid Dublin Core (DC) metadata</skos:prefLabel>
   <dct:description>Indicates if XMP-metadata contains valid Dublin Core data.</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#44"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
@@ -3010,6 +3050,46 @@
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
 </rdf:Description>
 
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#32">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>.Net API supported</skos:prefLabel>
+  <dct:description>Is a .Net API natively supported?</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#33">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>batchprocessing supported</skos:prefLabel>
+  <dct:description>Is there support for batch processing?</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#34">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>directory watch supported</skos:prefLabel>
+  <dct:description>Is directory watch supported, i.e. can the software automatically monitor the content of a certain folder in the file system and automatically process anything appearing there?</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#35">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>Java API supported</skos:prefLabel>
+  <dct:description>Is a Java native API supported?</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#36">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>Other API supported</skos:prefLabel>
+  <dct:description>Are any other APIs supported?</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#12"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#112">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>documentation availability</skos:prefLabel>
@@ -3028,76 +3108,20 @@
   <restriction>complete/fragmentary/useless</restriction>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#387">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>audio sampling frequency</skos:prefLabel>
-  <dct:description>Number of samples per second measured in hz/sec</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#86"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
-</rdf:Description>
-
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#388">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>number of audio channels</skos:prefLabel>
-  <dct:description>Number of channels in an audio file</dct:description>
+  <dct:description>Number of audio channels in an audio file</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#86"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
 </rdf:Description>
 
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#389">
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#401">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>audio bitrate</skos:prefLabel>
-  <dct:description>The bitrate of an audio stream measured in kbit/sec</dct:description>
+  <skos:prefLabel>audio duration</skos:prefLabel>
+  <dct:description>The length of the audio file in seconds.</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#86"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#394">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>audio length identical</skos:prefLabel>
-  <dct:description>Indicates whether the length of the audio file is identical</dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#86"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#395">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>content retained</skos:prefLabel>
-  <dct:description></dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#86"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#396">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>channel mapping retained</skos:prefLabel>
-  <dct:description></dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#86"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#397">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>audio sampling rate retained</skos:prefLabel>
-  <dct:description></dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#86"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#398">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>audio bit depth retained</skos:prefLabel>
-  <dct:description></dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#86"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
-</rdf:Description>
-
-<rdf:Description rdf:about="http://purl.org/DP/quality/measures#399">
-  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>number of audio channels retained</skos:prefLabel>
-  <dct:description></dct:description>
-  <attribute rdf:resource="http://purl.org/DP/quality/attributes#86"/>
-  <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#301">
