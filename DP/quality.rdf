@@ -29,19 +29,28 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 
-  <owl:Ontology rdf:about="http://purl.org/DP/quality"/>
+  <owl:Ontology rdf:about="http://purl.org/DP/quality">
+    <rdfs:comment>Ensuring that the objectives associated with a preservation case are met is the target of preservation planning. To achieve this, objectives need to be associated with measurable outcomes. To this end, we define a measure as the result of measurement of an attribute. Objectives are thus based on attributes that are represented by measures. Following the definition in ISO/IEC 15939:2002, an attribute is an “inherent property or characteristic of an entity that can be distinguished  quantitatively or qualitatively by human or automated means”.  
+
+An example is the attribute compression which indicates the compression used. Measures for this attribute include the compression type (none, lossless, or lossy), compression algorithm, and compression algorithm covered by patent which indicates whether licencing fees might occur when using a certain compression algorithm. 	
+
+This ontology provides vocabulary that allows for the description of measures and attributes. In addition, criterion categories and categories provide an organisational hierarchy for attributes.  
+</rdfs:comment>
+  </owl:Ontology>
 
   <rdf:Description rdf:about="http://purl.org/DP/quality#attribute">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="http://purl.org/DP/quality#Attribute"/>
     <rdfs:domain rdf:resource="http://purl.org/DP/quality#Measure"/>
     <owl:inverseOf rdf:resource="http://purl.org/DP/quality#measure"/>
+    <rdfs:comment>Relates a measure to the attribute that it is a measurement of.</rdfs:comment>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://purl.org/DP/quality#measure">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="http://purl.org/DP/quality#Measure"/>
     <rdfs:domain rdf:resource="http://purl.org/DP/quality#Attribute"/>
+    <rdfs:comment>Relates an attribute to a measure that measures it.</rdfs:comment>
   </rdf:Description>
 
 
@@ -49,12 +58,14 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="http://purl.org/DP/quality#CriterionCategory"/>
     <rdfs:domain rdf:resource="http://purl.org/DP/quality#Attribute"/>
+    <rdfs:comment>Relates an attribute to a criterion category.</rdfs:comment>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://purl.org/DP/quality#scale">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="http://purl.org/DP/quality#Scale"/>
     <rdfs:domain rdf:resource="http://purl.org/DP/quality#Measure"/>
+    <rdfs:comment>Relates a measure to a Scale.</rdfs:comment>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://purl.org/DP/quality#scope">
@@ -67,18 +78,20 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="http://purl.org/DP/quality#Category"/>
     <rdfs:domain rdf:resource="http://purl.org/DP/quality#Category"/>
+    <rdfs:comment>Used to organise categories hierarchically.</rdfs:commment>
   </rdf:Description>
 
   <!-- This name may not be ideal --> 
   <rdf:Description rdf:about="http://purl.org/DP/quality#relatesToMediaType">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.org/DP/quality#Attribute"/>
-    <rdfs:comment>Expected to have ranges taken from http://purl.org/NET/mediatypes</rdfs:comment>
+    <rdfs:comment>This property relates an attribute to a Media Type. Expected to have ranges taken from http://purl.org/NET/mediatypes</rdfs:comment>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://purl.org/DP/quality#Attribute">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <skos:prefLabel>Attribute</skos:prefLabel>     
+    <skos:prefLabel>Attribute</skos:prefLabel>
+    <rdfs:comment>Following the definition in ISO/IEC 15939:2002, an attribute is an “inherent property or characteristic of an entity that can be distinguished quantitatively or qualitatively by human or automated means"</rdfs:comment>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://purl.org/DP/quality#Category">
@@ -94,6 +107,7 @@
   <rdf:Description rdf:about="http://purl.org/DP/quality#Measure">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <skos:prefLabel>Measure</skos:prefLabel> 
+    <rdfs:comment>A measure is the result of a measurement of an attribute.</rdfs:comment>
   </rdf:Description>
 
 </rdf:RDF>     

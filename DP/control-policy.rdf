@@ -36,11 +36,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-    <owl:Ontology rdf:about="http://purl.org/DP/control-policy"/>
+    <owl:Ontology rdf:about="http://purl.org/DP/control-policy">
+      <rdfs:comment>A vocabulary that provides terms for describing Control Policies.</rdfs:comment>
+    </owl:Ontology>
 
     <rdf:Description rdf:about="http://purl.org/DP/control-policy#Objective">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <skos:prefLabel>Objective</skos:prefLabel>      
+	<rdfs:comment>Objectives are the atomic building blocks of control policies. Objectives refer to properties that representations of content have; properties of the formats themselves; tools used and so on. Objectives are defined in terms of measures which are taken from a catalogue.</rdfs:comment>
     </rdf:Description>
 
     <rdf:Description rdf:about="http://purl.org/DP/control-policy#modality">

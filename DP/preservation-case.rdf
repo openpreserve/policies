@@ -335,6 +335,7 @@
     <owl:Class rdf:about="http://purl.org/DP/preservation-case#ContentSet">
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
         <skos:prefLabel>Content Set</skos:prefLabel>
+	<rdfs:comment>A Content Set represents a collection of object that are the focus of a policy.</rdfs:comment>
     </owl:Class>
     
 
@@ -369,6 +370,7 @@
 
     <owl:Class rdf:about="http://purl.org/DP/preservation-case#PreservationCase">
         <skos:prefLabel>Preservation Case</skos:prefLabel>
+	<rdfs:comment>A Preservation Case ties a number of Objectives to a Content Set and intended User Community.</rdfs:comment>
     </owl:Class>
     
 
