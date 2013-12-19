@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Digital Preservation: Authenticity Aspects
+
+  Changes:
+-->
+<rdf:RDF xmlns="http://purl.org/DP/authenticity#"
+  xml:base="http://purl.org/DP/authenticity/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Authenticity Aspects
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+  <rdf:Description rdf:about="http://purl.org/DP/authenticity#scheme">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dct:title>AUTHENTICITY</dct:title>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/authenticity#Content">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Content</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/DP/authenticity#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/authenticity#Context">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Context</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/DP/authenticity#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/authenticity#Appearance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Appearance</skos:prefLabel>
+    <skos:altLabel>Rendering</skos:altLabel>
+    <skos:inScheme rdf:resource="http://purl.org/DP/authenticity#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/authenticity#Structure">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Structure</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/DP/authenticity#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/authenticity#Behaviour">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Behaviour</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/DP/authenticity#scheme"/>
+  </rdf:Description>
+
+</rdf:RDF>     

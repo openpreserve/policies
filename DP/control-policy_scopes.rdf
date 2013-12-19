@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Digital Preservation: Control Policy - Scopes
+
+  Changes:
+-->    
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="http://purl.org/DP/control-policy#"
+     xml:base="http://purl.org/DP/control-policy/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.org/DP/control-policy/scopes"/>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Qualifiers
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/scopes#scheme">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dct:title>Scope of a control policy</dct:title>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/scopes#Community">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Community scope</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/scopes#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/scopes#Organisation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Organisation scope</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/scopes#scheme"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://purl.org/DP/control-policy/scopes#PreservationCase">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Preservation case scope</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://purl.org/DP/control-policy/scopes#scheme"/>
+  </rdf:Description>
+
+</rdf:RDF>

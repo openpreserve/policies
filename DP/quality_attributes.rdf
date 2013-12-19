@@ -82,6 +82,7 @@
   <skos:prefLabel>colour space of a digital image</skos:prefLabel>
   <dct:description>The designated colour space of the decompressed image data</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#55" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#56" />
@@ -131,6 +132,7 @@
   <skos:prefLabel>image EXIF metadata</skos:prefLabel>
   <dct:description>The accuracy of Exchangeable Image File Format (EXIF) metadata of an image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#132" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#250" />
@@ -213,6 +215,7 @@
   <skos:prefLabel>image content</skos:prefLabel>
   <dct:description>The accuracy of image content preservation</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#1" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#2" />
@@ -230,6 +233,7 @@
   <skos:prefLabel>image metadata</skos:prefLabel>
   <dct:description>The accuracy of metadata of an image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#291" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#292" />
@@ -699,6 +703,7 @@
   <skos:prefLabel>colour profile of a digital image</skos:prefLabel>
   <dct:description>The colour profile associated with the digital image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#57" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#58" />
@@ -891,6 +896,7 @@
   <skos:prefLabel>image DC metadata</skos:prefLabel>
   <dct:description>The accuracy of Dubling Core (DC) metadata to an image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#300" />
 </rdf:Description>
@@ -929,6 +935,7 @@
   <skos:prefLabel>image size</skos:prefLabel>
   <dct:description>Dimensions of a digital image</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#50" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#51" />
@@ -997,6 +1004,7 @@
   <skos:prefLabel>image IPTC metadata</skos:prefLabel>
   <dct:description>The accuracy of International Press Telecommunications Council (IPTC) metadata of an image.</dct:description>
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_transformation_independent_property"/>
+  <relatesToMediaType rdf:resource="http://purl.org/NET/mediatypes/image"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#290" />
 </rdf:Description>

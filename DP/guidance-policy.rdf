@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Digital Preservation: Guidance Policies
+
+  Changes:
+-->
+<rdf:RDF xmlns="http://purl.org/DP/guidance#"
+  xml:base="http://purl.org/DP/guidance/"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Guidance Policies
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#scheme">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <dct:title>Guidance</dct:title>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#Authenticity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Authenticity</skos:prefLabel>
+    <skos:description>Authenticity, measure to establish authenticity</skos:description>
+    <skos:inScheme rdf:resource="http://purl.org/DP/guidance#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#FunctionalPreservation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Functional Preservation</skos:prefLabel>
+    <skos:description>Functional Preservation</skos:description>
+    <skos:inScheme rdf:resource="http://purl.org/DP/guidance#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#BitPreservation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Bit Preservation</skos:prefLabel>
+    <skos:description>Bit Preservation</skos:description>
+    <skos:inScheme rdf:resource="http://purl.org/DP/guidance#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#Metadata">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Metadata</skos:prefLabel>
+    <skos:description>Metadata, policies relating to metadata</skos:description>
+    <skos:inScheme rdf:resource="http://purl.org/DP/guidance#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#Organisation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Organisation</skos:prefLabel>
+    <skos:description>Organisation, policies related to the behaviour and tasks of the archival organisation.</skos:description>
+    <skos:inScheme rdf:resource="http://purl.org/DP/guidance#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#Standards">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Standards</skos:prefLabel>
+    <skos:description>Standards, the applicability of standards.</skos:description>
+    <skos:inScheme rdf:resource="http://purl.org/DP/guidance#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#Access">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Access</skos:prefLabel>
+    <skos:description>Access, policies related to the users of the digital archive.</skos:description>
+    <skos:inScheme rdf:resource="http://purl.org/DP/guidance#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#Rights">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Rights</skos:prefLabel>
+    <skos:description>Rights, policies related to access, preservation, IP etc. rights.</skos:description>
+    <skos:inScheme rdf:resource="http://purl.org/DP/guidance#scheme"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://purl.org/DP/guidance#TrustworthyDigitalRepositories">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel>Trustworthy Digital Repositories</skos:prefLabel>
+    <skos:description>Trustworthy Digital Repositories, policies related to the aim to become a TDR.</skos:description>
+    <skos:inScheme rdf:resource="http://purl.org/DP/guidance#scheme"/>
+  </rdf:Description>
+
+</rdf:RDF>     

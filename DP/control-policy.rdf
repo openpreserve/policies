@@ -36,13 +36,15 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-    <owl:Ontology rdf:about="http://purl.org/DP/control-policy"/>
+    <owl:Ontology rdf:about="http://purl.org/DP/control-policy">
+      <rdfs:comment>A vocabulary that provides terms for describing Control Policies.</rdfs:comment>
+    </owl:Ontology>
 
     <rdf:Description rdf:about="http://purl.org/DP/control-policy#Objective">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <skos:prefLabel>Objective</skos:prefLabel>      
+	<rdfs:comment>Objectives are the atomic building blocks of control policies. Objectives refer to properties that representations of content have; properties of the formats themselves; tools used and so on. Objectives are defined in terms of measures which are taken from a catalogue.</rdfs:comment>
     </rdf:Description>
-
 
     <rdf:Description rdf:about="http://purl.org/DP/control-policy#modality">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -56,12 +58,29 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     </rdf:Description>
 
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#authenticityAspect">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#validInScope">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment>Allows the association of an objective with a particular community or organisation, without necessarily including the objective in a preservation	case. </rdfs:comment>
+    </rdf:Description>
+
     <rdf:Description rdf:about="http://purl.org/DP/control-policy#value">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     </rdf:Description>
 
+    <!-- Added SKB -->
 
-
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#validFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:range rdf:resource="&xsd;dateTime"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/DP/control-policy#validTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:range rdf:resource="&xsd;dateTime"/>
+    </rdf:Description>
 
     <!-- http://purl.org/DP/control-policy#modality -->
 
@@ -87,7 +106,19 @@
         <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
     </owl:ObjectProperty>
     
+    <!-- http://purl.org/DP/control-policy#authenticityAspect -->
 
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#authenticityAspect">
+        <rdfs:comment>Relates an Attribute to the Authenticity aspect with which is is concerned.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Attribute"/>
+    </owl:ObjectProperty>
+
+    <!-- http://purl.org/DP/control-policy#guidancePolicyArea -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/DP/control-policy#guidancePolicyArea">
+        <rdfs:comment>Relates an Objective to the general guidance policy area it relates to.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+    </owl:ObjectProperty>
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -97,13 +128,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
     <!-- http://purl.org/DP/control-policy#value -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/DP/control-policy#value">
         <rdfs:comment>Relates an Objective to the value that the measure pertains to. This may be a value that is required to be present (in the case of a MUST), or a value that is required to be absent (in the case of a MUST NOT).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://purl.org/DP/control-policy#validFrom -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/DP/control-policy#validFrom">
+        <rdfs:comment>Date/time from which an objective is valid</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://purl.org/DP/control-policy#validTo -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/DP/control-policy#validTo">
+        <rdfs:comment>Date/time until which an objective is valid</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/DP/control-policy#Objective"/>
     </owl:DatatypeProperty>
     
