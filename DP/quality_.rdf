@@ -78,7 +78,7 @@ This ontology provides vocabulary that allows for the description of measures an
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:range rdf:resource="http://purl.org/DP/quality#Category"/>
     <rdfs:domain rdf:resource="http://purl.org/DP/quality#Category"/>
-    <rdfs:comment>Used to organise categories hierarchically.</rdfs:commment>
+    <rdfs:comment>Used to organise categories hierarchically.</rdfs:comment>
   </rdf:Description>
 
   <!-- This name may not be ideal --> 
