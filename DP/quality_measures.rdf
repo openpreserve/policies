@@ -273,10 +273,44 @@
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
 </rdf:Description>
 
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#408">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>number of pages</skos:prefLabel>
+  <dct:description>Document page count</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#65"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
+</rdf:Description>
+
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#393">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>format identifier</skos:prefLabel>
   <dct:description>Identifier of the (file) format, e.g. PRONOM identifier</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#88"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#FREETEXT" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#413">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>MIME type</skos:prefLabel>
+  <dct:description>The media type according to http://www.iana.org/assignments/media-types/media-types.xhtml</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#88"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#FREETEXT" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#414">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>format version</skos:prefLabel>
+  <dct:description>The file format version
+Example : "1.6", "89a"</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#88"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#FREETEXT" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#415">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>format name</skos:prefLabel>
+  <dct:description>The file format name
+Example : Portable Document Format</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#88"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#FREETEXT" />
 </rdf:Description>
@@ -1281,6 +1315,24 @@
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
 </rdf:Description>
 
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#404">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>max object size handled in bytes</skos:prefLabel>
+  <dct:description>The size of the largest object (e.g. a file) a workflow/component has handled. Illustrates capability of running on heterogeneous file sizes when combined with #405 (min object size handled in bytes)
+Example : 140,168,260 (~133.6 MB)</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#15"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#405">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>min object size handled in bytes</skos:prefLabel>
+  <dct:description>The size of the smallest object (e.g. a file) a workflow/component has handled. Illustrates capability of running on heterogeneous file sizes when combined with #404 (max object size handled in bytes)
+Example : 20</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#15"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
+</rdf:Description>
+
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#169">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>bits per sample equal</skos:prefLabel>
@@ -1312,6 +1364,15 @@
   <dct:description>Indicates whether the outcome format is human readable as plain text.</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#50"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#410">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>byte order</skos:prefLabel>
+  <dct:description>Specifies the convention used to interpret the bytes of the object. (Also known as endianness)</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#92"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#ORDINAL" />
+  <restriction>little endian/big endian</restriction>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#171">
@@ -1977,6 +2038,15 @@
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
 </rdf:Description>
 
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#403">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>waveform block similarity</skos:prefLabel>
+  <dct:description>For each block (1 second audio) the algorithm calculates the optimal 'push' of one of the sound files, and a value for how good it was (a number between 0 and 1). Finally the value for the block where the best push was worst is returned.</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#89"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
+  <restriction>0.0/1.0</restriction>
+</rdf:Description>
+
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#65">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>error handling advice provided</skos:prefLabel>
@@ -2150,6 +2220,22 @@
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
 </rdf:Description>
 
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#411">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>creating author</skos:prefLabel>
+  <dct:description>Name of the author who created the digital object</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#66"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#FREETEXT" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#412">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>creating application</skos:prefLabel>
+  <dct:description>Name of the application used to create the digital object</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#66"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#FREETEXT" />
+</rdf:Description>
+
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#108">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>stability judgement</skos:prefLabel>
@@ -2157,6 +2243,14 @@
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#35"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#ORDINAL" />
   <restriction>stable/largely stable/unstable</restriction>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#407">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>failed objects in percent</skos:prefLabel>
+  <dct:description>Percent of objects on which the workflow failed, i.e. on which there was an error while processing the object and the object could not be fully processed</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#35"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#205">
@@ -2282,6 +2376,14 @@
   <dct:description>Factor for relative output file size, calculated as: (size of output file / size of input file)</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#41"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#409">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>file size</skos:prefLabel>
+  <dct:description>Size of the digital object in bytes</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#41"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#387">
@@ -2637,7 +2739,7 @@
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#54">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
-  <skos:prefLabel>image resolution as string (width x height) as string</skos:prefLabel>
+  <skos:prefLabel>image resolution (width x height) as string</skos:prefLabel>
   <dct:description>Width and height of an image in number of pixels represented as string (e.g. 1024x768).</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#19"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#FREETEXT" />
@@ -2904,6 +3006,24 @@
   <scale rdf:resource="http://purl.org/DP/quality/scales#BOOLEAN" />
 </rdf:Description>
 
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#416">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>QAFalseDifferentPercent</skos:prefLabel>
+  <dct:description>Ratio of 'QA decided different'/'human judged same', that is ratio of content comparisons resulting in original and migrated different, even though human evaluation define original and migrated similar
+ 0.412 %</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#93"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#417">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>IdentificationCorrectnessInPercent</skos:prefLabel>
+  <dct:description>Defining a statistical measure for binary evaluations
+Example : 85 %</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#93"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
+</rdf:Description>
+
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#228">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
   <skos:prefLabel>box artwork available for video game</skos:prefLabel>
@@ -3040,6 +3160,24 @@
   <dct:description>time of the CPU consumed by the process for each MB of input data, measured in milliseconds</dct:description>
   <attribute rdf:resource="http://purl.org/DP/quality/attributes#6"/>
   <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVENUMBER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#406">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>throughput in bytes per second</skos:prefLabel>
+  <dct:description>The throughput of data measured in bytes per second
+Example : 2500</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#6"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/measures#418">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Measure"/>
+  <skos:prefLabel>number of objects per second</skos:prefLabel>
+  <dct:description>Number of objects that can be processed per second
+Example : 250</dct:description>
+  <attribute rdf:resource="http://purl.org/DP/quality/attributes#6"/>
+  <scale rdf:resource="http://purl.org/DP/quality/scales#POSITIVEINTEGER" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/measures#241">

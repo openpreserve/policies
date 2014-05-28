@@ -105,6 +105,7 @@
   <measure rdf:resource="http://purl.org/DP/quality/measures#348" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#349" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#350" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#408" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#88">
@@ -114,6 +115,9 @@
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#393" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#413" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#414" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#415" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#49">
@@ -439,6 +443,8 @@
   <measure rdf:resource="http://purl.org/DP/quality/measures#48" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#49" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#133" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#404" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#405" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#61">
@@ -459,6 +465,15 @@
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#143" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#158" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/DP/quality/attributes#92">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
+  <skos:prefLabel>object encoding</skos:prefLabel>
+  <dct:description>Describes how the object is encoded, e.g. which byte order is used.</dct:description>
+  <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
+  
+  <measure rdf:resource="http://purl.org/DP/quality/measures#410" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#63">
@@ -674,6 +689,7 @@
   <measure rdf:resource="http://purl.org/DP/quality/measures#397" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#398" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#399" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#403" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#25">
@@ -744,6 +760,8 @@
   <measure rdf:resource="http://purl.org/DP/quality/measures#354" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#355" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#356" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#411" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#412" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#35">
@@ -753,6 +771,7 @@
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#maturity"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#108" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#407" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#74">
@@ -808,6 +827,7 @@
   <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_correctness_representation_instance_property"/>
   
   <measure rdf:resource="http://purl.org/DP/quality/measures#123" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#409" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#90">
@@ -1009,6 +1029,16 @@
   <measure rdf:resource="http://purl.org/DP/quality/measures#290" />
 </rdf:Description>
 
+<rdf:Description rdf:about="http://purl.org/DP/quality/attributes#93">
+  <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
+  <skos:prefLabel>exactness</skos:prefLabel>
+  <dct:description>Describes how exact the result produced by the tool is.</dct:description>
+  <criterionCategory rdf:resource="http://purl.org/DP/quality/categories#functional_appropriateness"/>
+  
+  <measure rdf:resource="http://purl.org/DP/quality/measures#416" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#417" />
+</rdf:Description>
+
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#79">
   <rdf:type rdf:resource="http://purl.org/DP/quality#Attribute"/>
   <skos:prefLabel>video game documentation</skos:prefLabel>
@@ -1072,6 +1102,8 @@
   <measure rdf:resource="http://purl.org/DP/quality/measures#10" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#11" />
   <measure rdf:resource="http://purl.org/DP/quality/measures#12" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#406" />
+  <measure rdf:resource="http://purl.org/DP/quality/measures#418" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://purl.org/DP/quality/attributes#82">
